@@ -1,0 +1,11 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+# Keep student interview material and local runs out of the public repository.
+private/
+local-runs/
