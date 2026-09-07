@@ -15,7 +15,7 @@ The workshop will demonstrate gstack, BMAD, and NightShift alongside the student
 
 ## Intended build order
 
-1. Select the local assistant and confirm student account access.
+1. Follow the approved Claude chat / optional Claude Code profile in the agent spec; verify participant access without requiring API keys or paid integrations.
 2. Implement the coach and its research workflow.
 3. Run an example and evaluate failures and unsupported claims.
 4. Write the student walkthrough from the tested setup.
