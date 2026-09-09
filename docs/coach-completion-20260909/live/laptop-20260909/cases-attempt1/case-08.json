@@ -1,0 +1,23 @@
+{
+  "id": "case-08",
+  "started_at": "2026-09-09T14:42:59.598493+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "68a1eb9dc122706c5b42a28d8bf549aeed89dac7035d629c2744c05f77743dc2",
+  "input": "I want ten features: profiles, AI matching, chat, video calls, payments, maps, gamification, calendars, ratings, and admin analytics. I saw three classmates struggle to pick a study time yesterday. We have six hours, one beginner coder, and one business student. Help scope the experiment.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established:** You directly observed three classmates struggle to pick a study time yesterday (direct observation, recent problem).\n**Still unknown:** What those three classmates actually did afterward (gave up, texted for an hour, used an app, split into two groups), how many other students face this same problem, and how many you can realistically reach and test with in your six-hour window.\n\n**On the ten features and MVP**\n\nMVP (minimum viable product) here means the smallest thing you can put in front of real people in your six hours that tests whether *this specific problem* — three people can't agree on a study time — is worth solving with software. AI matching, video calls, payments, maps, gamification, calendars, ratings, chat, and admin analytics are ten separate things to build, test, and maintain; with one beginner coder and one business student and six hours, most of them can't be built, let alone learned from. Building all ten and then testing risks discovering the core scheduling problem was never the blocker, after spending the time you don't have.\n\nI'm proposing three features tied to what you actually observed. These are proposals, not decisions — tell me if you'd swap any:\n\n1. **Availability input** (a simple form: \"I'm free these times\") — tied directly to the observed problem (they couldn't compare availability easily).\n2. **Basic overlap matching** (not \"AI\" — a simple rule that finds shared free slots) — tied to the observed problem. Calling it \"AI matching\" is a labeled assumption that intelligence beyond simple overlap-checking is needed; unsupported by what you observed.\n3. **Minimal group/profile** (name + course, nothing more) — labeled assumption: some identifier is needed to know whose availability belongs to whom. Not confirmed as necessary yet.\n\n**Deferred, and why:** chat, video calls, payments, maps, gamification, calendars (beyond simple availability), ratings, admin analytics — none are tied to the observed problem (picking a time), and none fit six hours with your team's skills.\n\n**Provisional experiment (assumptions labeled where I haven't heard specifics from you):**\n\n- Participants: proposed — the same three classmates plus any others from that study group you can reach in six hours (count Unknown until you tell me).\n- Action: they use the availability form + overlap matching to try to pick a time for an actual upcoming study session (not hypothetical).\n- Observed: whether they reach a scheduled time faster than yesterday's struggle, and whether they say they'd use it again.\n- Proposed threshold (yours to set): at least 2 of 3 pick a time in under 5 minutes and say they'd use it again — adjust as you see fit.\n- If it disappoints: narrow to just the overlap-matching step alone (drop profiles), or investigate why (e.g., the real blocker was trust/commitment, not visibility of availability), rather than adding features.\n\n1. Confirm or replace the three proposed MVP features (availability input, overlap matching, minimal profile).\n2. What did the three classmates actually do after yesterday's struggle — did they resolve it, and how (their current workaround)?\n3. Define your bounded reachable group for the test (e.g., \"my study group of 3\" or \"our class section of X\") and how many you can realistically reach and test with inside six hours.\n4. Keep my proposed success threshold (2 of 3 pick a time in under 5 minutes and would reuse it), or set your own?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

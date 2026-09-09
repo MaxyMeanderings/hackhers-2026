@@ -1,0 +1,44 @@
+{
+  "version": 1,
+  "decision": "approve",
+  "reviewer_provider": "codex",
+  "reviewer_author_id": "fresh-classification-reviewer-20260909",
+  "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
+  "scenario_ids": [
+    "public-evidence",
+    "public-experiment",
+    "documentation",
+    "live-evidence"
+  ],
+  "classifications": {
+    "public-evidence": "prototype",
+    "public-experiment": "prototype",
+    "documentation": "not_applicable",
+    "live-evidence": "not_applicable",
+    "summary": "prototype"
+  },
+  "rationale": [
+    "B1 and B2 concern actual model evidence handling across turns and appropriately declare prompt_behavior and runtime_interaction risks. Required cases cover both bounded behavioral acceptance IDs.",
+    "B1 final strict JSON equality checks retention of supplied counts, absence of invented real interviews and absence of proven demand. Earlier source status and omission assertions supplement that bounded final-state claim.",
+    "B2 combines json_field_nonempty and json_field_length_at_most on features, requiring one to three array entries. Nonempty participant, action, measure, threshold and basis fields require an immediate proposed experiment structure; final strict equality retains the student decision, precommitted criterion, assumption and not-run status.",
+    "D1 and D2 inspect documentation and execution evidence, with explicit empty-risk applicability rationales; neither represents executable deterministic product logic. Their mandatory independent inspection and source-scope obligations remain in force.",
+    "Empty prohibited lists have explicit forbidden-behavior rationales. Supported local operators provide reproducible narrow assertions; no arbitrary grader execution is proposed."
+  ],
+  "repair_findings": [
+    {
+      "scenario_id": "public-evidence",
+      "status": "resolved",
+      "finding": "Previously eight replies did not establish total contacts, yet the oracle required contacted=8. The reviewed input now explicitly states exactly eight people contacted and all eight replied, supporting the expected value without inference."
+    }
+  ],
+  "limits": [
+    "This approves classifications and bounded scenario design, not an execution result or product acceptance.",
+    "Structural operators do not establish semantic feature quality, observed-problem linkage, feasible participant/action design, measurable threshold quality, question count or relevance. Actual intermediate transcripts require independent semantic review; strict final equality cannot repair earlier fabrication.",
+    "Question-mark presence alone does not establish one to five appropriate coaching questions. Name and HTTPS omission checks alone do not establish absence of every fabricated source or unsupported claim.",
+    "Ten actual evaluation cases and a full session require independent review of all original acceptance criteria, including inquiry sequence, four deliverables and cited supporting excerpts or explicit unverified/no-research labels. Missing or failed evidence blocks delivery even if machine assertions pass.",
+    "Static canonical prompt identity does not prove live Claude chat parity; live parity remains unverified unless actually executed.",
+    "Actual replay proves bounded tool-free conversation behavior, not native persistence, browsing or cross-surface parity. Hosted model alias is not an immutable backend version.",
+    "A separate different-provider typed prototype challenge and subsequent development/final gate evidence remain required."
+  ],
+  "implementation_prompt_read": false
+}

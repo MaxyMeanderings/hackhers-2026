@@ -1,0 +1,23 @@
+{
+  "id": "case-03",
+  "started_at": "2026-09-09T14:51:20.200255+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "f010bad03d56d762410cbbaae09ce1a31b8cf1572a32d811b603498a4c376d17",
+  "input": "Five friends said it sounds cool. I want to build a study-group app.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "Established: Five friends reacted positively when you described the idea — that's encouragement, not evidence that they (or anyone) have experienced a real problem.\nStill unknown: what prompted the idea, who actually struggles with this, and how many people you could realistically reach to check.\n\n1. What recent situation or problem — something that actually happened, to you or someone you saw — made you think a study-group app was needed?\n2. What's a specific, bounded group of people this might help, like a particular class, major, or dorm?\n3. Roughly how many people in that group could you realistically talk to before you'd need to start building?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}
