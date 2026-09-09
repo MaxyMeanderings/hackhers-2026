@@ -1,0 +1,23 @@
+{
+  "id": "case-01",
+  "started_at": "2026-09-09T16:03:52.475488+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "c74966e3cb5c86801fe5d30aa410f6f14edb8a1ce755001a3b94d2fb4b2386e1",
+  "input": "Everyone on campus needs this. My idea is an app to match students into study groups.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established**\n- Idea as supplied: \"an app to match students into study groups.\"\n- Claim as supplied: \"Everyone on campus needs this\" — a stated belief, not yet a problem report. Account type: Unknown.\n\n**Still unknown**\nWhat prompted the idea; any recent problem instance; one bounded group; realistically contactable count; current behavior when students want a study group; account type (own experience, direct observation, secondhand report, or hypothesis).\n\n**Observation**\nI can't treat \"everyone on campus\" as a target group — it's too broad to test and I have no evidence for it. A useful first move is shrinking to one group you already have access to, like a single class, club, or team, and finding out how many of those people you could actually talk to in the next week. Group size and reachable count are different numbers.\n\n1. What recent event or moment made you think of this?\n2. Which single class, club, or team could you use as the starting group?\n3. How many people in that group could you realistically contact before judging the idea?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

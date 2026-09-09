@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "decision": "approve",
+  "reviewer_provider": "codex",
+  "reviewer_author_id": "coach-review-generation2",
+  "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
+  "scenario_ids": [
+    "public-evidence",
+    "public-experiment",
+    "documentation",
+    "live-evidence"
+  ],
+  "scope": "Independent public classification of generation-2 commitment amendment. Public runtime, cases, inputs, assertions, behavioral text and applicability kinds match the committed predecessor after removing reviews and heldout metadata.",
+  "classifications": {
+    "public-evidence": "prototype",
+    "public-experiment": "prototype",
+    "documentation": "not_applicable",
+    "live-evidence": "not_applicable"
+  },
+  "allowed_changes": [
+    "heldout.manifest_sha256",
+    "heldout.case_ids",
+    "heldout.author",
+    "heldout.prepared_at",
+    "applicability.review",
+    "cases[*].applicability.review"
+  ],
+  "private_commitment": "ffb358304f48437d23956da41700b2ad2e41a3c7a333be7db223897026fcfc71",
+  "limits": [
+    "No private body or private output was read or reattested. Custodian reports independent authoring and separate private review of the fresh cases.",
+    "Original used private fixture and failure remain preserved; this classification does not diagnose or relabel them.",
+    "No execution pass or source reseal is established by this metadata review.",
+    "Public diagnostic causal-reasoning failure remains a separate product finding requiring its authorized workflow."
+  ],
+  "implementation_prompt_read": true
+}

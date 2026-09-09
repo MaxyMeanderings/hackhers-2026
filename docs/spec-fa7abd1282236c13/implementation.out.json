@@ -1,0 +1,33 @@
+{
+  "artifacts": {
+    "branch": "nightshift/spec-fa7abd1282236c13",
+    "diff": " .nightshift/spec-fa7abd1282236c13.md |  38 ++++++\n coach/CLAUDE-CODE-ADAPTER.md         |  75 ++++++++++++\n coach/PROMPT.md                      | 218 +++++++++++++++++++++++++++++++++++\n coach/README.md                      |  50 ++++++++\n coach/templates/count-ledger.md      |  42 +++++++\n coach/templates/experiment-card.md   |  30 +++++\n coach/templates/idea-brief.md        |  50 ++++++++\n coach/templates/mvp-brief.md         |  40 +++++++\n 8 files changed, 543 insertions(+)",
+    "model": "sonnet",
+    "provider": "claude"
+  },
+  "attempts": 1,
+  "reason": "Created all 7 owned source-construction files for spec-fa7abd1282236c13 (docs/AGENT-SPEC.md is the sole behavior source; docs/spec-fa7abd1282236c13/SPEC.md is the approved implementation spec). coach/PROMPT.md is one self-contained canonical prompt covering: opening-question-before-advice (AC1, AGENT-SPEC.md:21), 1-5 question batching (AC2, AGENT-SPEC.md:10,23), no-invented-facts rule (AC3, AGENT-SPEC.md:22), jargon explanation (AC4, AGENT-SPEC.md:24), established-vs-uncertain recap (AC5, AGENT-SPEC.md:25), the full six-step inquiry sequence including the own-experience/observed/reported/hypothesis distinction (AC6, AGENT-SPEC.md:32-74), citation + tool-failure-disclosure + prompt-injection-resistance research rules (AC7, AGENT-SPEC.md:76-82), embedded compact deliverable structures for all four templates so a chat-only user can get them without filesystem tools (AC9, AGENT-SPEC.md:84-89), and an explicit MVP-feature negotiation-to-3 rule (AC10, AGENT-SPEC.md:67-68,102). coach/CLAUDE-CODE-ADAPTER.md (AC8) points at coach/PROMPT.md by reference only (no duplicated behavior text) and offers a simple paste-based path plus optional CLI flags verified locally via `claude --help` (confirmed present: --append-system-prompt, -p/--print, --tools, --strict-mcp-config, --mcp-config); it explicitly flags that a standalone `--system-prompt-file` flag was NOT found in this machine's `claude --help` output despite being named in the task input, and documents the shell `$(cat ...)` substitution as the verified alternative, with a link to https://code.claude.com/docs/en/cli-reference. Four standalone blank templates under coach/templates/ mirror the same fields (AC9). coach/README.md is self-contained per AC12: a new student can determine the Claude-chat quickstart, the optional Claude Code path, and the templates/eval locations without leaving that file. Per the dispatcher's ownership split, I did NOT create, read, or open coach/eval/evaluation-cases.md or coach/eval/RESULTS.md (orchestrator-owned; AC11 live-run recording is explicitly out of my scope and not claimed here). Appended the required CONVENTION_CHECK attestation line to .nightshift/spec-fa7abd1282236c13.md — verdict N/A because no code classes/collaborators exist in this prompt-only change. No commits, push, PR, or nested Codex process were performed.",
+  "results": {
+    "files_changed": [
+      "coach/PROMPT.md",
+      "coach/CLAUDE-CODE-ADAPTER.md",
+      "coach/templates/idea-brief.md",
+      "coach/templates/count-ledger.md",
+      "coach/templates/experiment-card.md",
+      "coach/templates/mvp-brief.md",
+      "coach/README.md",
+      ".nightshift/spec-fa7abd1282236c13.md"
+    ]
+  },
+  "rules_fired": [
+    "architect-dispatch-file-count-threshold(9-files-crossed-3)",
+    "agent-firewall-no-eval-no-tests-read",
+    "no-direct-file-load-used-cat/grep-excerpts-for-spec.AGENT-SPEC.md-full-read-was-106-lines-small-file",
+    "cli-flag-claims-verified-locally-via-claude---help-not-assumed",
+    "convention-check-attestation-appended",
+    "ownership-scope-respected-eval-files-not-touched",
+    "reversible-file-edits-no-plan-mode-per-factory-mode-override",
+    "no-commit-no-push-no-pr"
+  ],
+  "status": "SUCCESS"
+}

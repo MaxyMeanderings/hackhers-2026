@@ -1,0 +1,10 @@
+{
+  "role": "nightshift-code-fact-extractor",
+  "provider": "codex",
+  "model": "gpt-5.4",
+  "gear": "1",
+  "started_at": "2026-09-09T02:22:09Z",
+  "finished_at": "2026-09-09T02:22:13Z",
+  "status": "failed",
+  "pid": 33675
+}

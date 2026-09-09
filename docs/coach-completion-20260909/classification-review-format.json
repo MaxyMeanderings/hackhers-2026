@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "decision": "approve",
+  "reviewer_provider": "codex",
+  "reviewer_author_id": "coach-review-format-amendment",
+  "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
+  "scenario_ids": [
+    "public-evidence",
+    "public-experiment",
+    "documentation",
+    "live-evidence"
+  ],
+  "scope": "Independent prospective format/runtime metadata amendment and unchanged public classification. Public inputs, assertions, applicability kinds, and behavioral text match the committed predecessor after removing review metadata.",
+  "classifications": {
+    "public-evidence": "prototype",
+    "public-experiment": "prototype",
+    "documentation": "not_applicable",
+    "live-evidence": "not_applicable"
+  },
+  "allowed_changes": [
+    "runtime.model",
+    "runtime.response_normalization",
+    "heldout.manifest_sha256",
+    "applicability.review",
+    "cases[*].applicability.review"
+  ],
+  "rationale": [
+    "Opus remains a model-behavior prototype; the same evidence and experiment scenarios retain prompt_behavior/runtime_interaction risks.",
+    "Explicit json-or-single-fence-v1 changes only accepted presentation wrapper; content assertions and actual original history remain unchanged.",
+    "Documentation and live-evidence classifications remain not_applicable to deterministic logic, with mandatory independent artifact and semantic review.",
+    "Replacement private commitment reflects metadata-only amendment; custodian-attested unchanged body hashes and preserved original independent review were separately assessed without reading private bodies.",
+    "Cumulative policy extension preserves two consumed repairs and existing launches; authorization and policy amendment were independently reviewed."
+  ],
+  "limits": [
+    "This is not a new execution result, private-body substantive reattestation, or product pass.",
+    "Original strict failures and original classification evidence remain unchanged.",
+    "Private schema-only identity is conditional on custodian attestation; no hidden content was read.",
+    "Fresh independent challenge, correct reseal, and new development/final observations remain required.",
+    "All original ten cases and a full conversation require separate semantic review; current draft suite has unresolved failures.",
+    "Reviewer has read implementation prompts in its independent review role; no claim of source blindness is made."
+  ],
+  "implementation_prompt_read": true
+}

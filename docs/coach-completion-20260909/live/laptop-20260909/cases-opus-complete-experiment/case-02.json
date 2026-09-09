@@ -1,0 +1,24 @@
+{
+  "id": "case-02",
+  "started_at": "2026-09-09T17:16:36.312822+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "selected_model": "opus",
+  "prompt_sha256": "682f62a154591cd6bb5331d00222a7b16ededa656e7d132ae643996f86bc6927",
+  "input": "The market is worth billions. My idea is an app to match students into study groups. What does TAM mean?",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established**\n- Idea supplied: \"an app to match students into study groups\" — hypothesis, no problem report yet.\n- Claim supplied: \"The market is worth billions\" — no source supplied, so it stays unverified.\n\n**Still unknown**: recent problem instance, account type, one bounded group, realistically contactable count, current workaround.\n\n**TAM** stands for total addressable market — the total revenue you'd earn if every possible customer bought. It's a top-down estimate, and it says nothing about whether anyone you can actually reach this month wants this. For a two-day build, a group of 20 people you can talk to is worth more than a billion-dollar figure. So I won't lean on the market size either way; let's ground it in something you observed.\n\n1. What's one recent, specific moment where someone had trouble forming or joining a study group — and is that your own experience, something you watched happen, or something you heard secondhand?\n2. Which single bounded group would you start with (one class, club, or team)?\n3. How many people in that group could you realistically **contact** before judging the idea?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

@@ -1,0 +1,10 @@
+{
+  "role": "nightshift-spec-writer",
+  "provider": "claude",
+  "model": "sonnet",
+  "gear": "1",
+  "started_at": "2026-09-07T20:41:22Z",
+  "finished_at": "2026-09-07T20:44:07Z",
+  "status": "success",
+  "pid": 97648
+}

@@ -1,0 +1,23 @@
+{
+  "id": "case-03",
+  "started_at": "2026-09-09T15:57:28.468227+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "8ba18992a02a4a18c933bd21f9309057fe74ff6405e651e6c2b451484d306f78",
+  "input": "Five friends said it sounds cool. I want to build a study-group app.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established:** \"Five friends said it sounds cool\" — five positive reactions, account type: secondhand report of opinion. You want to build a study-group app.\n\n**Still unknown:** what prompted the idea, any recent problem instance, current study-group behavior, concrete next-step commitments, reachable group size.\n\nOne thing worth separating early: praise is a reaction to a pitch, not a report of a problem someone actually had, and not a commitment to do anything. Five people can honestly find an idea cool while none of them has struggled with study groups recently. That's not a knock on your friends — it's just that \"sounds cool\" and \"here's what happened to me last week\" are different kinds of evidence, and only the second one tells you whether the problem is real.\n\nSo before features, I'd like to know where the idea came from.\n\n1. What happened recently that made you think of this — your own experience, something you watched, or something someone told you?\n2. Did any of the five describe a specific recent time study groups gave them trouble?\n3. Has anyone agreed to a concrete next step, like a 15-minute conversation?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

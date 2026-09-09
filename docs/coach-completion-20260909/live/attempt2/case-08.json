@@ -1,0 +1,23 @@
+{
+  "id": "case-08",
+  "started_at": "2026-09-09T10:49:29.810098+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.266 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "a88b7b36d4736be2052df4b0336b913702b0973f35b00e344c75ce4e6207ea34",
+  "input": "I want ten features: profiles, AI matching, chat, video calls, payments, maps, gamification, calendars, ratings, and admin analytics. I saw three classmates struggle to pick a study time yesterday. We have six hours, one beginner coder, and one business student. Help scope the experiment.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established:** You observed three classmates struggle to pick a study time yesterday (this sounds like your own direct observation of something happening to them, not something they told you secondhand — I'll flag that to confirm below); the team has 6 hours, one beginner coder, and one business student; you've listed ten possible features.\n**Still unknown:** What exactly the struggle looked like, what they ended up doing, whether you can reach those same people (or others) for a test, and which of the ten features actually map to that specific problem.\n\nTen features is too many to build or test meaningfully in 6 hours with a beginner coder — let's cap it at **three**, tied to one experiment, right now.\n\n### Proposed MVP scope (minimum viable product — the smallest version needed to test one idea)\n\n| Feature | Tied to | What it enables in the test |\n|---|---|---|\n| 1. Availability input (each person marks free time slots) | **Observed problem** — the classmates couldn't agree on a time | Each participant enters when they're free |\n| 2. Auto-suggested overlapping slot | **Assumption** — that automatically surfacing the overlap (rather than manual back-and-forth) is what actually helps | Participants see one suggested time instead of negotiating |\n| 3. One-tap confirm/reject on the suggestion | **Assumption** — that a lightweight yes/no beats a group chat thread | Participants signal agreement without more discussion |\n\n**Deferred for this test** (not because they're bad ideas, just untested and out of scope for 6 hours): profiles, AI matching, chat, video calls, payments, maps, gamification, calendars-as-a-separate-system, ratings, admin analytics.\n\n### Experiment Card (draft — confirm or revise)\n- **Participants:** the same 3 classmates you observed (if reachable) — *assumption, please confirm you can actually get them to try this*\n- **What they do:** each enters their free time slots into the tool; tool shows one suggested overlapping slot; each taps confirm/reject\n- **What's observed:** whether all 3 land on an agreed time, and how long it takes compared to however they did it before\n- **Proposed success threshold (set before testing):** all 3 confirm the same slot within ~2 minutes of starting — *revise this number if it doesn't feel right*\n- **If it disappoints:** drop the auto-suggest logic, fall back to a manual poll/vote view, and re-test\n\n### To lock this in, I need from you:\n1. Was this your own direct observation of the three struggling, or did someone tell you about it? (Just confirming the source.)\n2. What did they actually do when they hit the snag — group chat, texting, in-person debate — and how did it end (did they pick a time, give up, split into subgroups)?\n3. Can you realistically get those same 3 (or a few more classmates) to try the tool before you'd need to judge results — how many people total?\n4. Do the three features above match what you'd want, or would you swap one out?\n5. Does the \"agree within ~2 minutes\" threshold sound right, or do you want a different bar?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

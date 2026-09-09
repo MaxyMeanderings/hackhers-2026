@@ -1,0 +1,110 @@
+{
+  "status": "SUCCESS",
+  "reason": "Admission verification completed; engineer/architect admission is not supported by current evidence. Extracted at 2026-09-09T02:22:55Z; consumer commit b7c05c3; installed runtime commit 64b447d. No mutations, live evaluations, or nested dispatches performed. SUCCESS denotes factual extraction, not behavioral approval.",
+  "attempts": 2,
+  "artifacts": {
+    "branch": "nightshift/spec-fa7abd1282236c13",
+    "diff": "",
+    "provider": "codex",
+    "model": "gpt-6-astra"
+  },
+  "rules_fired": [
+    "read-only",
+    "admission-verification-only",
+    "no-live-test-calls",
+    "no-nested-dispatch",
+    "preserve-repair-budget",
+    "no-requirements-waiver"
+  ],
+  "results": {
+    "claims": [
+      {
+        "claim": "VERIFIED absence: consumer behavior-scenarios.json does not exist. The task-bound state.json also does not exist at /Users/doctorew/shuttlebay/_ATL_/GSU/Hack-Her-Thon/.git/nightshift/behavior-proof/spec-fa7abd1282236c13/state.json, the location constructed by installed scripts/nightshift-behavior-proof.py:573-575. The retained development gate records exit_code=1, status=blocked, outcome=unknown, reason=proof_state_unavailable. Historical evaluation artifacts exist, but no current task-bound development pass was found.",
+        "status": "VERIFIED",
+        "file": "docs/spec-fa7abd1282236c13/resume-20260909/development-gate.json",
+        "line": 13,
+        "inspected_files": [
+          "docs/spec-fa7abd1282236c13/resume-20260909/development-gate.json",
+          "docs/spec-fa7abd1282236c13/behavior-scenarios.json",
+          "/Users/doctorew/shuttlebay/_ATL_/GSU/Hack-Her-Thon/.git/nightshift/behavior-proof/spec-fa7abd1282236c13/state.json",
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/scripts/nightshift-behavior-proof.py"
+        ]
+      },
+      {
+        "claim": "Installed dispatcher requires --task and a passing development gate before engineer/architect launch (lines 143-148). BEHAVIOR-PROOF.md:118-128 explicitly rejects missing/stale/unknown proof, requires migration of existing specs without scenarios before new GREEN work, and provides no grandfathered dispatcher or fixture bypass. Old artifacts do not waive admission.",
+        "status": "VERIFIED",
+        "file": "/Users/doctorew/shuttlebay/nightshift-community-runtime/scripts/nightshift-agent.sh",
+        "line": 143,
+        "inspected_files": [
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/scripts/nightshift-agent.sh",
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/docs/BEHAVIOR-PROOF.md"
+        ]
+      },
+      {
+        "claim": "Installed prototype profile is claude-subscription-text-v1: one synthetic input and one completion per case, tools/customizations/session persistence disabled (BEHAVIOR-PROOF.md:58-70). Implementation launches with empty --tools and --no-session-persistence; each case has a fresh directory and no prior conversation (nightshift-behavior-proof.py:1145-1150). This is per case, not a one-call limit for the entire suite. The runtime profile is validated against the single supported constant at lines 31 and 345-346.",
+        "status": "VERIFIED",
+        "file": "/Users/doctorew/shuttlebay/nightshift-community-runtime/scripts/nightshift-behavior-proof.py",
+        "line": 1145,
+        "inspected_files": [
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/scripts/nightshift-behavior-proof.py",
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/docs/BEHAVIOR-PROOF.md"
+        ]
+      },
+      {
+        "claim": "Browsing is optional upstream: AGENT-SPEC.md:77-80 permits public links/pasted sources and requires disclosure when tools are unavailable. Thus missing browsing alone does not establish incompatibility with every requirement. However, SPEC.md:85 selects Claude Code; live-eval.py:14-16 enables WebFetch/WebSearch specifically for case04, with tools disabled for other cases. Replacing that existing tool-enabled execution with a no-tool completion would not verify the same execution path.",
+        "status": "VERIFIED",
+        "file": "docs/AGENT-SPEC.md",
+        "line": 77,
+        "inspected_files": [
+          "docs/AGENT-SPEC.md",
+          "docs/spec-fa7abd1282236c13/SPEC.md",
+          "docs/spec-fa7abd1282236c13/live-eval.py"
+        ]
+      },
+      {
+        "claim": "The installed proof cannot cover all mandatory conversation obligations as written. SPEC.md:97 requires an actual full multi-turn session through six inquiry steps and four deliverables; lines 98-99 require citation inspection and recorded actual outcomes. Existing coaching-turn.py:5-9 preserves session identity and uses --resume. Installed proof instead supplies independent fixed case inputs with no prior conversation (nightshift-behavior-proof.py:1145-1150). A pasted transcript or separate single-turn cases do not execute the required full session. Its four local oracle operations (BEHAVIOR-PROOF.md:78-81) also do not perform source-URL inspection. It can cover bounded single-turn assertions, but that coverage does not satisfy these remaining obligations.",
+        "status": "VERIFIED",
+        "file": "docs/spec-fa7abd1282236c13/SPEC.md",
+        "line": 97,
+        "inspected_files": [
+          "docs/spec-fa7abd1282236c13/SPEC.md",
+          "docs/spec-fa7abd1282236c13/coaching-turn.py",
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/scripts/nightshift-behavior-proof.py",
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/docs/BEHAVIOR-PROOF.md"
+        ]
+      },
+      {
+        "claim": "Supported classifications do not provide an exemption for the whole coaching task: deterministic cases use observed tests; not_applicable requires independently reviewed rationale and empty risks; prompt/agent/runtime risks require prototype coverage. Existing independent review can support ordinary deterministic or documentation-only classification without another model call, but cannot replace required prototype coverage or constitute a generated approval placeholder (BEHAVIOR-PROOF.md:24-48). The consumer explicitly defines live-conversation evaluation rather than a keyword assertion suite (SPEC.md:81).",
+        "status": "VERIFIED",
+        "file": "/Users/doctorew/shuttlebay/nightshift-community-runtime/docs/BEHAVIOR-PROOF.md",
+        "line": 24,
+        "inspected_files": [
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/docs/BEHAVIOR-PROOF.md",
+          "docs/spec-fa7abd1282236c13/SPEC.md"
+        ]
+      },
+      {
+        "claim": "FAILURE.md:10-28 and tracker:49-52 record initial live evidence plus three exhausted behavioral repairs, final cases04/08 failed, and only two final-hash conversation turns. LIVE-CASES.json:42-51 records case04 semantic FAIL despite table_status PASS and exit_code 0; lines 90-99 record case08 FAIL despite exit_code 0. These are retained judgments, not newly rerun evaluations. Current commands/nightshift-eng.md:268-273 distinguishes infrastructure failures from substantive adversarial repairs, explicitly retains other stages' existing budgets, and forbids resetting/deleting budget evidence on resume. Resume does not supply a fresh behavioral repair budget.",
+        "status": "VERIFIED",
+        "file": ".nightshift/spec-fa7abd1282236c13.md",
+        "line": 49,
+        "inspected_files": [
+          ".nightshift/spec-fa7abd1282236c13.md",
+          "docs/spec-fa7abd1282236c13/FAILURE.md",
+          "docs/spec-fa7abd1282236c13/LIVE-CASES.json",
+          "/Users/doctorew/shuttlebay/nightshift-community-runtime/commands/nightshift-eng.md"
+        ]
+      },
+      {
+        "claim": "Original spec-author provider is recorded as claude in spec-author-provider.txt:1 and spec-writer.out.json:6; the writer artifact records model sonnet at line 5. This verifies retained provenance, not behavioral approval.",
+        "status": "VERIFIED",
+        "file": "docs/spec-fa7abd1282236c13/spec-author-provider.txt",
+        "line": 1,
+        "inspected_files": [
+          "docs/spec-fa7abd1282236c13/spec-author-provider.txt",
+          "docs/spec-fa7abd1282236c13/spec-writer.out.json"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "id": "case-07",
+  "started_at": "2026-09-09T16:27:17.302900+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "selected_model": "opus",
+  "prompt_sha256": "f097ab46bbf00ef93ab7a196cc9d297008d8adc00107809657690272fc482fab",
+  "input": "I have an idea for a student app, but I cannot name any specific person who would use it. I belong to a small campus club.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established:** You have \"an idea for a student app\" (idea itself not yet supplied) and you \"belong to a small campus club.\" Account type: your own membership.\n\n**Still unknown:** the idea, what prompted it, club size, recent difficulties, whether any member has described a problem.\n\nNot having a named user is a normal starting point, not a dead end. Your club is a reasonable tentative group to start with, since you already have access to it. The useful first move is discovery rather than pitching: talk with one club member about one recent, specific difficulty they had — something that actually happened in the last few weeks — and listen for what they did about it. Ideas get sharper when they're anchored to a real incident rather than to a general audience.\n\nBefore feature talk, I need the idea and its origin.\n\n1. What is the idea, in a sentence or two?\n2. What recently happened that prompted it?\n3. Roughly how many people are in the club, and what is that number based on?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

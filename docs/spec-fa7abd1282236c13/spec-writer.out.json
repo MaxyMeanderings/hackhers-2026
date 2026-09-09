@@ -1,0 +1,24 @@
+{
+  "artifacts": {
+    "branch": "nightshift/spec-fa7abd1282236c13",
+    "diff": "",
+    "model": "sonnet",
+    "provider": "claude"
+  },
+  "attempts": 1,
+  "reason": "Spec drafted and written from verified sources; all six extractor claims were VERIFIED (no NOT FOUND identifiers to exclude). Model Router routed to nightshift-architect (9 files across 4 top-level areas). No implementation, mutation, commit, or PR performed; read-only spec phase complete and ready for engineer approval.",
+  "results": {
+    "spec_path": "docs/spec-fa7abd1282236c13/SPEC.md"
+  },
+  "rules_fired": [
+    "mode:story",
+    "model-router:file-count>=3",
+    "model-router:modules>=2",
+    "sources:cite-or-omit",
+    "sources:path-line-branch-commit-required",
+    "no-not-found-in-body",
+    "test-plan:live-run-required-not-asserted",
+    "read-only:single-file-write"
+  ],
+  "status": "SUCCESS"
+}

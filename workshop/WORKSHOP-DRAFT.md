@@ -1,6 +1,6 @@
 # Build Your Hackathon Copilot
 
-Status: proposed workshop design; student tooling, budget, and deliverable scope await organizer input. No runtime has been selected or tested.
+Status: proposed workshop design. Claude chat and optional Claude Code paths, public links/pasted research with no required API keys or paid integrations, and batches of 1–5 questions are approved. Runtime execution and participant access remain unverified. See docs/AGENT-SPEC.md for the recorded decisions.
 
 ## Outcome
 

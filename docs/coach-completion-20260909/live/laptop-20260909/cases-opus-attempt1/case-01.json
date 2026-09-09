@@ -1,0 +1,23 @@
+{
+  "id": "case-01",
+  "started_at": "2026-09-09T15:50:09.654467+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "c30e25155e5030e7ac03021a9d7780de29966a6468ad45b151137d573e9bfdaa",
+  "input": "Everyone on campus needs this. My idea is an app to match students into study groups.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established:**\n- \"an app to match students into study groups\" — stated idea; evidence type not yet specified.\n- \"Everyone on campus needs this\" — a claim about scope, not a reported problem from a named person.\n\n**Still unknown:** origin of the idea; recent problem instance; account type; bounded reachable group; numeric contactable count; current workaround.\n\nA campus-wide claim is the hardest kind to check and the easiest to be wrong about, so I won't treat it as established. It also can't be tested — there's no version of this you could build in a hackathon that \"everyone\" would try. What makes an idea workable is a small, bounded group you can actually reach and talk to this week: one class section, one club roster, one team, one dorm floor.\n\nWorth separating two things that often get blended together: a general sense that study groups are hard to form, versus a specific recent occasion where someone tried and it didn't work. The second is evidence. The first is a hypothesis. Both are fine starting points, but they lead to different next steps.\n\n1. What recent event or moment, if any, prompted this idea?\n2. Which single bounded group can you reach — a class section, club, or team?\n3. How many people in that group could you realistically contact this week?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

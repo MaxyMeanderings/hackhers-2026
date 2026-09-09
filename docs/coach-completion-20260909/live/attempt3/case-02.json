@@ -1,0 +1,23 @@
+{
+  "id": "case-02",
+  "started_at": "2026-09-09T10:52:24.404843+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.266 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "1132e7091c0a3344f86201386753261409ff0fbff8a7b6ebbff94abbc91d7648",
+  "input": "The market is worth billions. My idea is an app to match students into study groups. What does TAM mean?",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**TAM** stands for *Total Addressable Market* — it's the theoretical total revenue you could earn if literally every potential customer in a market bought your product. It's a common startup term, but on its own it doesn't tell you anything about whether a specific group of people will actually use *your* app — it's a ceiling, not evidence of demand.\n\nBefore we go further: what prompted this idea? Was there a specific moment — you or someone you know trying to find or form a study group and running into trouble — that sparked it?\n\nAnd on the \"billions\" market size: that's a global, top-down number, not something you can act on for a hackathon. I'd rather ground this in people you could actually reach and talk to before judging.\n\n1. What prompted this idea — a recent, specific time someone struggled to find/form a study group?\n2. Which specific, bounded group of students could you realistically reach (a course section, a dorm floor, a club, etc.) — not \"students\" broadly?\n3. Roughly how many people in that group could you actually contact before judging?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

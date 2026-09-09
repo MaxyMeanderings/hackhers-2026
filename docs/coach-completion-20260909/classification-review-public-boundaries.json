@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "decision": "approve",
+  "reviewer_provider": "codex",
+  "reviewer_author_id": "coach-review-public-boundaries",
+  "reviewed_input_sha256": "3dea636ccde5abb830cc890a7639b4f31ffbca9a95534a7c10daac083eaef590",
+  "scenario_ids": [
+    "public-evidence",
+    "public-experiment",
+    "documentation",
+    "live-evidence"
+  ],
+  "scope": "Prospective public boundary strengthening after challenge-public-sentinel-review.json: explicit synthetic Unknown sentinel, nonempty one-to-three question array requests and assertions, and listed supplied-name/initial prohibitions. Existing exact content assertions, later inputs, runtime and generation2 private commitment remain unchanged.",
+  "classifications": {
+    "public-evidence": "prototype",
+    "public-experiment": "prototype",
+    "documentation": "not_applicable",
+    "live-evidence": "not_applicable"
+  },
+  "rationale": [
+    "The array request aligns with observable nonempty/maximum-length operators; the documented machine claim is array cardinality only.",
+    "Independent semantic review remains mandatory for distinct focused fields bundled inside strings, prose questions, string element types and indirect identifying disclosure.",
+    "Listed-token prohibitions strengthen privacy against partial-name echoes without weakening any existing content assertion.",
+    "The original product five-question ceiling is unchanged; this specific request prospectively asks a smaller three-entry batch.",
+    "Public sentinel ambiguity is resolved explicitly in the input rather than loosening the equality or teaching suppression of real supplied zero counts."
+  ],
+  "limits": [
+    "Existing receipts/failures/consumed counters and earlier classification evidence remain preserved.",
+    "No private body or output was inspected, reattested or used to diagnose a failure.",
+    "text_contains is a case-sensitive literal substring check, not comprehensive identity detection; matching ordinary wording can also fail. The narrow listed-token claim is not a universal privacy guarantee.",
+    "Array cardinality does not prove each element is a string or contains one focused question; semantic review must verify both.",
+    "Prospective challenge/lock/reseal and actual execution remain required. No product pass follows from this classification."
+  ],
+  "implementation_prompt_read": true
+}

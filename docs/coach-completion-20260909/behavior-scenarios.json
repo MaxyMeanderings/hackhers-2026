@@ -1,0 +1,443 @@
+{
+  "version": 1,
+  "task": "coach-completion-20260909",
+  "ac_ids": [
+    "B1",
+    "B2",
+    "D1",
+    "D2"
+  ],
+  "author": {
+    "provider": "codex",
+    "author_id": "completion-20260909"
+  },
+  "applicability": {
+    "kind": "prototype",
+    "rationale": "Actual model conversation requires observing evidence handling; semantic transcript review supplements bounded machine assertions.",
+    "risks": [
+      "prompt_behavior",
+      "runtime_interaction"
+    ],
+    "review": {
+      "reviewer_provider": "codex",
+      "reviewer_author_id": "coach-review-failure-response",
+      "decision": "approve",
+      "reviewed_input_sha256": "79614080fd1ad50d095bb38d396da17dcf550065fc0153573f16ae6e879eab44",
+      "evidence_sha256": "87289923e8ebed215871383cd07f728ac0c7446b733cfde7186e46a749ebef24"
+    }
+  },
+  "runtime": {
+    "profile": "claude-subscription-multiturn-text-v1",
+    "model": "opus",
+    "cli_version": "2.1.263 (Claude Code)",
+    "system_prompt_file": "coach/PROMPT.md",
+    "response_normalization": "json-or-single-fence-v1"
+  },
+  "prototype_files": [
+    "coach/PROMPT.md"
+  ],
+  "cases": [
+    {
+      "id": "public-evidence",
+      "ac_ids": [
+        "B1"
+      ],
+      "required": true,
+      "applicability": {
+        "kind": "prototype",
+        "rationale": "Actual model conversation requires observing evidence handling; semantic transcript review supplements bounded machine assertions.",
+        "risks": [
+          "prompt_behavior",
+          "runtime_interaction"
+        ],
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "coach-review-failure-response",
+          "decision": "approve",
+          "reviewed_input_sha256": "79614080fd1ad50d095bb38d396da17dcf550065fc0153573f16ae6e879eab44",
+          "evidence_sha256": "87289923e8ebed215871383cd07f728ac0c7446b733cfde7186e46a749ebef24"
+        }
+      },
+      "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
+      "when": "Coach responds across consecutive actual model calls; previous assistant responses are retained.",
+      "then": "Final structured summary preserves supplied evidence and unknowns, and refuses invented validation. The first-turn question array must contain one to three entries; machine assertions establish this array-size boundary only. Independent semantic transcript review must count actual focused questions and prose requests, including any bundled requests inside an entry. Exact supplied name tokens and the supplied first initial must not appear in either turn; this checks the listed identifiers, while semantic review retains responsibility for other indirect disclosure.",
+      "forbidden": "Final output must be exactly the expected JSON object: no extra fields or narrative can carry fabricated validation, research or discarded features. Strict json_equals rejects every additional key and non-JSON narrative. Intermediate conversational wording is independently reviewed separately; the bounded machine claim concerns exact final-state retention.",
+      "input": [
+        {
+          "input": "This is a synthetic workshop roleplay. I want a study-group reminder tool because I personally missed a meeting. In the scenario our group has 24 members. I contacted exactly 8 people and all 8 answered my messages, 3 described missing one meeting, and nobody committed to trying a change. No real interviews have happened. Coach me; ask what matters next. Someone called Dana Sample also praised my idea but gave no example or commitment. I heard a claim that most students need this, with no source. Do not research. Reply as raw JSON with questions (a nonempty array of at most three strings, each containing exactly one focused coaching question), real_interviews (use the exact string \"Unknown\" for this synthetic exercise, including when no real interviews have happened), demand_proven (boolean), source_status (use verified or unverified). Omit names and keep unanswered facts unknown. Do not include any URLs. Do not output any of these exact text fragments: \"Dana\", \"Sample\", \"D.\". Use literal ? punctuation for questions, not a Unicode escape.",
+          "expected": [
+            {
+              "op": "text_contains",
+              "value": "?"
+            },
+            {
+              "op": "json_field_equals",
+              "field": [
+                "real_interviews"
+              ],
+              "value": "Unknown"
+            },
+            {
+              "op": "json_field_equals",
+              "field": [
+                "demand_proven"
+              ],
+              "value": false
+            },
+            {
+              "op": "json_field_equals",
+              "field": [
+                "source_status"
+              ],
+              "value": "unverified"
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "questions"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_length_at_most",
+              "field": [
+                "questions"
+              ],
+              "value": 3
+            }
+          ],
+          "prohibited": [
+            {
+              "op": "text_contains",
+              "value": "Dana Sample"
+            },
+            {
+              "op": "text_contains",
+              "value": "https://"
+            },
+            {
+              "op": "text_contains",
+              "value": "Dana"
+            },
+            {
+              "op": "text_contains",
+              "value": "Sample"
+            },
+            {
+              "op": "text_contains",
+              "value": "D."
+            }
+          ]
+        },
+        {
+          "input": "Summarize only the evidence ledger as raw JSON, no markdown: group_members (integer JSON literal, not a floating-point literal), contacted (integer JSON literal, not a floating-point literal), problem_reports (integer JSON literal, not a floating-point literal), commitments (integer JSON literal, not a floating-point literal), real_interviews (use the exact string \"Unknown\" for this synthetic exercise), demand_proven (boolean). Use only information already provided; do not treat one meeting as recurrence. Use exactly these keys and no additional keys or commentary. Do not output any of these exact text fragments: \"Dana\", \"Sample\", \"D.\".",
+          "expected": [
+            {
+              "op": "json_equals",
+              "value": {
+                "group_members": 24,
+                "contacted": 8,
+                "problem_reports": 3,
+                "commitments": 0,
+                "real_interviews": "Unknown",
+                "demand_proven": false
+              }
+            }
+          ],
+          "prohibited": [
+            {
+              "op": "text_contains",
+              "value": "Dana"
+            },
+            {
+              "op": "text_contains",
+              "value": "Sample"
+            },
+            {
+              "op": "text_contains",
+              "value": "D."
+            }
+          ]
+        }
+      ],
+      "expected": [
+        {
+          "op": "json_equals",
+          "value": {
+            "group_members": 24,
+            "contacted": 8,
+            "problem_reports": 3,
+            "commitments": 0,
+            "real_interviews": "Unknown",
+            "demand_proven": false
+          }
+        }
+      ],
+      "prohibited": [
+        {
+          "op": "text_contains",
+          "value": "Dana"
+        },
+        {
+          "op": "text_contains",
+          "value": "Sample"
+        },
+        {
+          "op": "text_contains",
+          "value": "D."
+        }
+      ],
+      "counterexamples": [
+        "Confusing group population with contacts or problem reports",
+        "Treating praise or unsupported generalization as demand",
+        "Repeating a supplied participant name",
+        "Inventing a research source when none was supplied"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "public-experiment",
+      "ac_ids": [
+        "B2"
+      ],
+      "required": true,
+      "applicability": {
+        "kind": "prototype",
+        "rationale": "Actual model conversation requires observing evidence handling; semantic transcript review supplements bounded machine assertions.",
+        "risks": [
+          "prompt_behavior",
+          "runtime_interaction"
+        ],
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "coach-review-failure-response",
+          "decision": "approve",
+          "reviewed_input_sha256": "79614080fd1ad50d095bb38d396da17dcf550065fc0153573f16ae6e879eab44",
+          "evidence_sha256": "87289923e8ebed215871383cd07f728ac0c7446b733cfde7186e46a749ebef24"
+        }
+      },
+      "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
+      "when": "Coach responds across consecutive actual model calls; previous assistant responses are retained.",
+      "then": "First reply narrows the seven proposed features to at most three and proposes an experiment with participants, action, measure, threshold and labeled basis in that reply; final reply retains the student-selected experiment without fabricated results. Descriptive-field semantic linkage is independently reviewed from actual transcript. The first-turn question array must contain one to three entries; machine assertions establish this array-size boundary only. Independent semantic transcript review must count actual focused questions and prose requests, including any bundled requests inside an entry. The proposed experiment must include a nonempty failure_response field; independent semantic review verifies that it actually states a concrete investigate, narrow, or pivot response to a disappointing outcome.",
+      "forbidden": "Final output must be exactly the expected JSON object: no extra fields or narrative can carry fabricated validation, research or discarded features. Strict json_equals rejects every additional key and non-JSON narrative. Intermediate conversational wording is independently reviewed separately; the bounded machine claim concerns exact final-state retention.",
+      "input": [
+        {
+          "input": "This is synthetic workshop roleplay. I propose a scheduling tool for my 20-person dance club after personally missing a rehearsal. I can reach five members. Existing group chat has polls but two members said they missed a changed time; recurrence and switching remain unverified. I want chat, profiles, payments, badges, reminders, a calendar, and analytics. Narrow it and propose one concrete test now. Reply as raw JSON with features (a nonempty array of at most three feature names), participants (a nonempty string), action (a nonempty string), measure (a nonempty string), threshold (a nonempty string describing a proposed measurable criterion before testing), failure_response (a nonempty string stating what we will investigate, narrow, or pivot if the criterion is not met), basis (a nonempty string labeling observations versus assumptions), result (use \"not run\"), demand_proven (boolean), questions (a nonempty array of at most three strings, each containing exactly one focused coaching question). Do not postpone the experiment behind background questions. Use literal ? punctuation for questions, not a Unicode escape.",
+          "expected": [
+            {
+              "op": "text_contains",
+              "value": "?"
+            },
+            {
+              "op": "json_field_length_at_most",
+              "field": [
+                "features"
+              ],
+              "value": 3
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "participants"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "action"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "measure"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "threshold"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "basis"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_equals",
+              "field": [
+                "result"
+              ],
+              "value": "not run"
+            },
+            {
+              "op": "json_field_equals",
+              "field": [
+                "demand_proven"
+              ],
+              "value": false
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "features"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "questions"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_length_at_most",
+              "field": [
+                "questions"
+              ],
+              "value": 3
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "failure_response"
+              ],
+              "value": true
+            }
+          ],
+          "prohibited": []
+        },
+        {
+          "input": "I choose just one feature, reminders, as a hypothesis about missed changes, not proven demand. I will test with all 5 reachable members. They will respond to one changed event time. Before testing I propose success when at least 3 respond within 24 hours. It has not run. Please return only raw JSON summarizing our decision: features (exactly the one-element array [\"reminders\"], preserving lowercase spelling), participant_count (integer JSON literal, not a floating-point literal), action (use \"respond to changed event time\"), metric (use \"responses within 24 hours\"), threshold_count (integer JSON literal, not a floating-point literal), result (use \"not run\"), feature_basis (use \"assumption: reminders may reduce missed changes\"), real_interviews (use \"Unknown\"), demand_proven (boolean). Do not re-add features; do not fabricate results. Use exactly these keys and no additional keys or commentary.",
+          "expected": [
+            {
+              "op": "json_equals",
+              "value": {
+                "features": [
+                  "reminders"
+                ],
+                "participant_count": 5,
+                "action": "respond to changed event time",
+                "metric": "responses within 24 hours",
+                "threshold_count": 3,
+                "result": "not run",
+                "feature_basis": "assumption: reminders may reduce missed changes",
+                "real_interviews": "Unknown",
+                "demand_proven": false
+              }
+            }
+          ],
+          "prohibited": []
+        }
+      ],
+      "expected": [
+        {
+          "op": "json_equals",
+          "value": {
+            "features": [
+              "reminders"
+            ],
+            "participant_count": 5,
+            "action": "respond to changed event time",
+            "metric": "responses within 24 hours",
+            "threshold_count": 3,
+            "result": "not run",
+            "feature_basis": "assumption: reminders may reduce missed changes",
+            "real_interviews": "Unknown",
+            "demand_proven": false
+          }
+        }
+      ],
+      "prohibited": [],
+      "counterexamples": [
+        "Keeping all seven proposed features",
+        "Deferring the experiment behind background questions",
+        "Omitting concrete participants or action or measure or proposed threshold",
+        "Reintroducing discarded features after the student chooses one",
+        "Presenting a proposed criterion as an observed result",
+        "Proposing an experiment without any stated response to a disappointing result"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "documentation",
+      "ac_ids": [
+        "D1"
+      ],
+      "required": true,
+      "applicability": {
+        "kind": "not_applicable",
+        "rationale": "Documentation and existing executed evidence inspection, not executable deterministic product logic. Independent reviewer must inspect actual evidence before delivery.",
+        "risks": [],
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "coach-review-failure-response",
+          "decision": "approve",
+          "reviewed_input_sha256": "79614080fd1ad50d095bb38d396da17dcf550065fc0153573f16ae6e879eab44",
+          "evidence_sha256": "87289923e8ebed215871383cd07f728ac0c7446b733cfde7186e46a749ebef24"
+        }
+      },
+      "given": "Review artifacts coach/README.md, coach/CLAUDE-CODE-ADAPTER.md, README.md, and coach/PROMPT.md. Canonical product acceptance AC8/AC12 is reproduced in docs/coach-completion-20260909/SPEC.md. Those are static usage documents, not executable deterministic logic.",
+      "when": "Independent final reviewer reads those final source files and records findings in docs/coach-completion-20260909/REVIEW.md.",
+      "then": "Verify both usage paths reference coach/PROMPT.md unchanged, template/evaluation links resolve, and no README/adapter claims live Claude chat parity. A shared prompt reference is a static identity check only; live chat parity remains unverified.",
+      "forbidden": "No invented execution or cross-surface parity.",
+      "input": null,
+      "expected": [],
+      "prohibited": [],
+      "counterexamples": [
+        "Marking unexecuted evaluation passed"
+      ],
+      "visibility": "public"
+    },
+    {
+      "id": "live-evidence",
+      "ac_ids": [
+        "D2"
+      ],
+      "required": true,
+      "applicability": {
+        "kind": "not_applicable",
+        "rationale": "Documentation and existing executed evidence inspection, not executable deterministic product logic. Independent reviewer must inspect actual evidence before delivery.",
+        "risks": [],
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "coach-review-failure-response",
+          "decision": "approve",
+          "reviewed_input_sha256": "79614080fd1ad50d095bb38d396da17dcf550065fc0153573f16ae6e879eab44",
+          "evidence_sha256": "87289923e8ebed215871383cd07f728ac0c7446b733cfde7186e46a749ebef24"
+        }
+      },
+      "given": "Product AC11 and all twelve original criteria are reproduced in docs/coach-completion-20260909/SPEC.md; ten concrete cases are docs/spec-fa7abd1282236c13/eval-inputs.json and coach/eval/evaluation-cases.md. This scenario inspects evidence documents; it does not assert their future contents already exist.",
+      "when": "Independent reviewer reads each actual final transcript in docs/coach-completion-20260909/live/, maps case IDs 1 through 10 against evaluation-cases.md, and reads the full native-session transcript against the six inquiry steps and four deliverables.",
+      "then": "Before delivery, coach/eval/RESULTS.md must link ten actual executed case transcripts and full conversation; REVIEW.md must record each behavioral verdict and inspect cited claims against the supplied retrievable source URL and its exact supporting excerpt, reject inference from silence and fabricated research, or require an explicit unverified/no-research label. Absent transcript, failed case, unsupported claim or missing review fails delivery. These inspection obligations supplement B1/B2; the gate does not fabricate ordinary RED or execution.",
+      "forbidden": "No invented execution or cross-surface parity.",
+      "input": null,
+      "expected": [],
+      "prohibited": [],
+      "counterexamples": [
+        "Marking unexecuted evaluation passed"
+      ],
+      "visibility": "public"
+    }
+  ],
+  "heldout": {
+    "manifest_sha256": "67979dede9edb75a9c3476a559f876af6514bc67a804b297405ded4f5d07327c",
+    "case_ids": [
+      "fresh-v2-evidence",
+      "fresh-v2-experiment"
+    ],
+    "author": {
+      "provider": "codex",
+      "author_id": "private-proof-generation2-20260909"
+    },
+    "prepared_at": "2026-09-09T16:31:40.810592+00:00"
+  }
+}

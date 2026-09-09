@@ -1,0 +1,20 @@
+{
+  "id": "case-02",
+  "started_at": "2026-09-09T02:54:20.434412+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.266 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "a88b7b36d4736be2052df4b0336b913702b0973f35b00e344c75ce4e6207ea34",
+  "input": "The market is worth billions. My idea is an app to match students into study groups. What does TAM mean?",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 1,
+  "is_error": true,
+  "subtype": "success",
+  "output": "Failed to authenticate. API Error: 401 OAuth access token has expired. Re-authenticate to continue.",
+  "models": [],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}
