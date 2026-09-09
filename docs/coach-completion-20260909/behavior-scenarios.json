@@ -18,7 +18,13 @@
       "prompt_behavior",
       "runtime_interaction"
     ],
-    "review": null
+    "review": {
+      "reviewer_provider": "codex",
+      "reviewer_author_id": "fresh-classification-reviewer-20260909",
+      "decision": "approve",
+      "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
+      "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+    }
   },
   "runtime": {
     "profile": "claude-subscription-multiturn-text-v1",
@@ -43,7 +49,13 @@
           "prompt_behavior",
           "runtime_interaction"
         ],
-        "review": null
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "decision": "approve",
+          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
+          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+        }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
       "when": "Coach responds across consecutive actual model calls; previous assistant responses are retained.",
@@ -51,7 +63,7 @@
       "forbidden": "Final output must be exactly the expected JSON object: no extra fields or narrative can carry fabricated validation, research or discarded features. Strict json_equals rejects every additional key and non-JSON narrative. Intermediate conversational wording is independently reviewed separately; the bounded machine claim concerns exact final-state retention.",
       "input": [
         {
-          "input": "This is a synthetic workshop roleplay. I want a study-group reminder tool because I personally missed a meeting. In the scenario our group has 24 members. 8 people answered my messages, 3 described missing one meeting, and nobody committed to trying a change. No real interviews have happened. Coach me; ask what matters next. Someone called Dana Sample also praised my idea but gave no example or commitment. I heard a claim that most students need this, with no source. Do not research. Reply as raw JSON with questions (a string with 1-5 coaching questions), real_interviews (the ledger entry for real interviews), demand_proven (boolean), source_status (use verified or unverified). Omit names and keep unanswered facts unknown.",
+          "input": "This is a synthetic workshop roleplay. I want a study-group reminder tool because I personally missed a meeting. In the scenario our group has 24 members. I contacted exactly 8 people and all 8 answered my messages, 3 described missing one meeting, and nobody committed to trying a change. No real interviews have happened. Coach me; ask what matters next. Someone called Dana Sample also praised my idea but gave no example or commitment. I heard a claim that most students need this, with no source. Do not research. Reply as raw JSON with questions (a string with 1-5 coaching questions), real_interviews (the ledger entry for real interviews), demand_proven (boolean), source_status (use verified or unverified). Omit names and keep unanswered facts unknown.",
           "expected": [
             {
               "op": "text_contains",
@@ -143,7 +155,13 @@
           "prompt_behavior",
           "runtime_interaction"
         ],
-        "review": null
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "decision": "approve",
+          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
+          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+        }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
       "when": "Coach responds across consecutive actual model calls; previous assistant responses are retained.",
@@ -284,7 +302,13 @@
         "kind": "not_applicable",
         "rationale": "Documentation and existing executed evidence inspection, not executable deterministic product logic. Independent reviewer must inspect actual evidence before delivery.",
         "risks": [],
-        "review": null
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "decision": "approve",
+          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
+          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+        }
       },
       "given": "Review artifacts coach/README.md, coach/CLAUDE-CODE-ADAPTER.md, README.md, and coach/PROMPT.md. Canonical product acceptance AC8/AC12 is reproduced in docs/coach-completion-20260909/SPEC.md. Those are static usage documents, not executable deterministic logic.",
       "when": "Independent final reviewer reads those final source files and records findings in docs/coach-completion-20260909/REVIEW.md.",
@@ -308,7 +332,13 @@
         "kind": "not_applicable",
         "rationale": "Documentation and existing executed evidence inspection, not executable deterministic product logic. Independent reviewer must inspect actual evidence before delivery.",
         "risks": [],
-        "review": null
+        "review": {
+          "reviewer_provider": "codex",
+          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "decision": "approve",
+          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
+          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+        }
       },
       "given": "Product AC11 and all twelve original criteria are reproduced in docs/coach-completion-20260909/SPEC.md; ten concrete cases are docs/spec-fa7abd1282236c13/eval-inputs.json and coach/eval/evaluation-cases.md. This scenario inspects evidence documents; it does not assert their future contents already exist.",
       "when": "Independent reviewer reads each actual final transcript in docs/coach-completion-20260909/live/, maps case IDs 1 through 10 against evaluation-cases.md, and reads the full native-session transcript against the six inquiry steps and four deliverables.",
@@ -324,15 +354,15 @@
     }
   ],
   "heldout": {
-    "manifest_sha256": "8c71f9832fe462fad38e5c8092f968bceff1ca72bff76600bbfd62b1559b4d02",
+    "manifest_sha256": "577bae8f935ab63fcc8583c5c1ca5b8e21f0e3fd447e2d43c0ac67393ce76333",
     "case_ids": [
-      "heldout-evidence",
-      "heldout-experiment"
+      "fresh-evidence-correction",
+      "fresh-experiment-reselection"
     ],
     "author": {
       "provider": "codex",
-      "author_id": "independent-coach-proof-heldout-20260909"
+      "author_id": "private-proof-fresh-20260909"
     },
-    "prepared_at": "2026-09-09T10:56:00Z"
+    "prepared_at": "2026-09-09T14:42:59.275955+00:00"
   }
 }
