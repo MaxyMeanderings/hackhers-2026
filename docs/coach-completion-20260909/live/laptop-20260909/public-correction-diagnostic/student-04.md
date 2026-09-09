@@ -1,0 +1,1 @@
+One final correction: the roster still has 20 members, but only 6 can participate, so use participant_count 6. Keep the selected feature, action, metric, threshold, evidence basis and not-run status from my latest decision unchanged. Return the same exact JSON keys and literal values as in the preceding request, with only participant_count changed.

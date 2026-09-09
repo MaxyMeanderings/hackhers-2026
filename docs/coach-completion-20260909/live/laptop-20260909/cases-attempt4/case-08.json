@@ -1,0 +1,23 @@
+{
+  "id": "case-08",
+  "started_at": "2026-09-09T15:48:37.366845+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "c30e25155e5030e7ac03021a9d7780de29966a6468ad45b151137d573e9bfdaa",
+  "input": "I want ten features: profiles, AI matching, chat, video calls, payments, maps, gamification, calendars, ratings, and admin analytics. I saw three classmates struggle to pick a study time yesterday. We have six hours, one beginner coder, and one business student. Help scope the experiment.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "Established: \"I saw three classmates struggle to pick a study time yesterday\" (direct observation).\n\nStill unknown: what \"struggle\" looked like; what they tried before giving up; whether they eventually picked a time; reachable group size beyond these three; account type for any other claims.\n\nWith six hours, one beginner coder, and one business student, ten features is far more than you can build or learn from. An MVP is the smallest thing that lets you test whether this problem is real and your idea helps — not a smaller version of the final product.\n\nOf your ten features, only **calendars** and maybe **chat** connect directly to what you observed. The rest (AI matching, video calls, payments, maps, gamification, ratings, admin analytics) aren't tied to this observation — they'd be assumptions about a much bigger product.\n\nProposed scope for feedback:\n\n**Feature 1 — Shared availability view (calendar-lite)**\n- Evidence: \"struggle to pick a study time\"\n- Assumption: seeing everyone's free times side-by-side reduces back-and-forth\n- Role in experiment: core thing being tested\n- Acceptance criteria: [Unknown — pending your input]\n\n**Feature 2 — Group chat/thread (optional, only if time allows)**\n- Evidence: same observation\n- Assumption: coordination also needs discussion, not just a visual grid\n- Role: secondary; cut first if time runs short\n\nProvisional experiment (proposal, not yet confirmed):\n- Participants: 3 (the classmates you observed)\n- Action: have them use the tool to pick a study time this week\n- Observation: whether they land on a time without reverting to their prior method\n- Threshold: at least 2 of 3 pick a time using the tool without falling back\n- If disappointing: narrow to just the calendar view, drop chat, and ask what specifically broke\n\n1. What did the three classmates actually do to try to pick a time?\n2. Did they end up picking a time, or leave it unresolved?\n3. Can you reach these same three people again for a quick test?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

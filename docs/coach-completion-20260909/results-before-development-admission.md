@@ -2,9 +2,8 @@
 
 **Claude Opus: 10 of 10 original cases PASS; complete five-turn conversation PASS.**
 Independent review covers the coaching criteria, not just successful transport.
-The canonical machine gate passes, but independent public semantic review found
-a missing failure response and an unsupported effectiveness claim. Release
-remains unverified. The separate
+The current canonical public development gate failed a literal-value check;
+the independent audit found an ambiguous first-turn request. The separate
 [final release proof record](../../docs/coach-completion-20260909/FINAL-PROOF.md)
 records private-gate status and source identity; it must match the published source.
 

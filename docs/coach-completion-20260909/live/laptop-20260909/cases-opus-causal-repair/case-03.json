@@ -1,0 +1,24 @@
+{
+  "id": "case-03",
+  "started_at": "2026-09-09T16:26:58.844408+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "selected_model": "opus",
+  "prompt_sha256": "f097ab46bbf00ef93ab7a196cc9d297008d8adc00107809657690272fc482fab",
+  "input": "Five friends said it sounds cool. I want to build a study-group app.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established**\n- \"Five friends said it sounds cool\" — five reported positive reactions to the idea (secondhand report of opinion, not of a problem).\n- You want to build a study-group app.\n\n**Still unknown**\nWhat prompted the idea; any recent study-group difficulty; whether any of the five have committed to a next step; who the target person is; current methods people use.\n\n**Observation**\nPraise is a reaction to a pitch, not evidence of a problem. \"Sounds cool\" tells you the idea is understandable and socially agreeable — it doesn't tell you anyone recently struggled, nor that anyone will show up, test, or switch. Those are three separate things. The most useful next signal isn't more approval; it's one concrete story of something going wrong recently, and one person agreeing to a specific next step.\n\n**Questions**\n1. What happened recently that made you think of a study-group app — your own experience, something you watched, or something someone told you?\n2. Describe one recent instance where a study group didn't work well: what did the people involved actually do next?\n3. Have any of the five agreed to a concrete next step, such as a 15-minute conversation or trying a paper version?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

@@ -1,3 +1,6 @@
+> Historical blocked checkpoint. Continuation was authorized afterward. See
+> [current continuation status](CONTINUATION-STATUS.md) and [final proof](FINAL-PROOF.md).
+
 # Laptop continuation status — 2026-09-09
 
 **BLOCKED: coach development proof failed after both permitted repairs. The

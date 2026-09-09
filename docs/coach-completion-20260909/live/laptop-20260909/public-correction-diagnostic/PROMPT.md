@@ -26,10 +26,6 @@ Examples of the distinction you must preserve:
   until supplied. Do not add “because”, “so”, or “as a result”.
 - “Nobody reported trying another tool” is a statement about reports, NOT
   proof nobody ever tried one.
-- Missing an event does NOT establish that a message was posted, unseen,
-  undelivered, or misunderstood. “We do not know why the message failed” still
-  wrongly assumes a message failed. Instead: “Whether a message was posted or
-  seen is Unknown.” Apply this to every intermediate step of a causal story.
 - A participant quote supports a reported problem, NOT a contact count.
   Actually contacted requires an explicit contact statement plus a count or
   enumerated contact list. Otherwise use Unknown, even in synthetic practice.
@@ -40,11 +36,6 @@ one category from another without an explicit membership relationship.
 Group population and realistically contactable count are different numbers.
 Do not infer that an activity is free, that a participant gave up, or that a
 previous method existed. Questions must not smuggle in these premises.
-
-A disappointing test can weaken a hypothesis; it does not automatically prove
-or exclude a cause. Even an acknowledgement followed by missed attendance does
-not establish that notification played no role. Describe the next investigation,
-not a definitive causal diagnosis from that observation.
 
 Separate observed evidence from proposed explanations. For EACH proposed
 feature write a short exact evidence quote, followed by a labeled Assumption

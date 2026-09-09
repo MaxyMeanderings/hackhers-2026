@@ -1,0 +1,23 @@
+{
+  "id": "case-02",
+  "started_at": "2026-09-09T15:48:24.197051+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "c30e25155e5030e7ac03021a9d7780de29966a6468ad45b151137d573e9bfdaa",
+  "input": "The market is worth billions. My idea is an app to match students into study groups. What does TAM mean?",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "TAM stands for \"Total Addressable Market\" — it's the total revenue a business could theoretically capture if it got 100% of everyone who could ever use it, in every market it targets. It's a business-planning term, but it doesn't tell you anything about whether real students want your app or will use it.\n\nA billion-dollar TAM claim is a broad market claim, not evidence about your idea yet. Let's ground it in what actually happened.\n\nEstablished: your account states \"an app to match students into study groups\" as the idea.\nStill unknown: recent problem that prompted the idea; bounded reachable group; numeric reachable count.\n\n1. What recent event or situation made you think of this idea?\n2. Which specific group of students could you realistically reach first?\n3. About how many people are in that group?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

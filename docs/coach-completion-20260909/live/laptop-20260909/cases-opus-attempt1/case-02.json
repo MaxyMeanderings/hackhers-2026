@@ -1,0 +1,23 @@
+{
+  "id": "case-02",
+  "started_at": "2026-09-09T15:50:09.656602+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "c30e25155e5030e7ac03021a9d7780de29966a6468ad45b151137d573e9bfdaa",
+  "input": "The market is worth billions. My idea is an app to match students into study groups. What does TAM mean?",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**Established:** \"an app to match students into study groups\" — idea statement, evidence type not yet supplied. \"The market is worth billions\" — unsourced claim, not evidence.\n\n**Still unknown:** idea origin; recent problem instance; bounded reachable group; numeric contactable count; account type.\n\n**TAM** means *total addressable market*: the total revenue you'd earn if you captured 100% of demand for a product category. It's a fundraising number, and it's usually the wrong tool this early — a billion-dollar TAM is compatible with zero people wanting your specific thing. A large market also isn't endorsement of the study-group idea, so I won't treat it as support. The number that actually moves you forward is much smaller: how many specific people you can talk to before you build.\n\nSo the useful reframe is to swap the billions for a bounded group you can physically reach — one club, one class, one team.\n\n1. What recent difficulty, if any, prompted this idea?\n2. Which single club, class, or team can you reach in person?\n3. How many people in that group could you contact this week?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-opus-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

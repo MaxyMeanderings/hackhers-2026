@@ -25,3 +25,13 @@ Development failures, the failed original challenge, runtime-only reseal history
 The private author inherited historical handoff context containing earlier prompt reads. The author did not inspect the revised or frozen continuation prompt; complete historical source blindness is not claimed. Fresh private cases were independently authored, independently classified and kept from the implementation author. The separate public provenance audit concluded that historical context alone does not violate the specification's independent hidden-authoring requirement; that audit was conditional on the stated authorship, review and non-exposure facts and did not inspect private bodies.
 
 No final-gate success, full product completion, or live Claude chat parity is claimed. The failed coach must not be merged as verified work.
+
+## Prospective contract amendment
+
+The user subsequently authorized evaluation under raw JSON or one complete JSON fence, with content assertions unchanged. The blocked status above remains the historical strict-format checkpoint, not a permanent prohibition on the explicitly amended evaluation. No historical failure is converted to a pass. Continuation must retain all recorded counters and the exhausted two-repair allowance; this amendment does not authorize another prompt repair or reset. Private cases remain unused pending independently reviewed format metadata, renewed commitment where required by runtime identity, and fresh canonical challenge/seal.
+
+## Executed amended final proof
+
+The amended private commitment `eeddefa36fbb061ebcdb1bfbdd035b8335cd026066f87493a100db21baacbc83` was executed once against the QA-frozen source. The final run and read-only gate returned FAIL. Four calls executed; three turns passed and the last failed its local oracle. Retained totals are 16 development calls, 4 final calls, 3 repairs used of 5, and 1 infrastructure failure.
+
+All thirteen source identities in static-source-identity.json remain unchanged. The private manifest remains outside Git and its commitment is preserved, but these cases are now used final evidence and cannot be represented as unused fresh proof. No private body or locator was disclosed, no final response body was retained by the runtime, and no adaptation or retry was attempted. The earlier unused/blocking sections remain historical checkpoints. FINAL-PROOF.md and proof-final-format.json record the current failed outcome.
