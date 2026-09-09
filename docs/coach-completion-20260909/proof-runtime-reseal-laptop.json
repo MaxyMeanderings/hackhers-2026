@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "task": "coach-completion-20260909",
+  "gate": "development",
+  "status": "pass",
+  "outcome": "pass",
+  "reason": "sealed",
+  "scenario_ids": [],
+  "next_action": "continue",
+  "counters": {
+    "reservations": {
+      "development": 6,
+      "final": 0
+    },
+    "launches": {
+      "development": 6,
+      "final": 0
+    },
+    "infrastructure_failures": 0,
+    "repairs": 0
+  },
+  "timestamp": "2026-09-09T15:15:00Z",
+  "seal_sha256": "7ec07ec42222d523d0149d663095767c4acf0a7679d31a5199693086778f45a8",
+  "input_sha256": "59f059e001f227fbabf9885fa578d26f552917599ecd7cdd5e5a0a192de73ab3",
+  "oracle_sha256": "751845451183ca1b72d6d3a075d6ea898905116afc5bc6b0a61114231d59b374",
+  "runtime_sha256": "1460b7b3d705654fdc58ffccdf8ec880f1ae82a339d7ca20b0b29e5ff0d9657e",
+  "policy_sha256": "ba763e25f54048c8f570b136d06825fd9d93762073073a61b14cd4f19ee32a28",
+  "prompt_sha256": "f978ee1697dd90b28d7e070895100b5531322fcec534244885a9b888ef0ff0e1",
+  "applicability": "prototype",
+  "rationale_sha256": "1e45542a1aafa00cceed2ae5c0c46a67dbd07d1d1ea638d50c9f068b44138681",
+  "expected_red_observed": false,
+  "attempt_ids": [
+    "6a4e201ba0ca4d918358033eff5fe5d7"
+  ],
+  "duration_seconds": 50.058174,
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null
+  },
+  "failed_scenario_ids": [],
+  "distinct_failed_scenarios": 0,
+  "evidence_sha256": {
+    "challenge": "cb8e4570a6a05c3102452ba09939f14520376f6163126806a6867b6d216a08cc"
+  }
+}

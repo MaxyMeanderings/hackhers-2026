@@ -2,7 +2,17 @@
 
 Claude chat is the default student path; a terminal is optional. Both paths use the single [coaching prompt](PROMPT.md). Sharing that prompt does not prove identical model behavior: see [actual evaluation results](eval/RESULTS.md) for what was tested.
 
-Use your own eligible Claude Code account and existing installation. Check subscription sign-in with `claude auth status`; no separate API key is required for the subscription path. Account features and availability can vary. [Official quickstart](https://code.claude.com/docs/en/quickstart).
+Use your own eligible Claude Code account and existing installation. This workshop uses subscription authentication. Account features and availability can vary. [Official quickstart](https://code.claude.com/docs/en/quickstart).
+
+In the terminal session used for the workshop, remove API and alternate-provider overrides before checking authentication:
+
+```sh
+unset ANTHROPIC_API_KEY ANTHROPIC_AUTH_TOKEN ANTHROPIC_BASE_URL
+unset CLAUDE_CODE_USE_BEDROCK CLAUDE_CODE_USE_VERTEX CLAUDE_CODE_USE_FOUNDRY
+claude auth status --json
+```
+
+Continue when `loggedIn` is `true`, `authMethod` is `claude.ai`, and `apiProvider` is `firstParty`. Otherwise complete subscription sign-in first. These commands remove overrides from this shell session; they do not delete stored credentials. The evaluation harness also removes API credentials and refuses non-subscription authentication.
 
 ## Start a conversation
 
@@ -14,11 +24,11 @@ For a dedicated conversation with no coding or connected tools, use the exact ca
 claude --safe-mode --strict-mcp-config --mcp-config '{"mcpServers":{}}' --tools "" --system-prompt-file coach/PROMPT.md
 ```
 
-Flag sources: [official CLI reference](https://code.claude.com/docs/en/cli-reference); the executed print-mode equivalent is recorded in `docs/spec-fa7abd1282236c13/live-eval.py:18-22` and [case 01](../docs/spec-fa7abd1282236c13/live-case-01.json). That run verifies the file flag works on the evaluated installation even though it is omitted from the top-level help listing.
+The evaluated print-mode equivalent is implemented in [the portable harness](eval/run.py). Actual runtime, model identifiers, prompt hashes, and outcomes are linked from [evaluation results](eval/RESULTS.md). The CLI model choice remains configurable; the harness accepts `--model` or `COACH_EVAL_MODEL`. The evaluated model does not certify every other model or account. [Official CLI reference](https://code.claude.com/docs/en/cli-reference).
 
 This tool-free form uses public source material you paste into the conversation. Give the source URL and access date with the excerpt. The coach must disclose that it cannot open a page itself; a URL alone is not evidence of page contents. No API keys, paid integrations, or new project dependencies are needed.
 
-The evaluator uses fresh Claude Code print-mode sessions with this system-prompt file. That is distinct from testing interactive paste or Claude chat; those surfaces are not certified by a command-line result.
+The evaluator runs each case in a fresh Claude Code print-mode session with this system-prompt file. Its conversation mode starts a new session and resumes that actual session for later turns. These runs are distinct from interactive paste or Claude chat; those surfaces are not certified by a command-line result.
 
 ## Save your work
 

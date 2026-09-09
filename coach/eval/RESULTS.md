@@ -1,5 +1,13 @@
 # Coach live evaluation results
 
+**Latest completion follow-up: BLOCKED.** Both permitted proof repairs are
+consumed; the final prompt failed both public scenarios by fencing required raw
+JSON. No final heldout proof ran. The last supplemental ten-case suite passed
+seven cases on the preceding prompt; its full conversation also failed semantic
+review. See [current status and actual evidence](../../docs/coach-completion-20260909/LAPTOP-FINAL-STATUS.md).
+
+## Historical original task
+
 **FAIL: 8 of 10 cases passed after three permitted behavioral repairs.**
 
 Runtime: Claude Code with existing subscription sign-in. All ten final outputs match prompt SHA256 `8ae1c4bd8f24fd8ecdf1ead6f1a808c163143490e76af711162f80baf3a83083`.

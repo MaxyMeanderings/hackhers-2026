@@ -1,5 +1,9 @@
 # Proof handoff — pending, not complete
 
+> Superseded current status: [laptop continuation](LAPTOP-FINAL-STATUS.md).
+> Development has now failed with both repairs consumed; no final calls ran.
+> Do not restore the historical pre-seal snapshot over the current ledger.
+
 User changed priority to transferring the unfinished work to a laptop. No new provider calls should be launched until that continuation is intentionally resumed.
 
 No spec-lock commit, scope activation, behavioral seal, development prototype execution or final heldout execution has occurred for this task. One canonical public challenge ran and returned repair; its attempts/counters/outcomes are retained in proof-ledger-checkpoint.json and challenge-attempt1.json. Old failed task budgets remain unchanged.

@@ -40,3 +40,12 @@ no model request or interactive session was launched.
 
 The draft accurately distinguishes common instructions from proved surface
 parity. No sealed source was edited during this review.
+
+## Corrected draft
+
+The draft at SHA-256
+`ec35d10f9d9c0b03239a0e6f3fb72d59415e449a779b61866a600924a2b8bb28`
+now distinguishes fresh independent case sessions from the actual resumed
+conversation. The correction resolves the finding. Static approval applies to
+this draft; no host logout or interactive-parity claim follows from the
+reviewer's sandbox authentication result.

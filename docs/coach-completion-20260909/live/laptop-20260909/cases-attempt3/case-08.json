@@ -1,0 +1,23 @@
+{
+  "id": "case-08",
+  "started_at": "2026-09-09T15:22:48.726875+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "336f5ad322a9317ec62b3aee1152477a95673c7770874bd281719695b1e9d0f5",
+  "input": "I want ten features: profiles, AI matching, chat, video calls, payments, maps, gamification, calendars, ratings, and admin analytics. I saw three classmates struggle to pick a study time yesterday. We have six hours, one beginner coder, and one business student. Help scope the experiment.",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "Established: The idea (a study-time coordination tool) was prompted by directly observing three classmates struggle to pick a study time yesterday. Team capacity is 6 hours, one beginner coder, one business student. Ten features were requested: profiles, AI matching, chat, video calls, payments, maps, gamification, calendars, ratings, admin analytics.\n\nStill unknown: what the three classmates actually did after struggling (gave up, kept messaging, used another tool), and whether any of them would be willing to try a quick fix today.\n\nWith 6 hours and one beginner coder, an MVP means the smallest thing that lets you learn something from one test — not the smallest impressive app. Most of the ten features (video calls, payments, maps, gamification, ratings, admin analytics, full AI matching) aren't buildable or testable in that window and aren't tied to what you actually observed. I'd propose testing at most two features:\n\n1. **Shared availability input** (each person marks free/busy blocks for the week)\n   - Evidence: \"three classmates struggle to pick a study time yesterday\"\n   - Assumption: they don't currently have an easy shared view of everyone's free time, and that's contributing to the difficulty (unconfirmed — you haven't yet told me what they tried).\n\n2. **Overlap finder** (simple logic that highlights times where all inputs match — not \"AI,\" just a comparison)\n   - Evidence: same observation above\n   - Assumption: automatically surfacing overlapping slots would resolve the struggle faster than however they were doing it before (also unconfirmed).\n\nDeferred: profiles, AI matching, chat, video calls, payments, maps, gamification, calendars (beyond the simple input), ratings, admin analytics — none are tied to the observed problem, and most exceed a 6-hour, one-beginner-coder build.\n\n**Provisional experiment (proposal, not final):**\n- Participants: the same 3 classmates you observed\n- Action: each enters their free times into the tool\n- Observed: whether the tool surfaces a time slot all 3 can attend\n- Threshold (set before testing): at least 2 of 3 classmates confirm the suggested slot actually works for them\n- If it disappoints (fewer than 2 of 3): narrow to just two people, or investigate what they were doing before to see if the real blocker is something other than \"no shared view\" (e.g., unwillingness to commit, not availability).\n\n1. Do you want to run the test with the same three classmates, or a different group?\n2. Do you approve the two proposed features (availability input + overlap finder), or want to cut to just one given the 6-hour limit?\n3. What did the three classmates actually do after they got stuck yesterday (e.g., kept texting back and forth, gave up, used a group poll)?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

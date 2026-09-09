@@ -1,5 +1,10 @@
 # Continue the coach — laptop handoff
 
+> 2026-09-09 laptop update: runtime repairs are merged; coach development failed
+> after both permitted repairs. Read [current status](coach-completion-20260909/LAPTOP-FINAL-STATUS.md).
+> The original transfer instructions below are retained as history, not permission
+> to restore the old pre-seal ledger or reset consumed budgets.
+
 Status: unfinished checkpoint, not a passing release. User authorized completing, reviewing, pushing and merging the coach and runtime repair; latest request is to transfer this work to another laptop. Do not restart the old blocked batch unchanged.
 
 ## Get both repositories

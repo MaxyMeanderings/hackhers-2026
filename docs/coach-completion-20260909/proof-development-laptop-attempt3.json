@@ -1,0 +1,56 @@
+{
+  "applicability": "prototype",
+  "attempt_ids": [
+    "1b2465ace39c42d39ab3a0378d51875c",
+    "27567493b0b9413aa6b0f0811efc6d7f",
+    "6a4e201ba0ca4d918358033eff5fe5d7",
+    "bd8c3eb7c93c43189c1e2388c994f857",
+    "e8cd4af33a90404d8fb9d6dc3945f34d",
+    "f58ddeb11c684709bfe12527b8a19d38"
+  ],
+  "counters": {
+    "infrastructure_failures": 1,
+    "launches": {
+      "development": 11,
+      "final": 0
+    },
+    "repairs": 2,
+    "reservations": {
+      "development": 11,
+      "final": 0
+    }
+  },
+  "distinct_failed_scenarios": 2,
+  "duration_seconds": 92.824541,
+  "evidence_sha256": {
+    "challenge": "cb8e4570a6a05c3102452ba09939f14520376f6163126806a6867b6d216a08cc"
+  },
+  "expected_red_observed": false,
+  "failed_scenario_ids": [
+    "public-evidence",
+    "public-experiment"
+  ],
+  "gate": "development",
+  "input_sha256": "59f059e001f227fbabf9885fa578d26f552917599ecd7cdd5e5a0a192de73ab3",
+  "next_action": "repair_prototype",
+  "oracle_sha256": "751845451183ca1b72d6d3a075d6ea898905116afc5bc6b0a61114231d59b374",
+  "outcome": "fail",
+  "policy_sha256": "ba763e25f54048c8f570b136d06825fd9d93762073073a61b14cd4f19ee32a28",
+  "prompt_sha256": "62cdaa8048965bae4976a21c57177478121497056469ecbeb3a731e5297d4e33",
+  "rationale_sha256": "1e45542a1aafa00cceed2ae5c0c46a67dbd07d1d1ea638d50c9f068b44138681",
+  "reason": "behavior_failed",
+  "runtime_sha256": "1460b7b3d705654fdc58ffccdf8ec880f1ae82a339d7ca20b0b29e5ff0d9657e",
+  "scenario_ids": [
+    "public-evidence",
+    "public-experiment"
+  ],
+  "seal_sha256": "7ec07ec42222d523d0149d663095767c4acf0a7679d31a5199693086778f45a8",
+  "status": "fail",
+  "task": "coach-completion-20260909",
+  "timestamp": "2026-09-09T15:36:52Z",
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null
+  },
+  "version": 1
+}

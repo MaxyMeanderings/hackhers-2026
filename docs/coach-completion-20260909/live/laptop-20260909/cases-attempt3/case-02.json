@@ -1,0 +1,23 @@
+{
+  "id": "case-02",
+  "started_at": "2026-09-09T15:22:25.952384+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.263 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "336f5ad322a9317ec62b3aee1152477a95673c7770874bd281719695b1e9d0f5",
+  "input": "The market is worth billions. My idea is an app to match students into study groups. What does TAM mean?",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "TAM stands for Total Addressable Market — the total demand for a product/service if every possible customer bought it. It's a common way to size an opportunity, but a big TAM number on its own doesn't tell you whether *your* specific idea works for *your* specific users, especially at hackathon/early stage.\n\nEstablished: You want to build an app matching students into study groups. A \"billions\" market size claim was mentioned.\nStill unknown: What recent problem prompted this idea, which specific group of students you'd reach first, and how many of them you could actually contact.\n\n1. Was there a recent, specific moment (yours or someone else's) where forming or finding a study group was hard? What happened?\n2. What's one bounded group you could realistically reach first — e.g., a specific class, club, or dorm floor — rather than \"students\" broadly?\n3. Roughly how many people in that group could you actually contact (not the whole campus/market)?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

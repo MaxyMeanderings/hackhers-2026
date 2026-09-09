@@ -6,6 +6,9 @@ The coach helps students investigate a specific person's problem, count people t
 
 ## Start the coach
 
+The coach is an unfinished prototype. Its latest bounded evaluation failed;
+see [current status](docs/coach-completion-20260909/LAPTOP-FINAL-STATUS.md).
+
 1. Open [the coaching prompt](coach/PROMPT.md) and copy the entire document.
 2. Paste it into a fresh Claude chat, then describe your idea and what prompted it.
 3. Work through the questions. Ask for your idea brief, count ledger, experiment card, and MVP brief when ready.
@@ -13,7 +16,7 @@ The coach helps students investigate a specific person's problem, count people t
 Use your own eligible account. The optional [Claude Code path](coach/CLAUDE-CODE-ADAPTER.md) uses the same prompt. No API key or new application installation is required for the chat path.
 
 - [Student walkthrough](coach/README.md)
-- [Worked synthetic example](coach/examples/study-session.md)
+- [Synthetic example status](coach/examples/study-session.md)
 - [Blank output templates](coach/templates/)
 - [Recorded evaluation results and limitations](coach/eval/RESULTS.md)
 

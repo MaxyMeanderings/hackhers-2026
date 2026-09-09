@@ -1,5 +1,9 @@
 # Hackathon Idea Coach
 
+Status: unfinished prototype. The latest completion attempt exhausted its
+permitted repairs without passing development proof; see
+[evaluation results](eval/RESULTS.md).
+
 Turn an idea into a specific problem to investigate, a count of reachable people, and a small experiment. You make the final decision. No API key or paid integration is required. Use your own eligible Claude account; account features can vary.
 
 ## Start with Claude chat
@@ -16,7 +20,7 @@ Use your own experience; do not copy this example as evidence of your idea.
 Work from a recent problem to reachable people, current alternatives, reasons
 to switch, and one small experiment. You can choose to proceed, narrow the
 idea, investigate further, or pivot. You do not need to build an app to run
-a useful experiment. See the [worked synthetic session](examples/study-session.md).
+a useful experiment. See the [synthetic example status](examples/study-session.md).
 
 If browsing is unavailable, paste relevant source excerpts with their URLs and access dates. The coach should disclose the limitation and distinguish source claims from assumptions.
 
