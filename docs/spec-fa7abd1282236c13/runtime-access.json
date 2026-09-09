@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-07T20:49:03.749373+00:00",
+  "claude_code": {
+    "loggedIn": true,
+    "authMethod": "claude.ai",
+    "apiProvider": "firstParty",
+    "subscriptionType": "max"
+  },
+  "claude_chat": {
+    "url": "https://claude.ai/",
+    "observed": "Sign-in page in connected Chrome profile; alternate browser navigation timed out. No chat evaluation performed."
+  }
+}

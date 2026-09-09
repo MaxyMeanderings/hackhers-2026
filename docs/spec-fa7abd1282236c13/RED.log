@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/doctorew/shuttlebay/_ATL_/GSU/Hack-Her-Thon-worktrees/spec-fa7abd1282236c13/docs/spec-fa7abd1282236c13/RED-check.py", line 2, in <module>
+    assert Path("coach/PROMPT.md").is_file(), "Coach cannot be loaded: canonical prompt is not implemented"
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+AssertionError: Coach cannot be loaded: canonical prompt is not implemented
