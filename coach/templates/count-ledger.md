@@ -30,8 +30,10 @@ A, B, C.)
 
 ## Described a recent instance of the problem
 
-How many of those contacted described a recent, real instance of the problem
-(not just agreement that it sounds like a problem)?
+How many described a recent instance of the problem (not just agreement that
+it sounds like a problem)? Keep the supplied account type and evidence mode.
+A supplied participant report does not establish that your team contacted them;
+keep contact provenance Unknown unless an explicit contact account is supplied.
 
 ## Using an existing workaround
 

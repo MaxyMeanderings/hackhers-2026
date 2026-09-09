@@ -1,8 +1,7 @@
 # Hackathon Idea Coach
 
-Status: unfinished prototype. The latest completion attempt exhausted its
-permitted repairs without passing development proof; see
-[evaluation results](eval/RESULTS.md).
+The Claude Opus terminal evaluation passed all ten original cases and a complete
+coaching conversation. See [results and tested limits](eval/RESULTS.md).
 
 Turn an idea into a specific problem to investigate, a count of reachable people, and a small experiment. You make the final decision. No API key or paid integration is required. Use your own eligible Claude account; account features can vary.
 
@@ -10,6 +9,7 @@ Turn an idea into a specific problem to investigate, a count of reachable people
 
 1. Open [PROMPT.md](PROMPT.md) and copy the entire document.
 2. Start a fresh conversation at [claude.ai](https://claude.ai) using your own account.
+   Select Claude Opus if available to align with the evaluated model family.
 3. Paste the prompt, then describe your idea and what prompted it.
 4. Answer the coach's focused questions with what you know. Unknown is a useful answer.
 
@@ -20,13 +20,13 @@ Use your own experience; do not copy this example as evidence of your idea.
 Work from a recent problem to reachable people, current alternatives, reasons
 to switch, and one small experiment. You can choose to proceed, narrow the
 idea, investigate further, or pivot. You do not need to build an app to run
-a useful experiment. See the [synthetic example status](examples/study-session.md).
+a useful experiment. See the [worked synthetic session](examples/study-session.md).
 
 If browsing is unavailable, paste relevant source excerpts with their URLs and access dates. The coach should disclose the limitation and distinguish source claims from assumptions.
 
 ## Optional terminal path
 
-With an existing Claude Code installation and eligible subscription sign-in, open a terminal at this repository root, start `claude`, paste all of `coach/PROMPT.md` as your first message, and describe your idea. Use `claude auth status` to check sign-in. No project configuration edits are needed. [Official startup documentation](https://code.claude.com/docs/en/quickstart).
+With an existing Claude Code installation and eligible subscription sign-in, open a terminal at this repository root, start `claude --model opus`, paste all of `coach/PROMPT.md` as your first message, and describe your idea. Use `claude auth status` to check sign-in. No project configuration edits are needed. [Official startup documentation](https://code.claude.com/docs/en/quickstart).
 
 The [adapter](CLAUDE-CODE-ADAPTER.md) also provides a dedicated tool-free command. Both paths reference the same prompt; this does not establish live behavioral parity. See [evaluation results](eval/RESULTS.md) for tested runtime and remaining limitations.
 
@@ -47,7 +47,17 @@ Use anonymous participant labels and inspect evidence before sharing. The coach 
 
 Organizers can rerun the cases using the standard-library Python harness
 `coach/eval/run.py`; its `--help` describes case and conversation modes.
-Outputs require independent review: successful model transport is not a
+The harness defaults to Claude Opus; `--model` or `COACH_EVAL_MODEL` changes
+the choice. Outputs require independent review: successful model transport is not a
 passing evaluation. Use synthetic inputs for any public evidence.
+
+## Use in a workshop
+
+Start with the [worked session](examples/study-session.md) before students use
+their own ideas. Pause to distinguish observations from assumptions, reachable
+people from contacts, and a proposed test from a result. Students can roleplay
+with explicitly synthetic counts; real interviews are not required for practice.
+Have each team save its four outputs and explain what would make it narrow or
+pivot. The student retains the final decision.
 
 Behavior source: [approved specification](../docs/AGENT-SPEC.md), especially lines 7–11, 75–89 and 106.

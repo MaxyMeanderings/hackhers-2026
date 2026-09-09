@@ -21,10 +21,10 @@ From the repository root, start `claude`, paste the entire contents of `coach/PR
 For a dedicated conversation with no coding or connected tools, use the exact canonical prompt as a system instruction:
 
 ```sh
-claude --safe-mode --strict-mcp-config --mcp-config '{"mcpServers":{}}' --tools "" --system-prompt-file coach/PROMPT.md
+claude --model "${COACH_EVAL_MODEL:-opus}" --safe-mode --strict-mcp-config --mcp-config '{"mcpServers":{}}' --tools "" --system-prompt-file coach/PROMPT.md
 ```
 
-The evaluated print-mode equivalent is implemented in [the portable harness](eval/run.py). Actual runtime, model identifiers, prompt hashes, and outcomes are linked from [evaluation results](eval/RESULTS.md). The CLI model choice remains configurable; the harness accepts `--model` or `COACH_EVAL_MODEL`. The evaluated model does not certify every other model or account. [Official CLI reference](https://code.claude.com/docs/en/cli-reference).
+The evaluated print-mode equivalent is implemented in [the portable harness](eval/run.py). Actual runtime, model identifiers, prompt hashes, and outcomes are linked from [evaluation results](eval/RESULTS.md). The evaluated setup uses Claude Opus. The CLI model choice remains configurable; the harness defaults to `opus` and accepts `--model` or `COACH_EVAL_MODEL`. The evaluated model does not certify every other model or account. [Official CLI reference](https://code.claude.com/docs/en/cli-reference).
 
 This tool-free form uses public source material you paste into the conversation. Give the source URL and access date with the excerpt. The coach must disclose that it cannot open a page itself; a URL alone is not evidence of page contents. No API keys, paid integrations, or new project dependencies are needed.
 

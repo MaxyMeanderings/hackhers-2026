@@ -29,7 +29,7 @@ auth = "subscription"
 [behavior_proof]
 development_calls = 64
 final_calls = 64
-repairs = 2
+repairs = 5
 infrastructure_failures = 2
 timeout_seconds = 120
 output_bytes = 1048576

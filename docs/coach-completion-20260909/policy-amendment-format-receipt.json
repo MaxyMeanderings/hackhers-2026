@@ -1,0 +1,19 @@
+{
+  "status": "amended",
+  "outcome": "pass",
+  "reason": "fresh_challenge_and_reseal_required",
+  "task": "coach-completion-20260909",
+  "counters": {
+    "reservations": {
+      "development": 11,
+      "final": 0
+    },
+    "launches": {
+      "development": 11,
+      "final": 0
+    },
+    "infrastructure_failures": 1,
+    "repairs": 2
+  },
+  "evidence_sha256": "b2a1a6f6ee2ac6a6f097d461022b2ef1f6006b8417d605c0ce1b9d6315d6eaf5"
+}

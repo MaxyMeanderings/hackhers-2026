@@ -48,16 +48,19 @@ def main():
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--cases", type=Path, default=DEFAULT_CASES)
     parser.add_argument("--ids", nargs="+")
-    parser.add_argument("--model", default=os.environ.get("COACH_EVAL_MODEL"))
+    parser.add_argument("--model", default=os.environ.get("COACH_EVAL_MODEL") or "opus",
+                        help="Claude model (default: COACH_EVAL_MODEL or opus)")
     parser.add_argument("--message-file", type=Path)
     parser.add_argument("--web-case", action="store_true",
                         help="Allow only WebFetch/WebSearch for case 04")
     args = parser.parse_args()
+    if not args.model.strip():
+        parser.error("Choose a nonempty Claude model")
     env = environment()
     auth = subprocess.run(["claude", "auth", "status", "--json"], env=env,
                           text=True, capture_output=True, timeout=30)
     identity = json.loads(auth.stdout)
-    if auth.returncode or not identity.get("loggedIn") or identity.get("authMethod") != "claude.ai":
+    if auth.returncode or not identity.get("loggedIn") or identity.get("authMethod") != "claude.ai" or identity.get("apiProvider") != "firstParty":
         parser.error("Claude subscription sign-in required; API fallback disabled")
     version = subprocess.check_output(["claude", "--version"], env=env, text=True).strip()
     prompt_hash = hashlib.sha256(PROMPT.read_bytes()).hexdigest()
@@ -85,6 +88,7 @@ def main():
         command += ["--", message]
         record = dict(id=label, started_at=datetime.now(timezone.utc).isoformat(),
                       runtime="Claude Code", cli_version=version, auth="subscription",
+                      selected_model=args.model,
                       prompt_sha256=prompt_hash, input=message,
                       tools="WebFetch,WebSearch" if web else "none",
                       judgment="PENDING_INDEPENDENT_REVIEW")
