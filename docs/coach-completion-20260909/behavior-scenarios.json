@@ -20,17 +20,18 @@
     ],
     "review": {
       "reviewer_provider": "codex",
-      "reviewer_author_id": "fresh-classification-reviewer-20260909",
+      "reviewer_author_id": "coach-review-format-amendment",
       "decision": "approve",
-      "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
-      "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+      "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
+      "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
     }
   },
   "runtime": {
     "profile": "claude-subscription-multiturn-text-v1",
-    "model": "sonnet",
+    "model": "opus",
     "cli_version": "2.1.263 (Claude Code)",
-    "system_prompt_file": "coach/PROMPT.md"
+    "system_prompt_file": "coach/PROMPT.md",
+    "response_normalization": "json-or-single-fence-v1"
   },
   "prototype_files": [
     "coach/PROMPT.md"
@@ -51,10 +52,10 @@
         ],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "reviewer_author_id": "coach-review-format-amendment",
           "decision": "approve",
-          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
-          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
+          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
         }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
@@ -157,10 +158,10 @@
         ],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "reviewer_author_id": "coach-review-format-amendment",
           "decision": "approve",
-          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
-          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
+          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
         }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
@@ -304,10 +305,10 @@
         "risks": [],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "reviewer_author_id": "coach-review-format-amendment",
           "decision": "approve",
-          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
-          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
+          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
         }
       },
       "given": "Review artifacts coach/README.md, coach/CLAUDE-CODE-ADAPTER.md, README.md, and coach/PROMPT.md. Canonical product acceptance AC8/AC12 is reproduced in docs/coach-completion-20260909/SPEC.md. Those are static usage documents, not executable deterministic logic.",
@@ -334,10 +335,10 @@
         "risks": [],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "fresh-classification-reviewer-20260909",
+          "reviewer_author_id": "coach-review-format-amendment",
           "decision": "approve",
-          "reviewed_input_sha256": "204d0d87088e4b575a3bdfc6bb828b5621f43b91880f495100d043d7c05d0469",
-          "evidence_sha256": "3655e635f14dccadd59c9ed6176e59df3e897445689984d70e74cd05e90ba64c"
+          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
+          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
         }
       },
       "given": "Product AC11 and all twelve original criteria are reproduced in docs/coach-completion-20260909/SPEC.md; ten concrete cases are docs/spec-fa7abd1282236c13/eval-inputs.json and coach/eval/evaluation-cases.md. This scenario inspects evidence documents; it does not assert their future contents already exist.",
@@ -354,7 +355,7 @@
     }
   ],
   "heldout": {
-    "manifest_sha256": "577bae8f935ab63fcc8583c5c1ca5b8e21f0e3fd447e2d43c0ac67393ce76333",
+    "manifest_sha256": "eeddefa36fbb061ebcdb1bfbdd035b8335cd026066f87493a100db21baacbc83",
     "case_ids": [
       "fresh-evidence-correction",
       "fresh-experiment-reselection"
