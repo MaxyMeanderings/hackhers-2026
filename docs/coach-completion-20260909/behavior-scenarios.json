@@ -20,10 +20,10 @@
     ],
     "review": {
       "reviewer_provider": "codex",
-      "reviewer_author_id": "coach-review-format-amendment",
+      "reviewer_author_id": "coach-review-generation2",
       "decision": "approve",
-      "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
-      "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
+      "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
+      "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
     }
   },
   "runtime": {
@@ -52,10 +52,10 @@
         ],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-format-amendment",
+          "reviewer_author_id": "coach-review-generation2",
           "decision": "approve",
-          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
-          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
+          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
+          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
         }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
@@ -158,10 +158,10 @@
         ],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-format-amendment",
+          "reviewer_author_id": "coach-review-generation2",
           "decision": "approve",
-          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
-          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
+          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
+          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
         }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
@@ -305,10 +305,10 @@
         "risks": [],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-format-amendment",
+          "reviewer_author_id": "coach-review-generation2",
           "decision": "approve",
-          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
-          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
+          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
+          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
         }
       },
       "given": "Review artifacts coach/README.md, coach/CLAUDE-CODE-ADAPTER.md, README.md, and coach/PROMPT.md. Canonical product acceptance AC8/AC12 is reproduced in docs/coach-completion-20260909/SPEC.md. Those are static usage documents, not executable deterministic logic.",
@@ -335,10 +335,10 @@
         "risks": [],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-format-amendment",
+          "reviewer_author_id": "coach-review-generation2",
           "decision": "approve",
-          "reviewed_input_sha256": "f3729a6074677b8022aa93edc60a253d4182629e31675c6510394fc428d3b4bf",
-          "evidence_sha256": "1dd33507250a715ef380cc85e62eca5372f82039284dc287c1d94f46fe72acb1"
+          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
+          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
         }
       },
       "given": "Product AC11 and all twelve original criteria are reproduced in docs/coach-completion-20260909/SPEC.md; ten concrete cases are docs/spec-fa7abd1282236c13/eval-inputs.json and coach/eval/evaluation-cases.md. This scenario inspects evidence documents; it does not assert their future contents already exist.",
@@ -355,15 +355,15 @@
     }
   ],
   "heldout": {
-    "manifest_sha256": "eeddefa36fbb061ebcdb1bfbdd035b8335cd026066f87493a100db21baacbc83",
+    "manifest_sha256": "ffb358304f48437d23956da41700b2ad2e41a3c7a333be7db223897026fcfc71",
     "case_ids": [
-      "fresh-evidence-correction",
-      "fresh-experiment-reselection"
+      "fresh-v2-evidence",
+      "fresh-v2-experiment"
     ],
     "author": {
       "provider": "codex",
-      "author_id": "private-proof-fresh-20260909"
+      "author_id": "private-proof-generation2-20260909"
     },
-    "prepared_at": "2026-09-09T14:42:59.275955+00:00"
+    "prepared_at": "2026-09-09T16:31:40.810592+00:00"
   }
 }
