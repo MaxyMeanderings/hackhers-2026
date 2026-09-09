@@ -7,11 +7,14 @@
   "tickets": [
     "spec:docs/AGENT-SPEC.md"
   ],
-  "current": "spec:docs/AGENT-SPEC.md",
+  "current": null,
   "statuses": {
     "spec:docs/AGENT-SPEC.md": {
-      "status": "in_progress",
-      "started_at": "2026-09-09T01:58:25Z"
+      "status": "blocked",
+      "reason": "Development proof unavailable; required multi-turn runtime unsupported; prior behavioral repair budget exhausted",
+      "started_at": "2026-09-09T01:58:25Z",
+      "completed_at": "2026-09-09T02:26:09Z",
+      "receipt": "docs/spec-fa7abd1282236c13/resume-20260909/failure-receipt.json"
     }
   },
   "skip_reasons": {
@@ -21,7 +24,7 @@
     "complete": 0,
     "skipped": 0,
     "failed": 0,
-    "blocked": 0,
+    "blocked": 1,
     "needs-decision": 0,
     "pending": 0
   }
