@@ -7,14 +7,11 @@
   "tickets": [
     "spec:docs/AGENT-SPEC.md"
   ],
-  "current": null,
+  "current": "spec:docs/AGENT-SPEC.md",
   "statuses": {
     "spec:docs/AGENT-SPEC.md": {
-      "status": "failed",
-      "reason": "Live evaluation 8/10; citation support and experiment linkage fail after three repairs",
-      "started_at": "2026-09-07T20:40:03Z",
-      "completed_at": "2026-09-07T23:25:14Z",
-      "receipt": "docs/spec-fa7abd1282236c13/failure-receipt.json"
+      "status": "in_progress",
+      "started_at": "2026-09-09T01:58:25Z"
     }
   },
   "skip_reasons": {
@@ -23,7 +20,7 @@
   "metrics": {
     "complete": 0,
     "skipped": 0,
-    "failed": 1,
+    "failed": 0,
     "blocked": 0,
     "needs-decision": 0,
     "pending": 0
