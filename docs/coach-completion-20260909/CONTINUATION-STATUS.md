@@ -1,31 +1,39 @@
 # Coach continuation status
 
-The coach is not yet verified for merge. Runtime repairs are merged; the current
-Claude Opus prompt passed all ten original public cases and the full five-turn
-worked conversation under independent semantic review. The terminal path uses
-subscription authentication and configurable Claude models.
+**Verification complete.** The final Claude Opus coach passed all ten original
+cases, the full five-turn worked conversation, all four public proof turns, and
+all four freshly authored independent private proof turns. Publication status is
+recorded in [PUBLICATION.md](PUBLICATION.md).
 
-## Current verification
+## Evidence
 
-- [Ten-case review](CASES-REVIEW-OPUS-CAUSAL-REPAIR.md): PASS.
-- [Full conversation review](CONVERSATION-REVIEW-OPUS-CAUSAL-REPAIR.md): PASS with wording caveats.
-- [Public contract audit](PUBLIC-EVIDENCE-CONTRACT-AUDIT.md): the retained failure remains FAIL; the exact synthetic sentinel request required clarification.
-- Public contract clarification and stronger privacy/question-boundary checks are undergoing prospective independent review and challenge. Existing assertions are not relaxed to accept a failed output.
-- [Private final proof](FINAL-PROOF.md): preceding prompt failed. Fresh independent cases remain unused pending current public development acceptance and final source review.
+- [Original case review](CASES-REVIEW-OPUS-COMPLETE-EXPERIMENT.md): 10/10 PASS.
+- [Full conversation review](CONVERSATION-REVIEW-OPUS-COMPLETE-EXPERIMENT.md): PASS; all six stages and four deliverables.
+- [Public semantic review](PUBLIC-DEVELOPMENT-EXACT-INTERFACE-REVIEW.md) and [machine receipt](proof-development-exact-interface-pass.json): all four turns PASS.
+- [Private final receipt](proof-final-generation2.json): all four fresh turns PASS; [final proof](FINAL-PROOF.md) preserves the preceding failed final separately.
+- [Final source QA](QA-GENERATION2.md): thirteen source hashes frozen, 69 links resolve, example equals the actual final conversation response.
 
-## Accounting and evidence
+The coach uses Claude subscription authentication. The evaluated selector is
+`opus`; Claude models remain configurable. The runtime repairs are merged in
+[PR 32](https://github.com/doctor-ew/nightshift-community/pull/32), following
+PRs 29–31, and the runtime checkout is synced.
 
-The user-authorized continuation increased the cumulative prompt repair limit to
-five; four repairs are consumed. No ledger was reset. Canonical model calls and
-infrastructure failures remain in the retained ledger and gate receipts.
+## Preserved accounting
 
-[Supplemental execution accounting](live/laptop-20260909/CAUSAL-CONTINUATION-CHECKPOINT.json)
-records 108 actual laptop case/conversation executions, including failed and
-incomplete trials. These are separate from canonical proof calls. All three
-preceding evidence manifests were rechecked unchanged; the new
-[manifest](live/laptop-20260909/MANIFEST-CAUSAL-CONTINUATION.json) preserves 142 files.
+Canonical totals: 36 development calls, 8 final calls, 5 repairs, and 1
+infrastructure failure. These include the previous failures. The authorized
+cumulative repair allowance is five; no counters or failures were reset.
 
-The worked example and results draft are preserved while the runtime requires
-only prototype changes before development acceptance. Their final publication
-must follow successful development proof and source review. No real interviews,
-student outcomes, experiment success, or live Claude chat parity are claimed.
+[Supplemental accounting](live/laptop-20260909/COMPLETE-EXPERIMENT-CHECKPOINT.json)
+records 123 actual laptop case/conversation executions, including failed and
+incomplete attempts, separately from canonical calls. Four prior manifests were
+verified unchanged; the [latest manifest](live/laptop-20260909/MANIFEST-COMPLETE-EXPERIMENT.json)
+records 162 retained evidence files.
+
+Prospective format and literal-request clarifications retain strict assertions,
+independent review, challenges and old failed observations. Exposed private cases
+remain ineligible; replacement cases were independently authored and reviewed.
+
+These are finite synthetic evaluations with documented wording caveats. No real
+interviews, student outcomes, experiment success, or live Claude chat parity are
+claimed. The worked example is ready for curriculum planning and facilitator review.

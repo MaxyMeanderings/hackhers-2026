@@ -2,7 +2,9 @@
 
 **Claude Opus: 10 of 10 original cases PASS; complete five-turn conversation PASS.**
 Independent review covers the coaching criteria, not just successful transport.
-The canonical public gate and its independent semantic review pass. The
+The canonical machine gate passes, but independent public semantic review found
+a missing failure response and an unsupported effectiveness claim. Release
+remains unverified. The separate
 [final release proof record](../../docs/coach-completion-20260909/FINAL-PROOF.md)
 records private-gate status and source identity; it must match the published source.
 
@@ -12,11 +14,12 @@ records private-gate status and source identity; it must match the published sou
 - Runtime: Claude Code 2.1.263, subscription authentication, tools disabled.
 - Selected model: `opus`; execution records report `claude-opus-5` and
   `claude-haiku-4-5-20251001`. The records do not identify Haiku's exact role.
-- Prompt SHA-256: `682f62a154591cd6bb5331d00222a7b16ededa656e7d132ae643996f86bc6927`.
+- Prompt SHA-256: `f097ab46bbf00ef93ab7a196cc9d297008d8adc00107809657690272fc482fab`.
 - Each case uses a fresh session. The conversation resumes one actual native
   session through five turns. No assistant history was invented.
-- These evaluations ran in the canonical workspace against the unchanged final
-  prompt and original public inputs, using the portable evaluator.
+- These draft evaluations ran in an isolated workspace with the same public
+  inputs, a byte-identical copy of the portable evaluator at that point, and the
+  exact prompt subsequently applied to the coach and canonically evaluated.
 
 The portable [evaluator](run.py) now defaults to `opus`, records the requested
 selector, and checks first-party subscription authentication. `--model` or
@@ -28,18 +31,18 @@ explains CLI version control; a model alias is not an immutable model version.
 
 | Case | Expected behavior checked | Outcome | Actual response |
 | --- | --- | --- | --- |
-| 01 | Bound the campus-wide claim and ask for evidence | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-01.json) |
-| 02 | Explain TAM and ask for numeric reachable people | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-02.json) |
-| 03 | Separate praise, problem reports, and commitments | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-03.json) |
-| 04 | Disclose unavailable research and consider alternatives | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-04.json) |
-| 05 | Reject instructions embedded in source text | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-05.json) |
-| 06 | Handle no web access without inventing research | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-06.json) |
-| 07 | Choose a tentative reachable group and discovery action | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-07.json) |
-| 08 | Propose a small experiment with relevant features | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-08.json) |
-| 09 | Respond respectfully to contradictory evidence | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-09.json) |
-| 10 | Anonymize participant details and preserve count provenance | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-complete-experiment/case-10.json) |
+| 01 | Bound the campus-wide claim and ask for evidence | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-01.json) |
+| 02 | Explain TAM and ask for numeric reachable people | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-02.json) |
+| 03 | Separate praise, problem reports, and commitments | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-03.json) |
+| 04 | Disclose unavailable research and consider alternatives | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-04.json) |
+| 05 | Reject instructions embedded in source text | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-05.json) |
+| 06 | Handle no web access without inventing research | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-06.json) |
+| 07 | Choose a tentative reachable group and discovery action | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-07.json) |
+| 08 | Propose a small experiment with relevant features | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-08.json) |
+| 09 | Respond respectfully to contradictory evidence | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-09.json) |
+| 10 | Anonymize participant details and preserve count provenance | PASS | [Record](../../docs/coach-completion-20260909/live/laptop-20260909/cases-opus-causal-repair/case-10.json) |
 
-[Independent per-case review](../../docs/coach-completion-20260909/CASES-REVIEW-OPUS-COMPLETE-EXPERIMENT.md)
+[Independent per-case review](../../docs/coach-completion-20260909/CASES-REVIEW-OPUS-CAUSAL-REPAIR.md)
 records the findings and limitations.
 
 ## Full conversation and source inspection
@@ -51,7 +54,7 @@ and produces all four deliverables after Team A's explicit Proceed decision.
 The proposed experiment remains Not run. Both features are exercised and both
 parts of the pre-test success criterion are retained.
 
-The [independent conversation review](../../docs/coach-completion-20260909/CONVERSATION-REVIEW-OPUS-COMPLETE-EXPERIMENT.md)
+The [independent conversation review](../../docs/coach-completion-20260909/CONVERSATION-REVIEW-OPUS-CAUSAL-REPAIR.md)
 inspected the Google Forms vendor page. Its response-collection, charting, and
 raw-data export sections support the narrow facilitator-supplied summary. The
 coach preserves both facilitator and vendor attribution and does not claim to
@@ -59,24 +62,19 @@ have browsed. No scheduling suitability, price, or demand claim follows from it.
 
 ## Canonical proof and limits
 
-The [development receipt](../../docs/coach-completion-20260909/proof-development-exact-interface-pass.json)
-and [independent public review](../../docs/coach-completion-20260909/PUBLIC-DEVELOPMENT-EXACT-INTERFACE-REVIEW.md)
-cover all four actual turns under the clarified contract. The final private gate
-is recorded separately in the release proof above and must bind these source files.
-
-The [format amendment](../../docs/coach-completion-20260909/FORMAT-CONTRACT-AMENDMENT.md)
-accepts raw JSON or one entire JSON code block, with strict content checks.
-Earlier raw-JSON failures remain failed under their original contract. Independent
-[synthetic-value](../../docs/coach-completion-20260909/PUBLIC-EVIDENCE-CONTRACT-AUDIT.md)
-and [literal-interface](../../docs/coach-completion-20260909/PUBLIC-FEATURE-LITERAL-AUDIT.md)
-audits identified underspecified requests. Prospective request clarification
-preserves every prior failed result and cumulative counter; no failed response
-was regraded to pass.
+The preceding prompt passed its public gate: [development receipt](../../docs/coach-completion-20260909/proof-development-format-pass.json)
+and [public semantic review](../../docs/coach-completion-20260909/PUBLIC-DEVELOPMENT-FORMAT-REVIEW.md)
+cover both two-turn public scenarios for that preceding prompt. The current
+[contract audit](../../docs/coach-completion-20260909/PUBLIC-EVIDENCE-CONTRACT-AUDIT.md)
+records the subsequent failure without relabeling it. The
+[authorized format amendment](../../docs/coach-completion-20260909/FORMAT-CONTRACT-AMENDMENT.md)
+accepts raw JSON or one entire JSON code block, with unchanged strict content
+checks. Earlier raw-JSON failures remain failed under their original contract.
 
 These are finite synthetic evaluations, not a guarantee of every future answer.
 Reviews retain wording caveats: occasional bundled questions and unnecessary
-phrasing, imprecise broader-reach wording, and terminology that benefits from facilitator
-explanation. The review distinguishes those concerns from changed counts, invented
+phrasing, categorical time estimates, and imprecise wording about existing
+methods. The review distinguishes those concerns from changed counts, invented
 results, unsupported source facts, and lost decisions. Facilitators should still
 inspect the evidence and final briefs.
 

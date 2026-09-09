@@ -1,7 +1,7 @@
 # Proof handoff — pending, not complete
 
-> Superseded current status: [laptop continuation](LAPTOP-FINAL-STATUS.md).
-> Development has now failed with both repairs consumed; no final calls ran.
+> Historical handoff. The authorized continuation is now verified; see
+> [current status](CONTINUATION-STATUS.md) and [publication](PUBLICATION.md).
 > Do not restore the historical pre-seal snapshot over the current ledger.
 
 User changed priority to transferring the unfinished work to a laptop. No new provider calls should be launched until that continuation is intentionally resumed.

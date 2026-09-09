@@ -1,10 +1,10 @@
 # coach-completion-20260909
 
-Status: blocked — development failed; both permitted repairs consumed.
+Status: verification complete; publication in progress.
 
-Canonical ledger: 11 development launches, zero final launches, two repairs,
-one infrastructure failure. No reset or unchanged failed-prompt resampling.
+Ten original cases, full five-turn conversation, public four-turn proof and
+fresh private four-turn proof passed. Source QA passed with thirteen frozen files.
+Canonical totals: 36 development calls, 8 final calls, 5 repairs, 1 infrastructure
+failure. All prior failures and budgets remain preserved.
 
-Runtime repairs are merged. Coach remains unfinished; no verified coach merge.
-See docs/coach-completion-20260909/LAPTOP-FINAL-STATUS.md for evidence and limits.
-Original task and all historical failures remain unchanged.
+See docs/coach-completion-20260909/CONTINUATION-STATUS.md and PUBLICATION.md.

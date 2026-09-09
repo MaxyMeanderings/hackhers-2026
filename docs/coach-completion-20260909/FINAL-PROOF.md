@@ -1,17 +1,15 @@
 # Final release proof
 
-Status: **Pending new final proof — release is not verified.**
+Status: **PASS — generation2 final run and pinned final gate.**
 
-The current continuation is described in [CONTINUATION-STATUS.md](CONTINUATION-STATUS.md). The following failed final checkpoint is preserved as history; its source identity and counters describe that execution, not the current working tree.
+All four fresh private turns passed under the reviewed clarified contract. The new sanitized receipt is [proof-final-generation2.json](proof-final-generation2.json). The subsequent pinned read-only final gate returned the same eligible outcome without another model call.
 
-## Historical first private final: FAIL
+All thirteen source hashes in [static-source-identity-generation2.json](static-source-identity-generation2.json) matched before and after execution. The prompt is `682f62a154591cd6bb5331d00222a7b16ededa656e7d132ae643996f86bc6927` and the evaluator is `00287dd8cd8c6fe2b6136dfbf451d702d1b847e7b3d3394ddca1ec34e6737e19`. [QA-GENERATION2.md](QA-GENERATION2.md) records final source QA. The ten original cases, full five-turn conversation, and latest four public development responses have separate independent semantic approvals linked from the evaluation results and [PUBLIC-DEVELOPMENT-EXACT-INTERFACE-REVIEW.md](PUBLIC-DEVELOPMENT-EXACT-INTERFACE-REVIEW.md).
 
-The canonical private final run and the subsequent read-only final gate both returned `behavior_failed`. Four final model calls executed: three turns passed and the last turn failed its local oracle. The sanitized receipt is [proof-final-format.json](proof-final-format.json). The failed case identifier is public commitment metadata; private inputs and completions are not published.
+Execution used Claude Opus through the pinned subscription-authenticated CLI, with the explicitly reviewed whole-JSON-fence normalization. This establishes the bounded CLI proof and inspected product evidence; it does not establish live Claude chat UI parity, browsing, or an immutable hosted backend model version. Private completions are retained as hashes and outcomes, not published bodies.
 
-The ten original cases, full five-turn conversation, and public development gate passed, as recorded in `coach/eval/RESULTS.md`. Those results do not waive the failed private final gate. No final PASS or verified merge is authorized by this checkpoint.
+## Preserved history and accounting
 
-At that checkpoint, all thirteen frozen source hashes in [static-source-identity.json](static-source-identity.json) matched after execution. The canonical prompt was `c74966e3cb5c86801fe5d30aa410f6f14edb8a1ce755001a3b94d2fb4b2386e1`; the evaluator was `00287dd8cd8c6fe2b6136dfbf451d702d1b847e7b3d3394ddca1ec34e6737e19`. Execution used the pinned Claude CLI and subscription authentication.
+The earlier private final FAIL remains unchanged in [proof-final-format.json](proof-final-format.json). It was not retried unchanged or regraded as a pass. Fresh generation2 cases were independently authored and classified before execution; later prospective exact-interface clarifications preserved every expected value and assertion. Their prior bytes and reviews remain in private custody. The successful commitment is `67979dede9edb75a9c3476a559f876af6514bc67a804b297405ded4f5d07327c`.
 
-Totals at that checkpoint were sixteen development launches, four final launches, three repairs used against the amended cumulative limit of five, and one infrastructure failure. Historical failures and policy amendments remain recorded. No private-failure-driven adaptation or retry had occurred at that checkpoint. The runtime requires independently reviewed heldout replacement before further eligible final proof; changing a commitment alone does not establish success.
-
-Final execution intentionally retains completion hashes and outcomes rather than private response bodies. The exact failed assertion cannot be reconstructed from the sanitized receipt; no semantic diagnosis is claimed.
+Historical strict-interface failures, public challenge rejections, runtime admission failure, source-scope restoration and the independently reviewed cumulative policy amendment remain recorded. Final totals are thirty-six development launches, eight final launches, five repairs used against the amended limit of five, and one infrastructure failure. Eight final launches comprise four earlier failed-generation calls and four fresh successful-generation calls. No counter was reset.

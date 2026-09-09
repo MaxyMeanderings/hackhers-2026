@@ -2,7 +2,7 @@
 
 **Claude Opus: 10 of 10 original cases PASS; complete five-turn conversation PASS.**
 Independent review covers the coaching criteria, not just successful transport.
-The canonical public gate and its independent semantic review pass. The
+The final public and private gates remain separate requirements. The
 [final release proof record](../../docs/coach-completion-20260909/FINAL-PROOF.md)
 records private-gate status and source identity; it must match the published source.
 
@@ -58,11 +58,6 @@ coach preserves both facilitator and vendor attribution and does not claim to
 have browsed. No scheduling suitability, price, or demand claim follows from it.
 
 ## Canonical proof and limits
-
-The [development receipt](../../docs/coach-completion-20260909/proof-development-exact-interface-pass.json)
-and [independent public review](../../docs/coach-completion-20260909/PUBLIC-DEVELOPMENT-EXACT-INTERFACE-REVIEW.md)
-cover all four actual turns under the clarified contract. The final private gate
-is recorded separately in the release proof above and must bind these source files.
 
 The [format amendment](../../docs/coach-completion-20260909/FORMAT-CONTRACT-AMENDMENT.md)
 accepts raw JSON or one entire JSON code block, with strict content checks.
