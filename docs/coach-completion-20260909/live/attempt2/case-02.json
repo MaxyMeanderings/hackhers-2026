@@ -1,0 +1,23 @@
+{
+  "id": "case-02",
+  "started_at": "2026-09-09T10:49:07.746758+00:00",
+  "runtime": "Claude Code",
+  "cli_version": "2.1.266 (Claude Code)",
+  "auth": "subscription",
+  "prompt_sha256": "a88b7b36d4736be2052df4b0336b913702b0973f35b00e344c75ce4e6207ea34",
+  "input": "The market is worth billions. My idea is an app to match students into study groups. What does TAM mean?",
+  "tools": "none",
+  "judgment": "PENDING_INDEPENDENT_REVIEW",
+  "exit_code": 0,
+  "is_error": false,
+  "subtype": "success",
+  "output": "**TAM** stands for **Total Addressable Market** — the total revenue a business could theoretically generate if every possible customer worldwide bought the product. It's a common startup metric, but it's also often misleading for early-stage validation, because it tells you nothing about how many of those people you can actually reach, or whether any of them have the problem you think they have.\n\nThat's actually where I want to start rather than the billions figure — a top-down market-size number (however it was calculated) doesn't tell us whether real students have this problem or would use this app. I'd rather ground this in specifics first.\n\nA few questions to get us started:\n\n1. What prompted this idea — did something happen recently (to you or someone you know) that made study groups feel like a problem worth solving?\n2. Think of one specific person — maybe yourself — who struggled to find or organize a study group. When did that last happen, and what did they actually do about it?\n3. What's one specific, bounded group of students you could actually reach to test this — a class, a dorm, a club, a specific course section? (Not \"students\" broadly — something you could realistically contact.)\n4. Roughly how many people in that group could you contact before you'd need to judge whether this works?",
+  "models": [
+    "claude-haiku-4-5-20251001",
+    "claude-sonnet-5"
+  ],
+  "permission_denials": [],
+  "errors": [],
+  "stderr": "",
+  "prompt_unchanged": true
+}

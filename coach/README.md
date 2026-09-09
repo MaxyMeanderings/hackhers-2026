@@ -9,6 +9,15 @@ Turn an idea into a specific problem to investigate, a count of reachable people
 3. Paste the prompt, then describe your idea and what prompted it.
 4. Answer the coach's focused questions with what you know. Unknown is a useful answer.
 
+For example: "I want to help my club choose study-session times. Yesterday our
+organizer asked for availability in the group chat, but no time was agreed."
+Use your own experience; do not copy this example as evidence of your idea.
+
+Work from a recent problem to reachable people, current alternatives, reasons
+to switch, and one small experiment. You can choose to proceed, narrow the
+idea, investigate further, or pivot. You do not need to build an app to run
+a useful experiment. See the [worked synthetic session](examples/study-session.md).
+
 If browsing is unavailable, paste relevant source excerpts with their URLs and access dates. The coach should disclose the limitation and distinguish source claims from assumptions.
 
 ## Optional terminal path
@@ -31,5 +40,10 @@ Use anonymous participant labels and inspect evidence before sharing. The coach 
 ## Check the coach
 
 [Evaluation cases](eval/evaluation-cases.md) contain ten synthetic challenges and a full conversation procedure. [Results](eval/RESULTS.md) distinguish actual outcomes from unverified behavior.
+
+Organizers can rerun the cases using the standard-library Python harness
+`coach/eval/run.py`; its `--help` describes case and conversation modes.
+Outputs require independent review: successful model transport is not a
+passing evaluation. Use synthetic inputs for any public evidence.
 
 Behavior source: [approved specification](../docs/AGENT-SPEC.md), especially lines 7–11, 75–89 and 106.

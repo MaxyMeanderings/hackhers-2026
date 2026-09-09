@@ -2,21 +2,28 @@
 
 A workshop project for building a local hackathon idea coach with Drew and Tyler Sztuka.
 
-The coach will help students investigate a specific person's problem, count people they can actually reach, research existing alternatives, and design a small experiment before committing to an MVP.
+The coach helps students investigate a specific person's problem, count people they can actually reach, research existing alternatives, and design a small experiment before committing to an MVP.
 
-## Current status
+## Start the coach
 
-Repository and behavior specification are in preparation. The runnable local integration, verified example, student setup instructions, and slide deck are not complete yet.
+1. Open [the coaching prompt](coach/PROMPT.md) and copy the entire document.
+2. Paste it into a fresh Claude chat, then describe your idea and what prompted it.
+3. Work through the questions. Ask for your idea brief, count ledger, experiment card, and MVP brief when ready.
+
+Use your own eligible account. The optional [Claude Code path](coach/CLAUDE-CODE-ADAPTER.md) uses the same prompt. No API key or new application installation is required for the chat path.
+
+- [Student walkthrough](coach/README.md)
+- [Worked synthetic example](coach/examples/study-session.md)
+- [Blank output templates](coach/templates/)
+- [Recorded evaluation results and limitations](coach/eval/RESULTS.md)
+
+## Workshop planning
 
 - [Agent behavior and evaluation specification](docs/AGENT-SPEC.md)
 - [Proposed workshop agenda](workshop/WORKSHOP-DRAFT.md)
 
-The workshop will demonstrate gstack, BMAD, and NightShift alongside the student project. Exact installation and demo instructions will follow validation of the selected versions.
+The workshop agenda and slide deck are separate planning work. The coach's evaluation results distinguish the tested terminal runtime from unverified Claude chat behavior; a shared prompt alone does not prove parity.
 
-## Intended build order
+## Organizer references
 
-1. Follow the approved Claude chat / optional Claude Code profile in the agent spec; verify participant access without requiring API keys or paid integrations.
-2. Implement the coach and its research workflow.
-3. Run an example and evaluate failures and unsupported claims.
-4. Write the student walkthrough from the tested setup.
-5. Build the slide deck around the working example.
+The [completion follow-up](docs/coach-completion-20260909/SPEC.md) preserves the earlier failed evaluations and records the bounded repair and delivery requirements. Student account access still needs checking before the event.

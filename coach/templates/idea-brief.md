@@ -4,6 +4,8 @@ Fill this in with your Hackathon Idea Coach during or after your session. Leave
 any field `Unknown` rather than guessing — an honest gap is more useful than a
 made-up answer.
 
+Evidence mode: [ ] Real fieldwork [ ] Synthetic workshop roleplay
+
 ## Target person
 
 Who specifically experiences this problem?

@@ -4,6 +4,12 @@ Distinguishes estimates from interviews from problem reports from concrete
 commitments. Unknown counts stay `Unknown` — do not extrapolate a small,
 convenience sample to a whole campus or industry.
 
+Evidence mode: [ ] Real fieldwork [ ] Synthetic workshop roleplay
+
+For a roleplay, fill this ledger with the supplied **synthetic** counts and
+basis. Keep a separate real-fieldwork ledger with all six counts `Unknown`
+unless actual field evidence is supplied. Never turn missing counts into zero.
+
 **Participant privacy:** use anonymous labels only (e.g. "Participant A",
 "Participant B"). Never record real names or contact details here — this file
 may be shared or saved publicly.

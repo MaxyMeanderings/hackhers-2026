@@ -4,6 +4,9 @@ One hackathon-sized experiment, sized to your team's actual time, skills, and
 access — not an idealized team. The success criterion must be written down
 **before** you run the test, not chosen afterward to match the result.
 
+Evidence mode: [ ] Real fieldwork [ ] Synthetic workshop roleplay
+Result: Not run (replace only with an explicitly reported result).
+
 ## Participants
 
 Who takes part in this experiment? (Reference the reachable group from your
