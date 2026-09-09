@@ -1,6 +1,6 @@
 # coach-completion-20260909
 
-Status: verification complete; publication in progress.
+Status: verification complete; publication tracked in the linked pull request.
 
 Ten original cases, full five-turn conversation, public four-turn proof and
 fresh private four-turn proof passed. Source QA passed with thirteen frozen files.
