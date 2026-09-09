@@ -1,0 +1,25 @@
+{
+  "status": "blocked",
+  "ticket": "spec:docs/AGENT-SPEC.md",
+  "task": "spec-fa7abd1282236c13",
+  "batch": "20260907-2039",
+  "recorded_at": "2026-09-09T02:26:00.844205+00:00",
+  "gate": "development-admission",
+  "reason": "proof_state_unavailable; required multi-turn runtime unsupported; previous behavioral repairs exhausted",
+  "evidence": [
+    "development-gate.json",
+    "admission-review.out.json",
+    "admission-review.attempt2.out.json"
+  ],
+  "historical_behavioral_repairs": 3,
+  "resume_behavioral_repairs": 0,
+  "resume_infrastructure_repairs": 1,
+  "auth": "subscription",
+  "author_provider": "claude",
+  "verifier_provider": "codex",
+  "verifier_model": "gpt-6-astra",
+  "pushed": false,
+  "pr_url": null,
+  "receipt": "docs/spec-fa7abd1282236c13/resume-20260909/FAILURE.md",
+  "source_changes": []
+}
