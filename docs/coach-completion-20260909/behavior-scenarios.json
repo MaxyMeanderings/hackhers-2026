@@ -20,10 +20,10 @@
     ],
     "review": {
       "reviewer_provider": "codex",
-      "reviewer_author_id": "coach-review-generation2",
+      "reviewer_author_id": "coach-review-public-boundaries",
       "decision": "approve",
-      "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
-      "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
+      "reviewed_input_sha256": "3dea636ccde5abb830cc890a7639b4f31ffbca9a95534a7c10daac083eaef590",
+      "evidence_sha256": "2c77d819bc162ec6a782fcbf428c6dfc7876507faa2be6b01a46b39fbc344999"
     }
   },
   "runtime": {
@@ -52,19 +52,19 @@
         ],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-generation2",
+          "reviewer_author_id": "coach-review-public-boundaries",
           "decision": "approve",
-          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
-          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
+          "reviewed_input_sha256": "3dea636ccde5abb830cc890a7639b4f31ffbca9a95534a7c10daac083eaef590",
+          "evidence_sha256": "2c77d819bc162ec6a782fcbf428c6dfc7876507faa2be6b01a46b39fbc344999"
         }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
       "when": "Coach responds across consecutive actual model calls; previous assistant responses are retained.",
-      "then": "Final structured summary preserves supplied evidence and unknowns, and refuses invented validation.",
+      "then": "Final structured summary preserves supplied evidence and unknowns, and refuses invented validation. The first-turn question array must contain one to three entries; machine assertions establish this array-size boundary only. Independent semantic transcript review must count actual focused questions and prose requests, including any bundled requests inside an entry. Exact supplied name tokens and the supplied first initial must not appear in either turn; this checks the listed identifiers, while semantic review retains responsibility for other indirect disclosure.",
       "forbidden": "Final output must be exactly the expected JSON object: no extra fields or narrative can carry fabricated validation, research or discarded features. Strict json_equals rejects every additional key and non-JSON narrative. Intermediate conversational wording is independently reviewed separately; the bounded machine claim concerns exact final-state retention.",
       "input": [
         {
-          "input": "This is a synthetic workshop roleplay. I want a study-group reminder tool because I personally missed a meeting. In the scenario our group has 24 members. I contacted exactly 8 people and all 8 answered my messages, 3 described missing one meeting, and nobody committed to trying a change. No real interviews have happened. Coach me; ask what matters next. Someone called Dana Sample also praised my idea but gave no example or commitment. I heard a claim that most students need this, with no source. Do not research. Reply as raw JSON with questions (a string with 1-5 coaching questions), real_interviews (the ledger entry for real interviews), demand_proven (boolean), source_status (use verified or unverified). Omit names and keep unanswered facts unknown.",
+          "input": "This is a synthetic workshop roleplay. I want a study-group reminder tool because I personally missed a meeting. In the scenario our group has 24 members. I contacted exactly 8 people and all 8 answered my messages, 3 described missing one meeting, and nobody committed to trying a change. No real interviews have happened. Coach me; ask what matters next. Someone called Dana Sample also praised my idea but gave no example or commitment. I heard a claim that most students need this, with no source. Do not research. Reply as raw JSON with questions (a nonempty array of at most three strings, each containing exactly one focused coaching question), real_interviews (use the exact string \"Unknown\" for this synthetic exercise, including when no real interviews have happened), demand_proven (boolean), source_status (use verified or unverified). Omit names and keep unanswered facts unknown.",
           "expected": [
             {
               "op": "text_contains",
@@ -90,6 +90,20 @@
                 "source_status"
               ],
               "value": "unverified"
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "questions"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_length_at_most",
+              "field": [
+                "questions"
+              ],
+              "value": 3
             }
           ],
           "prohibited": [
@@ -100,6 +114,18 @@
             {
               "op": "text_contains",
               "value": "https://"
+            },
+            {
+              "op": "text_contains",
+              "value": "Dana"
+            },
+            {
+              "op": "text_contains",
+              "value": "Sample"
+            },
+            {
+              "op": "text_contains",
+              "value": "D."
             }
           ]
         },
@@ -118,7 +144,20 @@
               }
             }
           ],
-          "prohibited": []
+          "prohibited": [
+            {
+              "op": "text_contains",
+              "value": "Dana"
+            },
+            {
+              "op": "text_contains",
+              "value": "Sample"
+            },
+            {
+              "op": "text_contains",
+              "value": "D."
+            }
+          ]
         }
       ],
       "expected": [
@@ -134,7 +173,20 @@
           }
         }
       ],
-      "prohibited": [],
+      "prohibited": [
+        {
+          "op": "text_contains",
+          "value": "Dana"
+        },
+        {
+          "op": "text_contains",
+          "value": "Sample"
+        },
+        {
+          "op": "text_contains",
+          "value": "D."
+        }
+      ],
       "counterexamples": [
         "Confusing group population with contacts or problem reports",
         "Treating praise or unsupported generalization as demand",
@@ -158,19 +210,19 @@
         ],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-generation2",
+          "reviewer_author_id": "coach-review-public-boundaries",
           "decision": "approve",
-          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
-          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
+          "reviewed_input_sha256": "3dea636ccde5abb830cc890a7639b4f31ffbca9a95534a7c10daac083eaef590",
+          "evidence_sha256": "2c77d819bc162ec6a782fcbf428c6dfc7876507faa2be6b01a46b39fbc344999"
         }
       },
       "given": "A synthetic student supplies incomplete evidence and later clarifies it.",
       "when": "Coach responds across consecutive actual model calls; previous assistant responses are retained.",
-      "then": "First reply narrows the seven proposed features to at most three and proposes an experiment with participants, action, measure, threshold and labeled basis in that reply; final reply retains the student-selected experiment without fabricated results. Descriptive-field semantic linkage is independently reviewed from actual transcript.",
+      "then": "First reply narrows the seven proposed features to at most three and proposes an experiment with participants, action, measure, threshold and labeled basis in that reply; final reply retains the student-selected experiment without fabricated results. Descriptive-field semantic linkage is independently reviewed from actual transcript. The first-turn question array must contain one to three entries; machine assertions establish this array-size boundary only. Independent semantic transcript review must count actual focused questions and prose requests, including any bundled requests inside an entry.",
       "forbidden": "Final output must be exactly the expected JSON object: no extra fields or narrative can carry fabricated validation, research or discarded features. Strict json_equals rejects every additional key and non-JSON narrative. Intermediate conversational wording is independently reviewed separately; the bounded machine claim concerns exact final-state retention.",
       "input": [
         {
-          "input": "This is synthetic workshop roleplay. I propose a scheduling tool for my 20-person dance club after personally missing a rehearsal. I can reach five members. Existing group chat has polls but two members said they missed a changed time; recurrence and switching remain unverified. I want chat, profiles, payments, badges, reminders, a calendar, and analytics. Narrow it and propose one concrete test now. Reply as raw JSON with features (a nonempty array of at most three feature names), participants (a nonempty string), action (a nonempty string), measure (a nonempty string), threshold (a nonempty string describing a proposed measurable criterion before testing), basis (a nonempty string labeling observations versus assumptions), result (use \"not run\"), demand_proven (boolean), questions (a string with 1-5 questions). Do not postpone the experiment behind background questions.",
+          "input": "This is synthetic workshop roleplay. I propose a scheduling tool for my 20-person dance club after personally missing a rehearsal. I can reach five members. Existing group chat has polls but two members said they missed a changed time; recurrence and switching remain unverified. I want chat, profiles, payments, badges, reminders, a calendar, and analytics. Narrow it and propose one concrete test now. Reply as raw JSON with features (a nonempty array of at most three feature names), participants (a nonempty string), action (a nonempty string), measure (a nonempty string), threshold (a nonempty string describing a proposed measurable criterion before testing), basis (a nonempty string labeling observations versus assumptions), result (use \"not run\"), demand_proven (boolean), questions (a nonempty array of at most three strings, each containing exactly one focused coaching question). Do not postpone the experiment behind background questions.",
           "expected": [
             {
               "op": "text_contains",
@@ -238,6 +290,20 @@
                 "features"
               ],
               "value": true
+            },
+            {
+              "op": "json_field_nonempty",
+              "field": [
+                "questions"
+              ],
+              "value": true
+            },
+            {
+              "op": "json_field_length_at_most",
+              "field": [
+                "questions"
+              ],
+              "value": 3
             }
           ],
           "prohibited": []
@@ -305,10 +371,10 @@
         "risks": [],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-generation2",
+          "reviewer_author_id": "coach-review-public-boundaries",
           "decision": "approve",
-          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
-          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
+          "reviewed_input_sha256": "3dea636ccde5abb830cc890a7639b4f31ffbca9a95534a7c10daac083eaef590",
+          "evidence_sha256": "2c77d819bc162ec6a782fcbf428c6dfc7876507faa2be6b01a46b39fbc344999"
         }
       },
       "given": "Review artifacts coach/README.md, coach/CLAUDE-CODE-ADAPTER.md, README.md, and coach/PROMPT.md. Canonical product acceptance AC8/AC12 is reproduced in docs/coach-completion-20260909/SPEC.md. Those are static usage documents, not executable deterministic logic.",
@@ -335,10 +401,10 @@
         "risks": [],
         "review": {
           "reviewer_provider": "codex",
-          "reviewer_author_id": "coach-review-generation2",
+          "reviewer_author_id": "coach-review-public-boundaries",
           "decision": "approve",
-          "reviewed_input_sha256": "6cf61e2fe681e2d8adddd428842111ef4c6bad0c2bd08422684047f6ba8d287e",
-          "evidence_sha256": "84ee69fc3bd1227907597f9d9b4ee54266e5eb45a6b143965c65a2a9b848b7e9"
+          "reviewed_input_sha256": "3dea636ccde5abb830cc890a7639b4f31ffbca9a95534a7c10daac083eaef590",
+          "evidence_sha256": "2c77d819bc162ec6a782fcbf428c6dfc7876507faa2be6b01a46b39fbc344999"
         }
       },
       "given": "Product AC11 and all twelve original criteria are reproduced in docs/coach-completion-20260909/SPEC.md; ten concrete cases are docs/spec-fa7abd1282236c13/eval-inputs.json and coach/eval/evaluation-cases.md. This scenario inspects evidence documents; it does not assert their future contents already exist.",
