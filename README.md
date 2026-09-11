@@ -24,6 +24,8 @@ Use your own eligible account. The optional [Claude Code path](coach/CLAUDE-CODE
 
 - [Agent behavior and evaluation specification](docs/AGENT-SPEC.md)
 - [Proposed workshop agenda](workshop/WORKSHOP-DRAFT.md)
+- [Build track: how to build a coach like this one](workshop/build-track/README.md) — the student build-along and the presentation's worked example, staged as commits on `workshop/build-the-coach`.
+- [Shakedown-cruise testing guide](workshop/build-track/TESTING.md) — how to test the real coach before the event.
 
 The workshop agenda and slide deck are separate planning work. The coach's evaluation results distinguish the tested terminal runtime from unverified Claude chat behavior; a shared prompt alone does not prove parity.
 

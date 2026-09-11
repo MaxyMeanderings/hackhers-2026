@@ -8,6 +8,8 @@ Each team builds and tests a research assistant that turns an idea into an evide
 
 Source brief: `/Users/doctorew/Library/CloudStorage/Dropbox/__HOME__/_OBSIDIAN_/DoctorEw/Untitled 112.md`. This draft adapts its analyst, skeptic, and product handoff exercise. The shared use case remains a proposal pending organizer input.
 
+[`build-track/`](build-track/README.md) fleshes out the 18–38 and 50–60 minute blocks below into five runnable stages, each citing this repo's own spec, prompt, and evaluation record as the worked example. [`build-track/TESTING.md`](build-track/TESTING.md) covers shaking down the real coach before the event.
+
 ## Proposed 90-minute hands-on agenda
 
 | Minutes | Activity | Visible result |
