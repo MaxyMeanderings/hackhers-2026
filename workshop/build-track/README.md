@@ -23,6 +23,8 @@ break `coach/PROMPT.md` itself.
 4. [Scale to the real thing](04-scaling-up.md) — name the concrete gap
    between the toy and `coach/PROMPT.md`, and what closing that gap actually
    cost on this project.
+5. [Methodology comparison](05-methodology-comparison.md) — instructor-only:
+   build the same toy coach with no process, with NightShift, and with BMAD.
 
 Each stage is one commit on this branch (`workshop/build-the-coach`) — check
 out any stage's commit and `git diff` the one before it to show that step's
@@ -39,7 +41,8 @@ change live: `git log --oneline` on this branch lists them in order.
 The Stage 0–2 loop is the "18–38 min: build the smallest research loop"
 block in [`../WORKSHOP-DRAFT.md`](../WORKSHOP-DRAFT.md); Stage 3 is the
 "50–60 min: test missing evidence, a misleading source, an overlarge idea"
-block. Stage 4 is not a live student exercise — it's instructor material for
-the 60–72 min harness-comparison slot and the 83–90 min close, where showing
-`coach/eval/RESULTS.md`'s real pass numbers lands better after students have
+block. Stages 4 and 5 are not live student exercises — they're instructor
+material for the 60–72 min harness-comparison slot and the 83–90 min close,
+where showing `coach/eval/RESULTS.md`'s real pass numbers (Stage 4) and a
+real NightShift artifact trail (Stage 5) lands better after students have
 just felt their own toy prompt fail the same way.

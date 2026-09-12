@@ -19,7 +19,7 @@ Source brief: `/Users/doctorew/Library/CloudStorage/Dropbox/__HOME__/_OBSIDIAN_/
 | 18–38 | Build the smallest research loop in the selected coding environment | One successful research run and an inspectable tool result |
 | 38–50 | Add claim-level sources and explicit uncertainty | A market brief with facts separated from hypotheses |
 | 50–60 | Test missing evidence, a misleading source, and an overlarge idea | A recorded failure and an improvement |
-| 60–72 | Instructor comparison: gstack, BMAD, NightShift; four minutes each | The same small task viewed through three workflows |
+| 60–72 | Instructor comparison: unstructured Claude, NightShift, BMAD; four minutes each | The same small task viewed through three workflows |
 | 72–83 | Pass the reviewed brief into a product-planning step | Three proposed MVP features with acceptance criteria |
 | 83–90 | Pair review and demonstrate one evidence-to-decision trace | A reusable agent plus a short demo |
 
@@ -46,13 +46,19 @@ Introductions are outside this 90-minute block. The supplied schedule says “0 
 9. End a run within a configured tool-call and cost budget; choose those limits once access is confirmed.
 10. Pass a normal idea, missing-evidence case, and source-instruction attack case, with students inspecting actual outputs.
 
-## Harness comparison: source-backed scope
+## Harness comparison: build the same toy coach three ways
 
-| Harness | Verified upstream description | Proposed teaching moment |
+Updated 2026-09-12: this compares unstructured Claude, NightShift, and BMAD
+— not gstack. Your global `~/.claude/CLAUDE.md` drew-* pipeline section is
+explicit that these skills never invoke a gstack-namespaced skill; keep that
+boundary in the workshop too. Full runbook with exact commands per path:
+[`build-track/05-methodology-comparison.md`](build-track/05-methodology-comparison.md).
+
+| Path | Verified status | Proposed teaching moment |
 | --- | --- | --- |
-| gstack | Its README describes specialist skills spanning product planning, engineering review, browser QA, and shipping. [Source](https://github.com/garrytan/gstack#readme) | Show how a review step challenges a change and requests evidence. |
-| BMAD | Its README describes explicit decisions, preserved context, specialized perspectives, and planning depth that scales with the work. Current entry guidance uses the bmad hub and bmad-build. [Source](https://github.com/bmad-code-org/bmad-method#readme) | Show a brief becoming a bounded implementation task. |
-| NightShift | The supplied community repository could not be retrieved during this research pass. Commands and capabilities remain unverified. [Supplied repository](https://github.com/doctor-ew/nightshift-community) | Proposed: Drew demonstrates one actual task, its review evidence, and a human decision point after the community version is verified. |
+| Unstructured Claude | One prompt, no process — this is the deliberate contrast case, not a harness. | Show what's missing without a spec/verify/review/drift trail: no record of intent, no claim-checking, no regression test, no drift detection. |
+| NightShift | Commands confirmed present and readable locally (`~/.claude/commands/nightshift-*.md`, checked 2026-09-12) — this is the actual pipeline that built this repo's own coach; its real output is `docs/coach-completion-20260909/` and `.nightshift/coach-completion-20260909.md`. | Walk the real artifact trail: SPEC.md, the adversarial citations log, the review history, and the documented 8/10 → 10/10 repair. |
+| BMAD | Skills confirmed installed locally (`~/.claude/skills/bmad-*`, checked 2026-09-12); stage-for-stage equivalence to NightShift's names is NOT verified — see the runbook's two flagged gaps (no exact works-cited stage, no stated TDD discipline). | Show a PRD (`bmad-prd`) becoming reviewed, working code (`bmad-build`, `bmad-code-review`) — rehearsed beforehand, not run cold. |
 
 Do not copy the older BMAD command sequence from the source note into student instructions without checking the selected workshop version. Pin and rehearse each harness version before the event.
 
