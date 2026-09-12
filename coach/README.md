@@ -1,7 +1,10 @@
-# Hackathon Idea Coach
+# Hackathon Go-to-Market Advisor
 
 The Claude Opus terminal evaluation passed all ten original cases and a complete
-coaching conversation. See [results and tested limits](eval/RESULTS.md).
+coaching conversation under the prior "Hackathon Idea Coach" name; see
+[results and tested limits](eval/RESULTS.md). That evaluation has not yet been
+rerun against this renamed prompt — see `docs/AGENT-SPEC.md`'s 2026-09-12
+naming update.
 
 Turn an idea into a specific problem to investigate, a count of reachable people, and a small experiment. You make the final decision. No API key or paid integration is required. Use your own eligible Claude account; account features can vary.
 

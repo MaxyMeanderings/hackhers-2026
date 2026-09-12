@@ -1,13 +1,15 @@
 # GSU Hack-Her-Thon 2026
 
-A workshop project for building a local hackathon idea coach with Drew and Tyler Sztuka.
+A workshop project for building a local hackathon go-to-market advisor with Drew and Tyler Sztuka.
 
-The coach helps students investigate a specific person's problem, count people they can actually reach, research existing alternatives, and design a small experiment before committing to an MVP.
+The advisor helps students investigate a specific person's problem, count people they can actually reach, research existing alternatives, and design a small experiment before committing to an MVP.
 
-## Start the coach
+## Start the advisor
 
 The Claude Opus terminal evaluation passed all ten original cases and a full
-coaching session. See [results and tested limits](coach/eval/RESULTS.md).
+coaching session under the prior "Hackathon Idea Coach" name. See
+[results and tested limits](coach/eval/RESULTS.md); that evaluation has not
+yet been rerun against the renamed prompt.
 
 1. Open [the coaching prompt](coach/PROMPT.md) and copy the entire document.
 2. Paste it into a fresh Claude chat, then describe your idea and what prompted it.
