@@ -23,7 +23,10 @@ Use your own experience; do not copy this example as evidence of your idea.
 Work from a recent problem to reachable people, current alternatives, reasons
 to switch, and one small experiment. You can choose to proceed, narrow the
 idea, investigate further, or pivot. You do not need to build an app to run
-a useful experiment. See the [worked synthetic session](examples/study-session.md).
+a useful experiment. See the worked synthetic sessions:
+[study-session scheduling](examples/study-session.md) and
+[retail restock alerts](examples/retail-restock.md), a B2B example showing
+the advisor is not scoped to campus-club ideas.
 
 If browsing is unavailable, paste relevant source excerpts with their URLs and access dates. The coach should disclose the limitation and distinguish source claims from assumptions.
 

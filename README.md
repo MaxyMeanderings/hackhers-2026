@@ -18,7 +18,7 @@ yet been rerun against the renamed prompt.
 Use your own eligible account. The optional [Claude Code path](coach/CLAUDE-CODE-ADAPTER.md) uses the same prompt. No API key or new application installation is required for the chat path.
 
 - [Student walkthrough](coach/README.md)
-- [Worked synthetic example](coach/examples/study-session.md)
+- [Worked synthetic examples](coach/examples/study-session.md) — [and a B2B one](coach/examples/retail-restock.md)
 - [Blank output templates](coach/templates/)
 - [Recorded evaluation results and limitations](coach/eval/RESULTS.md)
 
