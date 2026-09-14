@@ -46,7 +46,7 @@ class: presenters-slide
 <div class="takeaway">Bring an idea. Leave with evidence you can explain.</div>
 
 
-<div class="source"><a href="https://szdlabs.io/">Tyler: SZD Labs</a> · <a href="https://sessionize.com/drew-schillinger/">Drew: speaker profile</a></div>
+<div class="source"><a href="https://szdlabs.io/">Tyler: SZD Labs</a> · <a href="https://doctorew.com">Drew: doctorew.com</a></div>
 
 <!--
 

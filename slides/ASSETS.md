@@ -12,3 +12,5 @@ Retrieved 2026-09-13. Images are local for reliable presentation and export.
 Presenter bios are concise paraphrases of public professional sources, pending any preferred wording or photo replacements from the presenters. No generated headshots or inferred credentials.
 
 - Font: Source Code Pro Regular and Semibold, bundled from https://github.com/adobe-fonts/source-code-pro/tree/release/WOFF2/TTF . License retained at `public/fonts/LICENSE.md`. Standard Adobe font; the installed Powerline variant was not copied.
+
+- Presenter slide links Drew to https://doctorew.com at the organizer’s request. Original bio/headshot provenance is retained above.

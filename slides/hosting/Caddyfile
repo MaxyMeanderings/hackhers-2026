@@ -1,0 +1,17 @@
+{
+    auto_https off
+    admin off
+}
+:8080 {
+    root * /srv
+    encode gzip zstd
+    @download path /coach/* /walkthrough/* /workshop.pdf
+    handle @download {
+        file_server
+    }
+    handle {
+        try_files {path} /index.html
+        file_server
+    }
+    header X-Content-Type-Options nosniff
+}
