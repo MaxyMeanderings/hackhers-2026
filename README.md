@@ -1,4 +1,4 @@
-# GSU Hack-Her-Thon 2026
+# HackHers 2026
 
 A workshop project for building a local hackathon idea coach with Drew and Tyler Sztuka.
 
