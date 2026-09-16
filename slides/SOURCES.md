@@ -49,6 +49,7 @@ Sources accessed September 16, 2026.
 Slide 3 adapts the copilot/autopilot comparison in a LinkedIn post attributed to
 Chorouk Malmoum in the screenshot supplied by the workshop organizer on
 September 16, 2026. The screenshot is the source available for this attribution;
-a permalink and publication date were not supplied. The slide paraphrases the
+a permalink and publication date were not supplied. The original screenshot is
+bundled at public/assets/copilot-autopilot-post.png and opens from slide 3. The slide paraphrases the
 idea and adds workshop questions. It does not present the post as empirical
 research or imply that autonomous execution is inherently undesirable.

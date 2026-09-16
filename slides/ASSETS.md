@@ -12,3 +12,8 @@ Retrieved 2026-09-13. Images are local for reliable presentation and export.
 Presenter bios are concise paraphrases of public professional sources, pending any preferred wording or photo replacements from the presenters. No generated headshots or inferred credentials.
 
 - Font: Source Code Pro Regular and Semibold, bundled from https://github.com/adobe-fonts/source-code-pro/tree/release/WOFF2/TTF . License retained at `public/fonts/LICENSE.md`. Standard Adobe font; the installed Powerline variant was not copied.
+
+- `public/assets/copilot-autopilot-post.png`: original, unmodified screenshot
+  supplied by the organizer on September 16, 2026. It shows a LinkedIn post
+  attributed to Chorouk Malmoum. Slide 3 displays a thumbnail linked to the
+  full-size image in a new tab. No post permalink was supplied.

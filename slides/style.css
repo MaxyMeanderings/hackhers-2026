@@ -94,3 +94,13 @@
 .slidev-layout .presenter h3{font-size:24px;}
 .slidev-layout .presenter p{font-size:16px;}
 .slidev-layout .presenter .role{font-size:13px;}
+
+/* Original source image alongside the copilot comparison. */
+.slidev-layout .copilot-content{display:grid;grid-template-columns:minmax(0,1fr) 180px;gap:30px;align-items:start;}
+.slidev-layout .copilot-content .two{gap:24px;}
+.slidev-layout .copilot-content h3{font-size:21px;}
+.slidev-layout .copilot-content p{font-size:19px;line-height:1.45;}
+.slidev-layout .post-thumbnail{display:block;border:1px solid #978359;border-radius:6px;padding:8px;text-decoration:none;}
+.slidev-layout .post-thumbnail img{display:block;width:100%;height:auto;}
+.slidev-layout .post-thumbnail span{display:block;font-size:12px;line-height:1.5;color:#e7a58d;margin-top:9px;text-align:center;}
+.slidev-layout .post-thumbnail:hover,.slidev-layout .post-thumbnail:focus-visible{outline:2px solid #e7a58d;outline-offset:4px;}
