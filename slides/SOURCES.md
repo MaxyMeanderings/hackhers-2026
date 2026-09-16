@@ -3,16 +3,17 @@
 The build walkthrough is authored teaching material. It illustrates how to reproduce
 the workflow; it does not pretend to be a transcript of the historical build.
 
-- Slides 5–7, 26–32: ../coach/README.md, ../coach/PROMPT.md,
-  ../coach/templates/, and ../coach/examples/study-session.md.
+- Slides 5–7 and optional slides 31–40: ../coach/README.md,
+  ../coach/PROMPT.md, ../coach/templates/, ../coach/examples/study-session.md,
+  walkthrough/USE-THE-COACH.md, and walkthrough/HACKATHON-PLAYBOOK.md.
 - Slide 6: exact excerpts from the input and output fields of
   ../docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json.
   The full response contains additional context; the slide labels the excerpts.
-- Slides 7, 28, 30, 35: recorded synthetic example summaries from
+- Slides 7, 33, 35, and 39: recorded synthetic example summaries from
   ../coach/examples/study-session.md. No actual interviews or experiment results claimed.
-- Slides 8–10, 12–20: walkthrough/BUILD-BRIEF.md and walkthrough/CLAUDE-CODE-STEPS.md,
-  grounded in ../docs/AGENT-SPEC.md, ../coach/PROMPT.md and ../coach/eval/evaluation-cases.md.
-- Slides 26–38: walkthrough/USE-THE-COACH.md and walkthrough/HACKATHON-PLAYBOOK.md.
+- Slides 8–23: walkthrough/BUILD-BRIEF.md and walkthrough/CLAUDE-CODE-STEPS.md,
+  grounded in ../docs/AGENT-SPEC.md, ../coach/PROMPT.md, and ../coach/eval/evaluation-cases.md.
+  Reference artifacts illustrate the target; checkpoints require student-built artifacts.
 - Claude Code: https://code.claude.com/docs/en/quickstart and
   https://code.claude.com/docs/en/how-claude-code-works .
 - Tool overview: https://github.com/bmad-code-org/BMAD-METHOD ,
@@ -29,7 +30,7 @@ subscription-only shell setup is copied into the student flow.
 
 ## Engineering principles and workflow scope
 
-Slides 22–25 use the following primary sources. Scheduling, validation, booking,
+Slides 24–27 use the following primary sources. Scheduling, validation, booking,
 and operation-count examples are authored teaching illustrations, not claims
 about implemented coach behavior.
 
@@ -39,7 +40,7 @@ about implemented coach behavior.
 - ACID: [IBM transaction properties](https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties).
 - Big O: [Carnegie Mellon machine learning primer](https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html).
 
-Slide 37 summarizes the official BMAD and gstack repositories linked above.
+Slide 28 summarizes the official BMAD and gstack repositories linked above.
 Omitting their setup is a workshop scope decision. The slide does not assert that
 either tool lacks engineering principles, review, testing, or evidence features.
 Sources accessed September 16, 2026.
@@ -56,10 +57,10 @@ research or imply that autonomous execution is inherently undesirable.
 
 ## Checkpoints
 
-Slides 11, 21, 33, and 38 are authored workshop activities. The setup commands follow
-[Claude Code quickstart](https://code.claude.com/docs/en/quickstart), accessed
-September 16, 2026. The behavior challenge adapts the praise case in
-../coach/eval/evaluation-cases.md. Completion criteria use ../coach/PROMPT.md,
-../coach/templates/, and walkthrough/USE-THE-COACH.md. The offline behavior
-fallback links to the recorded synthetic ../coach/examples/study-session.md;
-it is not a newly executed test.
+Slides 11, 14, 17, and 23 are authored build activities: prepare a fresh project,
+approve a testable spec, implement a coach, and test that student implementation.
+Commands follow [Claude Code quickstart](https://code.claude.com/docs/en/quickstart),
+accessed September 16, 2026. Build deliverables follow walkthrough/BUILD-BRIEF.md.
+Testing and repair follow walkthrough/CLAUDE-CODE-STEPS.md. A reference response
+or a check against the supplied completed coach is not evidence that a student’s
+implementation works.

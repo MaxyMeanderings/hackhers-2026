@@ -1,12 +1,14 @@
 # Build walkthrough in Claude Code
 
-Use a separate demo folder. Copy BUILD-BRIEF.md into it first. Do not overwrite the completed coach.
+Build your own coach in a fresh project folder. Save the supplied BUILD-BRIEF.md
+there first. The completed repository coach is a reference for comparison.
+Your deliverables are SPEC.md, a coach prompt, four output templates, test cases,
+and saved inputs, responses, and review decisions.
 
 ## 1. Orient
 Start `claude` in your project folder. Source: https://code.claude.com/docs/en/quickstart .
-Prompt: Read the project files and explain what is here. Identify the coach prompt,
-specification, templates, and tests. Do not edit anything yet.
-For an empty demo folder, read BUILD-BRIEF.md instead.
+Prompt: Read BUILD-BRIEF.md. Summarize what we must build and identify questions
+to resolve. Do not implement yet.
 
 ## 2. Specify
 Read BUILD-BRIEF.md. Draft SPEC.md with numbered, observable requirements,
@@ -20,12 +22,15 @@ change and the checks you will run. Leave unrelated files alone.
 ## 4. Inspect the build
 Open the resulting prompt, templates and cases. Point from one spec requirement
 to the prompt instruction intended to satisfy it. Inspect the diff.
-The completed repository example is `../../coach/PROMPT.md`, `../../coach/templates/`,
+For comparison only, the completed repository example is `../../coach/PROMPT.md`, `../../coach/templates/`,
 and `../../coach/eval/evaluation-cases.md`.
 
 ## 5. Run cases
-Use fresh coaching conversations for independent cases. Save the exact input and full
-response; do not manually improve a response before reviewing it.
+Use a fresh conversation and load the coach prompt created in your own project.
+Confirm the actual file path. Run an acceptance case from your SPEC.md and save
+the exact input and full response. Compare the behavior with your expectation;
+do not manually improve a response before reviewing it. Use fresh conversations
+for independent cases.
 
 ## 6. Challenge in a separate session
 Review SPEC.md, the coach prompt, and the saved test responses. For each applicable

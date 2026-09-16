@@ -1,7 +1,7 @@
 ---
 theme: default
 title: Build with AI. Own the evidence.
-info: Build and use a go-to-market coach with Claude Code.
+info: Build your own go-to-market coach from a brief and specification with Claude Code.
 colorSchema: dark
 aspectRatio: 16/9
 canvasWidth: 1280
@@ -18,14 +18,14 @@ mdc: true
 
 <div class="slide-number">Hackhers</div>
 
-# Build a coach.<br>Use it to build better.
+# Build a coach.<br>Own how it behaves.
 
-<div class="cover-mark"><img src="/assets/claude-logo.svg" alt="Claude" /></div><div class="hero-sub">An idea → a testable spec → working behavior.<br>A coach → evidence → your hackathon MVP.</div><div class="tagline">Claude Code · go-to-market discovery · human judgment</div><div class="sponsor-note">API credits provided by Anthropic</div>
+<div class="cover-mark"><img src="/assets/claude-logo.svg" alt="Claude" /></div><div class="hero-sub">A build brief → your spec → your coach.<br>Implement it. Test it. Explain what you changed.</div><div class="tagline">Claude Code · go-to-market discovery · human judgment</div><div class="sponsor-note">API credits provided by Anthropic</div>
 
 <div class="source">Workshop walkthrough · teaching example</div>
 
 <!--
-Open with the actual coach, not tool setup. Two linked activities: build this coach and use it to scope the team project.
+The workshop deliverable is each team’s own coach prompt, templates, test cases, and evidence. The supplied coach illustrates the target. Using it for a hackathon idea is optional follow-on material.
 -->
 
 ---
@@ -74,14 +74,14 @@ class: content
 
 <div class="slide-number">Hackhers</div>
 
-# Two jobs. One evidence trail.
+# Your build. Your evidence.
 
-<div class="three"><section><h3>Build the coach</h3><p>Use Claude Code to specify, implement, challenge, and improve it.</p></section><section><h3>Use the coach</h3><p>Find reachable people, compare alternatives, and choose an experiment.</p></section><section><h3>Build your project</h3><p>Turn the approved MVP brief into a spec your team can test.</p></section></div><div class="takeaway">You should leave knowing what to type, inspect, and save.</div>
+<div class="three"><section><h3>Specify your coach</h3><p>Turn the supplied build brief into observable requirements and acceptance cases.</p></section><section><h3>Implement your coach</h3><p>Use Claude Code to create the prompt, four output templates, and tests in your own folder.</p></section><section><h3>Demonstrate your coach</h3><p>Run your implementation, inspect its answers, repair failures, and explain the evidence.</p></section></div><div class="takeaway">Leave with a coach you built and a behavior you can defend.</div>
 
-<div class="source">Workshop walkthrough · teaching example</div>
+<div class="source">walkthrough/BUILD-BRIEF.md · Workshop learning objectives</div>
 
 <!--
-
+Show the completed coach only to establish what students are building. Filled-in business discovery outputs are examples of the coach’s eventual use, not the primary student deliverable today.
 -->
 
 ---
@@ -90,9 +90,9 @@ class: content
 
 <div class="slide-number">Hackhers</div>
 
-# Meet your go-to-market coach.
+# Meet the reference coach.
 
-<div class="two"><div><p>Bring a hackathon idea and a recent problem.</p><p>The coach asks focused questions, separates facts from guesses, and helps you choose a small test.</p></div><div class="artifact"><label>WHAT YOU GET</label><p>Idea brief<br>Count ledger<br>Experiment card<br>MVP brief</p></div></div><div class="takeaway">It helps you decide what deserves to be built.</div>
+<div class="two"><div><p>This completed example shows what your team will build.</p><p>The coach asks focused questions, separates facts from guesses, and helps you choose a small test.</p></div><div class="artifact"><label>WHAT YOU GET</label><p>Idea brief<br>Count ledger<br>Experiment card<br>MVP brief</p></div></div><div class="takeaway">Your task: reproduce these behaviors from the brief and your approved spec.</div>
 
 <div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md#L3">coach/README.md:3</a></div>
 
@@ -172,14 +172,14 @@ class: content
 
 # Open the project. Start Claude.
 
-<div class="terminal"><div class="terminal-label">Terminal · in your project folder</div><pre>claude</pre></div><div class="terminal"><div class="terminal-label">Type in Claude Code</div><pre>Read the project files and explain what is here.
-Identify the coach prompt, specification, templates, and tests.
-Do not edit anything yet.</pre></div><div class="takeaway">Check that Claude is looking at the right folder.</div>
+<div class="terminal"><div class="terminal-label">Terminal · in your project folder</div><pre>claude</pre></div><div class="terminal"><div class="terminal-label">Type in Claude Code</div><pre>Read BUILD-BRIEF.md and explain what we will build.
+Identify the deliverables and questions to resolve.
+Do not implement yet.</pre></div><div class="takeaway">Check that Claude is looking at the right folder.</div>
 
 <div class="source"><a href="https://code.claude.com/docs/en/quickstart">Claude Code quickstart</a> · walkthrough/CLAUDE-CODE-STEPS.md:5</div>
 
 <!--
-Show the terminal alongside VS Code. Use provided API access in the prepared terminal; never display the key.
+Show the terminal alongside VS Code in a fresh build folder containing BUILD-BRIEF.md. The next checkpoint has students prepare their own folder. Use the organizer’s API access; never display the key.
 -->
 
 ---
@@ -188,19 +188,20 @@ class: content checkpoint
 
 <div class="slide-number">Hackhers</div>
 
-# Checkpoint 1: Claude is ready.
+# Checkpoint 1: your build folder is ready.
 
-<div class="exercise-time">3 MINUTES · PAIRS · ONE WORKING LAPTOP</div>
-<div class="two"><div><h3>Do this</h3><p>Open a terminal in your downloaded or cloned workshop repository.</p><div class="terminal"><div class="terminal-label">Run each command in the terminal</div><pre>claude --version
-claude</pre></div><p>Use the organizer’s API access setup.</p></div><div><h3>Then ask Claude</h3><div class="terminal"><pre>Read coach/PROMPT.md.
-Quote one rule about evidence.
-Do not edit any files.</pre></div><p>Find that same sentence in the file yourself.</p></div></div><div class="takeaway">Done: show a version, a response, and the matching rule to your partner.</div>
-<p class="checkpoint-help">Stuck? Ask a facilitator about installation or access; pair with a working laptop.</p>
+<div class="exercise-time">5 MINUTES · PAIRS · START YOUR OWN COACH</div>
+<div class="two"><div><h3>Prepare your workspace</h3><p>Create an empty folder. Save the <a href="./walkthrough/BUILD-BRIEF.md" target="_blank">build brief</a> there as <code>BUILD-BRIEF.md</code>.</p><div class="terminal"><div class="terminal-label">Terminal · in that folder</div><pre>claude --version
+claude</pre></div></div><div><h3>Ask your builder</h3><div class="terminal"><pre>Read BUILD-BRIEF.md.
+Summarize what we must build.
+List questions before implementation.
+Do not build yet.</pre></div><p>Check the answer against the brief.</p></div></div><div class="takeaway">Done: your own folder, the brief, working Claude access, and an accurate scope summary.</div>
+<p class="checkpoint-help">Stuck on setup? Use the organizer’s access instructions or pair on a working laptop.</p>
 
-<div class="source"><a href="https://code.claude.com/docs/en/quickstart">Claude Code quickstart / installation</a> · coach/PROMPT.md · Authored checkpoint</div>
+<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
 
 <!--
-Pause for three minutes. The facilitator checks a version number, a successful model response, and a manually matched source sentence; installation alone does not establish working access. Have students open the downloaded or cloned repository root, not an empty folder. If installation is missing, use the linked official quickstart with a facilitator. If authentication or credits fail, follow the organizer’s setup and never project keys. Pair blocked students with a working laptop so they can still inspect the file and check the answer. Ask each pair to signal ready or needs help before continuing. Fast finishers locate a second rule and explain the failure it prevents.
+Students build their own conversational coach prompt and supporting files. Use a separate empty project folder containing only the supplied build brief initially. Download or save the linked Markdown under the specified filename. Do not copy the completed repository coach as the implementation. A successful response confirms model access; a version number alone does not. Keep credentials private. A blocked pair can review the brief together, but mark model access unresolved until a real response succeeds.
 -->
 
 ---
@@ -238,6 +239,26 @@ In a fresh demo folder, copy walkthrough/BUILD-BRIEF.md there first. Show a prep
 -->
 
 ---
+class: content checkpoint
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Checkpoint 2: your spec is testable.
+
+<div class="exercise-time">8 MINUTES · DRAFT, CHALLENGE, APPROVE</div>
+<div class="terminal"><div class="terminal-label">Ask Claude Code in your build folder</div><pre>Read BUILD-BRIEF.md. Draft SPEC.md with numbered requirements,
+exclusions, and acceptance cases. Do not implement yet.</pre></div>
+<div class="two"><section><h3>Driver · inspect scope</h3><p>Check that the spec covers the brief. Identify the coach prompt, four templates, and test cases to build.</p></section><section><h3>Partner · challenge a rule</h3><p>Choose one requirement. Write an input, expected behavior, and a visible failure. Resolve consequential gaps.</p></section></div><div class="takeaway">Done: a saved spec your team can explain and explicitly approve.</div>
+<p class="checkpoint-help">Too vague? Replace “be helpful” with a behavior you can observe in a response.</p>
+
+<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
+
+<!--
+Pause while every pair drafts and reviews its own SPEC.md. The partner should be able to judge an example response against the chosen acceptance case. Review the rest of the brief too; a single test does not establish complete coverage. If access is blocked, draft the same requirements manually and label that fallback. Do not approve unresolved consequential requirements just to keep pace. The next checkpoint implements the approved specification.
+-->
+
+---
 class: content
 ---
 
@@ -263,7 +284,7 @@ class: content
 
 # Watch the files take shape.
 
-<div class="two"><div class="artifact"><label>ACTUAL REPOSITORY</label><pre>docs/AGENT-SPEC.md
+<div class="two"><div class="artifact"><label>COMPLETED REFERENCE · YOUR PATHS MAY DIFFER</label><pre>docs/AGENT-SPEC.md
 coach/
   PROMPT.md
   templates/
@@ -276,7 +297,28 @@ coach/
 <div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md">coach/README.md</a></div>
 
 <!--
-Open each real file. Do not run the implementation prompt over this completed repository; use a separate demo directory.
+Show the reference files briefly, then have teams implement in their own build folders. Students should inspect the actual paths their builder creates; these reference paths are not the required student file layout.
+-->
+
+---
+class: content checkpoint
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Checkpoint 3: build your coach.
+
+<div class="exercise-time">12 MINUTES · IMPLEMENT YOUR APPROVED SPEC</div>
+<div class="terminal"><div class="terminal-label">After your team approves SPEC.md</div><pre>Implement the approved SPEC.md in this project.
+Create the coach prompt, four output templates, and test cases.
+First propose file paths and checks. Stay within the spec.</pre></div>
+<div class="two"><section><h3>Driver · inspect the files</h3><p>Open the prompt, templates, and cases Claude created. Check them against your spec.</p></section><section><h3>Partner · trace a rule</h3><p>Point from one requirement to its prompt instruction and acceptance case.</p></section></div><div class="takeaway">Done: your own coach files exist, and your partner can trace a requirement through them.</div>
+<p class="checkpoint-help">Missing a rule or file? Ask for a focused repair before testing the coach.</p>
+
+<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
+
+<!--
+This is the student implementation step, not a demonstration of supplied repository files. Use the actual paths proposed and created in the pair’s project; the next checkpoint must load that implementation. Coach output templates are build artifacts here, distinct from filled-in coaching outputs generated during use. File existence is only this checkpoint’s structural check, not proof of correct behavior. If a team cannot finish, identify the missing artifact and mark implementation incomplete; do not substitute the reference coach and claim it as their build.
 -->
 
 ---
@@ -359,7 +401,7 @@ class: content
 <div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md">coach/PROMPT.md</a> · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/eval/evaluation-cases.md">coach/eval/evaluation-cases.md</a></div>
 
 <!--
-Allocate about 4 minutes here; reserve another 4 minutes for Checkpoint 2. Use the existing files and a prepared response if runtime is slow. Say when a response is recorded.
+Demonstrate the spec-to-test loop briefly, then let students run checkpoint 4 against the coach they built. Any facilitator reference response must be labeled recorded and is not evidence that a student implementation passed.
 -->
 
 ---
@@ -368,19 +410,16 @@ class: content checkpoint
 
 <div class="slide-number">Hackhers</div>
 
-# Checkpoint 2: prove one behavior.
+# Checkpoint 4: test the coach you built.
 
-<div class="exercise-time">4 MINUTES · SWAP DRIVER AND CHALLENGER</div>
-<div class="terminal"><div class="terminal-label">In a fresh Claude Code conversation</div><pre>Read coach/PROMPT.md and act as that coach. Do not edit files.
-Synthetic practice: five friends said it sounds cool.
-I want to build a study-group app. What should I do next?</pre></div>
-<div class="two"><section><h3>Driver · run and save</h3><p>Save the exact input and full answer. Keep this practice scenario labeled synthetic.</p></section><section><h3>Challenger · inspect</h3><p>Did it turn praise into customers? Quote the response and compare it with the coach rule.</p></section></div><div class="takeaway">Done: show your input, response, and pass / fail / unresolved decision with a reason.</div>
-<p class="checkpoint-help">No access? Inspect the <a href="./coach/examples/study-session.md" target="_blank">recorded example</a> for an unsupported inference; label it recorded.</p>
+<div class="exercise-time">12 MINUTES · RUN, INSPECT, REPAIR</div>
+<div class="two"><section><h3>Driver · run your implementation</h3><p>Start a fresh conversation. Load the coach prompt from your build folder and ask Claude to act as that coach.</p><p>Run an acceptance case from your spec. Save the exact input and full answer.</p></section><section><h3>Partner · judge the result</h3><p>Compare the answer with the expected behavior. Quote evidence for pass, fail, or unresolved.</p><p>If it fails, repair your prompt and rerun. Also check a case that passed before.</p></section></div><div class="takeaway">Done: demonstrate your coach and show the spec → implementation → test evidence.</div>
+<p class="checkpoint-help">Not built yet? Finish checkpoint 3. Mark unexecuted cases “Not run.”</p>
 
-<div class="source">coach/eval/evaluation-cases.md · coach/PROMPT.md · Authored checkpoint</div>
+<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
 
 <!--
-Pause for four minutes inside the Build it time budget. Students use the completed repository coach in a fresh session, not their unfinished demo files. Review this one behavior; a pass here is not a full coach evaluation. If the answer fails, describe a minimal repair and the input you would repeat rather than overwriting the shared example during this checkpoint. For the offline fallback, inspect a quoted response in the linked recorded example, cite its evidence boundary, and use the same pass/fail/unresolved format. Do not claim that the fallback ran the live praise test. Ask two pairs to share differing judgments and the exact text supporting them. Fast finishers propose one harder input.
+The test target is the team’s newly built coach, not coach/PROMPT.md from the completed reference repository. Confirm the actual loaded path with the team. For a praise-versus-commitment acceptance case, use a clearly synthetic student input and compare the generated response with the approved expectation. A passing result supports only the behaviors exercised. If the case passes immediately, run a harder case or another requirement; never manufacture a failure or repair story. For failures preserve before/after responses and explain the actual change. This checkpoint is the workshop’s principal demonstration of what students built.
 -->
 
 ---
@@ -454,9 +493,57 @@ class: content
 
 <div class="slide-number">Hackhers</div>
 
-# Start using the finished coach.
+# Where do BMAD and gstack fit?
 
-<div class="two"><section><h3>Claude Code · API access</h3><p>Start a separate conversation in the repository. Ask Claude to read <code>coach/PROMPT.md</code> and act as that coach.</p><p>“Do not edit files or build yet. Help me investigate my idea.”</p></section><section><h3>Claude chat · your account</h3><p>Copy the entire <a href="./coach/PROMPT.md" target="_blank">coach prompt</a> into a fresh conversation, then describe your idea.</p><p>Use whichever chat access your account provides.</p></section></div><div class="takeaway">Keep coaching and coding conversations separate.</div>
+<div class="three"><section><h3>BMAD</h3><p>Structured planning and delivery with product, architecture, development, and testing perspectives.</p></section><section><h3>gstack</h3><p>Specialist workflows for planning, code review, browser testing, and shipping.</p></section><section><h3>Today’s scope</h3><p>Practice the underlying decisions directly in Claude Code before adding workflow setup.</p></section></div><div class="takeaway">These tools can guide the work. Your project still needs explicit rules, design choices, and tests.</div>
+
+<div class="source"><a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD: official repository</a> · <a href="https://github.com/garrytan/gstack">gstack: official repository</a> · Workshop scope: teaching choice</div>
+
+<!--
+Neither is required for this workshop. This is a time-and-focus choice, not a verdict on quality or a claim that either lacks engineering practices. Both offer substantial planning and review support. What remains for any project is domain context: which rule is authoritative, which contract a replacement must preserve, which writes belong in a transaction, and what workload to measure. DRY, SOLID, ACID, Big O, and conventions help students assess the proposed answers. The same responsibility applies when using Nightshift or a plain coding session. Adopt a workflow when its structure helps the team; installation itself is not evidence of correctness.
+-->
+
+---
+class: closing
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Show the coach you built.
+
+<div class="exit"><p>Which requirement did your team implement?</p><p>Where does your coach enforce that behavior?</p><p>What input did you run, and what happened?</p><p>What did you repair—or what remains unresolved?</p></div><div class="tagline">Your spec → your implementation → your test evidence.</div>
+
+<div class="source">Workshop walkthrough · teaching example</div>
+
+<!--
+
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Your coach-building kit.
+
+<div class="two"><section><h3>Build your own</h3><p><a href="./walkthrough/BUILD-BRIEF.md" target="_blank">Download the build brief ↗</a></p><p><a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Follow the build steps ↗</a></p><p>Save your spec, coach prompt, four templates, test cases, and actual responses.</p></section><section><h3>Compare and continue</h3><p><a href="./coach/PROMPT.md" target="_blank">Completed reference prompt ↗</a></p><p><a href="https://github.com/doctor-ew/hackhers-2026" target="_blank">Workshop repository ↗</a></p><p><a href="./walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Optional: apply your coach to a project ↗</a></p></section></div><div class="takeaway">The core workshop ends here. The next slides are optional practice using your coach.</div>
+
+<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md</div>
+
+<!--
+Students should show their own build artifacts before comparing with the supplied implementation. Optional slides explain how the coach’s outputs can inform another project after this workshop. Share the published URL for classroom access.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Optional: use the coach you built.
+
+<div class="two"><section><h3>Claude Code · API access</h3><p>Start a fresh conversation in your build folder. Load your own coach prompt and ask Claude to act as that coach.</p><p>“Do not edit files or build yet. Help me investigate my idea.”</p></section><section><h3>Claude chat · your account</h3><p>Copy your complete coach prompt into a fresh chat. The <a href="./coach/PROMPT.md" target="_blank">reference prompt</a> is available for comparison.</p><p>Use whichever chat access your account provides.</p></section></div><div class="takeaway">Keep coaching and coding conversations separate.</div>
 
 <div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md#L7">coach/README.md:7</a> · walkthrough/USE-THE-COACH.md:1</div>
 
@@ -472,7 +559,7 @@ class: content
 
 # Give it a real starting point.
 
-<div class="terminal"><div class="terminal-label">FIRST COACH MESSAGE · FILL IN YOUR OWN FACTS</div><pre>Act as the coach in coach/PROMPT.md.
+<div class="terminal"><div class="terminal-label">FIRST COACH MESSAGE · FILL IN YOUR OWN FACTS</div><pre>Act as the coach in the prompt I supplied.
 My idea is ____. The person I want to help is ____.
 The last time I observed this problem was ____.
 They currently handle it by ____.
@@ -567,24 +654,6 @@ Pairs save outputs into their project docs folder. Use the linked local template
 -->
 
 ---
-class: content checkpoint
----
-
-<div class="slide-number">Hackhers</div>
-
-# Checkpoint 3: your handoff is ready.
-
-<div class="exercise-time">4 MINUTES · PAIRS · SAVE BEFORE YOU BUILD</div>
-<div class="two"><section><h3>Driver · save the work</h3><p>Save all four coach outputs in your project. Keep missing facts marked Unknown.</p><p>Record your choice: Proceed, Narrow, Investigate, or Pivot, and why.</p></section><section><h3>Partner · show the evidence</h3><p>Open the saved outputs. Point to a person, a problem, and one testable action.</p><p>Identify a success threshold, a source or Unknown, and at most three MVP features.</p></section></div><div class="takeaway">Done: your partner can find the files and explain the next experiment without asking you.</div>
-<p class="checkpoint-help">Missing evidence? Save the Unknown and the next question. You can choose Investigate.</p>
-
-<div class="source">walkthrough/USE-THE-COACH.md · coach/templates/ · Authored checkpoint</div>
-
-<!--
-Pause for four minutes within Use it. This checks a usable handoff, not proof of demand or a requirement to choose Proceed. Have the partner open the files, rather than accept a verbal “saved.” The count ledger is the fourth output even though the next build prompt reads only three documents. Students with no working model can fill the four linked templates manually from their own facts; preserve Unknowns and label synthetic practice. Fast finishers write one acceptance case for the proposed experiment. Bring an unresolved Unknown into the next spec instead of asking the model to fill it in.
--->
-
----
 class: content
 ---
 
@@ -634,70 +703,4 @@ class: content
 
 <!--
 This is where works cited becomes useful to their pitch. Do not turn synthetic counts into customer claims.
--->
-
----
-class: content
----
-
-<div class="slide-number">Hackhers</div>
-
-# Where do BMAD and gstack fit?
-
-<div class="three"><section><h3>BMAD</h3><p>Structured planning and delivery with product, architecture, development, and testing perspectives.</p></section><section><h3>gstack</h3><p>Specialist workflows for planning, code review, browser testing, and shipping.</p></section><section><h3>Today’s scope</h3><p>Practice the underlying decisions directly in Claude Code before adding workflow setup.</p></section></div><div class="takeaway">These tools can guide the work. Your project still needs explicit rules, design choices, and tests.</div>
-
-<div class="source"><a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD: official repository</a> · <a href="https://github.com/garrytan/gstack">gstack: official repository</a> · Workshop scope: teaching choice</div>
-
-<!--
-Neither is required for this workshop. This is a time-and-focus choice, not a verdict on quality or a claim that either lacks engineering practices. Both offer substantial planning and review support. What remains for any project is domain context: which rule is authoritative, which contract a replacement must preserve, which writes belong in a transaction, and what workload to measure. DRY, SOLID, ACID, Big O, and conventions help students assess the proposed answers. The same responsibility applies when using Nightshift or a plain coding session. Adopt a workflow when its structure helps the team; installation itself is not evidence of correctness.
--->
-
----
-class: content checkpoint
----
-
-<div class="slide-number">Hackhers</div>
-
-# Checkpoint 4: show one working slice.
-
-<div class="exercise-time">6 MINUTES · PAIRS · USE YOUR APPROVED SCOPE</div>
-<div class="two"><section><h3>Driver · build and run</h3><p>Choose one acceptance case from your approved project spec.</p><p>Ask Claude Code to implement the smallest slice and run the check. Inspect the changes.</p></section><section><h3>Challenger · try it</h3><p>Exercise the workflow yourself. Compare the expected result with what actually happens.</p><p>Record pass, fail, or unresolved. Swap roles for the next check.</p></section></div><div class="takeaway">Done: show one workflow, its expected and actual result, and your next decision.</div>
-<p class="checkpoint-help">Not ready to code? Run the approved manual experiment, or write the missing acceptance case first.</p>
-
-<div class="source">walkthrough/HACKATHON-PLAYBOOK.md · Authored checkpoint</div>
-
-<!--
-Keep this bounded to six minutes. The team must approve the scope before implementation. A failing check is useful evidence; do not hide it to claim completion. If the plan is still unresolved, write one concrete input and expected result, label execution Not run, and choose the next action. This fallback is planning progress, not a working-slice pass. A manual MVP can be exercised manually; explain which observation tests the feature. Ask one pair to show a failure and what they would change, and another to show a passing result with its limits.
--->
-
----
-class: closing
----
-
-<div class="slide-number">Hackhers</div>
-
-# Leave with a next step you can defend.
-
-<div class="exit"><p>Who can your team reach?</p><p>What will you test before adding features?</p><p>Which spec requirement will Claude Code build first?</p><p>What evidence would change your mind?</p></div><div class="tagline">Use the coach to investigate. Use the spec to build. Use evidence to decide.</div>
-
-<div class="source">Workshop walkthrough · teaching example</div>
-
-<!--
-
--->
-
----
-class: content
----
-
-<div class="slide-number">Hackhers</div>
-
-# Your hackathon kit.
-
-<div class="two"><section><h3>Use the coach</h3><p><a href="./coach/PROMPT.md" target="_blank">Open the full coaching prompt ↗</a></p><p><a href="./coach/templates/idea-brief.md" target="_blank">Idea brief</a> · <a href="./coach/templates/count-ledger.md" target="_blank">Count ledger</a></p><p><a href="./coach/templates/experiment-card.md" target="_blank">Experiment card</a> · <a href="./coach/templates/mvp-brief.md" target="_blank">MVP brief</a></p></section><section><h3>Build with the workflow</h3><p><a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Claude Code build steps ↗</a></p><p><a href="./walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Team playbook ↗</a></p><p><a href="https://github.com/doctor-ew/hackhers-2026" target="_blank">Workshop repository ↗</a></p></section></div>
-
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md">coach/README.md</a></div>
-
-<!--
-These links are bundled with the presentation for local use. A localhost URL on the projector is not accessible from a student laptop; distribute the repository or exported files.
 -->

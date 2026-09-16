@@ -1,5 +1,16 @@
 # Coach walkthrough validation
 
+## Student-built coach correction — September 16, 2026
+
+- The Pages build passed for 30 core slides plus 10 optional follow-on slides.
+- Chrome checked revised slides 1, 4, 5, 10, 11, 14, 16, 17, 22, 23, 28–32
+  without measured content overflow or uncaught page errors.
+- Implementation and testing checkpoints were visually inspected.
+- All four checkpoints now operate on the student’s own build folder and spec.
+  Reference coach responses are explicitly excluded as evidence for that build.
+- The bundled build walkthrough matches the authoring copy.
+
+
 ## Checkpoints and source image — September 16, 2026
 
 - The 40-slide Pages build passed.
