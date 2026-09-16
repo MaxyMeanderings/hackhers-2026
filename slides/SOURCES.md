@@ -3,16 +3,16 @@
 The build walkthrough is authored teaching material. It illustrates how to reproduce
 the workflow; it does not pretend to be a transcript of the historical build.
 
-- Slides 4–6, 23–29: ../coach/README.md, ../coach/PROMPT.md,
+- Slides 5–7, 24–30: ../coach/README.md, ../coach/PROMPT.md,
   ../coach/templates/, and ../coach/examples/study-session.md.
-- Slide 5: exact excerpts from the input and output fields of
+- Slide 6: exact excerpts from the input and output fields of
   ../docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json.
   The full response contains additional context; the slide labels the excerpts.
-- Slides 6, 25, 27, 31: recorded synthetic example summaries from
+- Slides 7, 26, 28, 32: recorded synthetic example summaries from
   ../coach/examples/study-session.md. No actual interviews or experiment results claimed.
-- Slides 7–18: walkthrough/BUILD-BRIEF.md and walkthrough/CLAUDE-CODE-STEPS.md,
+- Slides 8–19: walkthrough/BUILD-BRIEF.md and walkthrough/CLAUDE-CODE-STEPS.md,
   grounded in ../docs/AGENT-SPEC.md, ../coach/PROMPT.md and ../coach/eval/evaluation-cases.md.
-- Slides 23–34: walkthrough/USE-THE-COACH.md and walkthrough/HACKATHON-PLAYBOOK.md.
+- Slides 24–35: walkthrough/USE-THE-COACH.md and walkthrough/HACKATHON-PLAYBOOK.md.
 - Claude Code: https://code.claude.com/docs/en/quickstart and
   https://code.claude.com/docs/en/how-claude-code-works .
 - Tool overview: https://github.com/bmad-code-org/BMAD-METHOD ,
@@ -29,7 +29,7 @@ subscription-only shell setup is copied into the student flow.
 
 ## Engineering principles and workflow scope
 
-Slides 19–22 use the following primary sources. Scheduling, validation, booking,
+Slides 20–23 use the following primary sources. Scheduling, validation, booking,
 and operation-count examples are authored teaching illustrations, not claims
 about implemented coach behavior.
 
@@ -39,7 +39,16 @@ about implemented coach behavior.
 - ACID: [IBM transaction properties](https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties).
 - Big O: [Carnegie Mellon machine learning primer](https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html).
 
-Slide 33 summarizes the official BMAD and gstack repositories linked above.
+Slide 34 summarizes the official BMAD and gstack repositories linked above.
 Omitting their setup is a workshop scope decision. The slide does not assert that
 either tool lacks engineering principles, review, testing, or evidence features.
 Sources accessed September 16, 2026.
+
+## Copilot and autopilot
+
+Slide 3 adapts the copilot/autopilot comparison in a LinkedIn post attributed to
+Chorouk Malmoum in the screenshot supplied by the workshop organizer on
+September 16, 2026. The screenshot is the source available for this attribution;
+a permalink and publication date were not supplied. The slide paraphrases the
+idea and adds workshop questions. It does not present the post as empirical
+research or imply that autonomous execution is inherently undesirable.

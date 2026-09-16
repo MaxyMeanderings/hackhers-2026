@@ -1,7 +1,7 @@
 # Build with AI. Own the evidence.
 
 90-minute workshop on building and using a go-to-market coach with Claude Code.
-Includes 36 slides, speaker notes, student handouts, and a four-slide engineering
+Includes 37 slides, speaker notes, student handouts, and a four-slide engineering
 interlude covering DRY, SOLID, ACID, Big O, and convention over configuration.
 A brief comparison explains where BMAD and gstack fit in the workflow.
 
@@ -45,7 +45,7 @@ examples are labeled and sourced. Synthetic exercises do not represent real fiel
 
 ## Coach walkthrough
 
-The 36-slide deck centers the full coach, its build steps, and hackathon use.
+The 37-slide deck centers the full coach, its build steps, and hackathon use.
 The clickable side rail follows six modules. Exact teaching prompts live in
 [walkthrough/](walkthrough/); student assets are bundled under public/.
 The earlier deck is retained in archive/deck-before-coach-walkthrough.md.
@@ -53,8 +53,12 @@ The earlier deck is retained in archive/deck-before-coach-walkthrough.md.
 ## Publish to GitHub Pages
 
 The workflow in [.github/workflows/deploy-slides.yml](../.github/workflows/deploy-slides.yml)
-builds and publishes slide changes pushed to main. It can also be started manually
-from GitHub Actions. Repository Pages settings must use GitHub Actions as the build source.
+builds slide changes when a pull request targeting main is opened or updated.
+After the pull request is merged, the push to main automatically rebuilds and
+publishes the deck at https://doctor-ew.github.io/hackhers-2026/.
+Pull request builds validate the changes; the public deck updates after merge.
+Manual publishing is available from GitHub Actions on main. Repository Pages
+settings must use GitHub Actions as the build source.
 
 Run `npm run build:pages` to reproduce the hosted build. It uses the repository
 base path and hash routing so shared slide links work on GitHub Pages. The default

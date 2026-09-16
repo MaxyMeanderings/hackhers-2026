@@ -1,5 +1,16 @@
 # Coach walkthrough validation
 
+## Copilot introduction and PR publishing — September 16, 2026
+
+- The 37-slide GitHub Pages build passed.
+- Chrome rendered slide 3 without measured overlap into the source footer.
+- All five shifted section links reached slides 5, 8, 24, 31, and 36.
+- No uncaught browser errors occurred during these checks.
+- The new slide was visually inspected at 1280 × 720.
+- Pull request builds use read-only repository permissions; publication is
+  restricted to non-PR runs on main.
+
+
 ## Engineering additions — September 16, 2026
 
 - Static production build succeeded for the 36-slide deck.

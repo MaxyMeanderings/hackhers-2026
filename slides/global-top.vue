@@ -3,9 +3,9 @@ import { computed } from 'vue'
 import { useNav } from '@slidev/client'
 const nav = useNav()
 const sections = [
-  {label:'Start', start:1}, {label:'Meet the coach', start:4},
-  {label:'Build it', start:7}, {label:'Use it', start:23},
-  {label:'Your hackathon', start:30}, {label:'Take it away', start:35},
+  {label:'Start', start:1}, {label:'Meet the coach', start:5},
+  {label:'Build it', start:8}, {label:'Use it', start:24},
+  {label:'Your hackathon', start:31}, {label:'Take it away', start:36},
 ]
 const active = computed(() => sections.reduce((found,s,i) => nav.currentPage.value >= s.start ? i : found, 0))
 </script>

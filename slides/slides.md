@@ -58,6 +58,22 @@ class: content
 
 <div class="slide-number">Hackhers</div>
 
+# Copilot vs autopilot: own the decision.
+
+<div class="two"><section><h3>Copilot · stay engaged</h3><p>Frame the problem and state your assumptions.</p><p>Ask AI for options, explanations, and challenges.</p><p>Check the evidence. Explain why you accept or change the result.</p></section><section><h3>Autopilot · the trap</h3><p>Delegate the framing before understanding the problem.</p><p>Accept a convincing answer without checking it.</p><p>Struggle to explain the choice when someone challenges it.</p></section></div><div class="takeaway">Before you ship: can you explain the choice, show the evidence, and name what would change your mind?</div>
+
+<div class="source">Inspired by Chorouk Malmoum’s LinkedIn post · supplied screenshot · workshop adaptation</div>
+
+<!--
+Spend about one minute here. The screenshot contrasts copilot and autopilot as ways of using AI. This slide paraphrases that perspective; it is not an empirical classification of people or a claim that using AI causes skill loss. Copilot here is a metaphor, not a product name. Useful automation can still run autonomously within clear boundaries; the team owns the goal, acceptance criteria, and consequential decisions. Beginners can practice this too: predict what a change should do, ask for an explanation, test it, and explain what they learned. Ask pairs: if the demo fails, can you explain what you expected and which evidence you would inspect? Then connect this habit to the spec, challenger, and repair loop.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
 # Two jobs. One evidence trail.
 
 <div class="three"><section><h3>Build the coach</h3><p>Use Claude Code to specify, implement, challenge, and improve it.</p></section><section><h3>Use the coach</h3><p>Find reachable people, compare alternatives, and choose an experiment.</p></section><section><h3>Build your project</h3><p>Turn the approved MVP brief into a spec your team can test.</p></section></div><div class="takeaway">You should leave knowing what to type, inspect, and save.</div>
