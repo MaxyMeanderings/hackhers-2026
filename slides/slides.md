@@ -16,7 +16,7 @@ transition: none
 mdc: true
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Build a coach.<br>Use it to build better.
 
@@ -32,7 +32,7 @@ Open with the actual coach, not tool setup. Two linked activities: build this co
 class: presenters-slide
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Your workshop guides
 
@@ -56,7 +56,7 @@ class: presenters-slide
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Two jobs. One evidence trail.
 
@@ -72,7 +72,7 @@ class: content
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Meet your go-to-market coach.
 
@@ -88,7 +88,7 @@ class: content
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # What a conversation looks like.
 
@@ -104,7 +104,7 @@ Read the coach aloud. Ask: what did it refuse to assume? These are exact excerpt
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # The outputs are usable artifacts.
 
@@ -120,7 +120,7 @@ Open the locally bundled worked example if the audience wants detail. The MVP he
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Build it in six visible steps.
 
@@ -136,7 +136,7 @@ Walk through the real repository artifacts. Prompts on the next slides are a rep
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Claude Code is the builder.
 
@@ -152,7 +152,7 @@ Keep these in separate conversations so implementation context does not become a
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Open the project. Start Claude.
 
@@ -170,7 +170,7 @@ Show the terminal alongside VS Code. Use provided API access in the prepared ter
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Start with a behavior brief.
 
@@ -186,7 +186,7 @@ class: content
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Ask for a spec before code.
 
@@ -204,7 +204,7 @@ In a fresh demo folder, copy walkthrough/BUILD-BRIEF.md there first. Show a prep
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Review and approve the contract.
 
@@ -222,7 +222,7 @@ Have a student identify one missing acceptance case before approval. A prompt ap
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Watch the files take shape.
 
@@ -246,7 +246,7 @@ Open each real file. Do not run the implementation prompt over this completed re
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Read the instruction that matters.
 
@@ -262,7 +262,7 @@ Quote typography uses a curly apostrophe for presentation; wording is otherwise 
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Test behavior, not just the file.
 
@@ -278,7 +278,7 @@ These are shortened teaching challenges, not verbatim historical test inputs. Ru
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Give the challenger the evidence.
 
@@ -297,7 +297,7 @@ Explain adversarial review here, with a visible response. Separate sessions orga
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Repair one failure. Test again.
 
@@ -313,7 +313,7 @@ This illustrates a failure mode; do not present it as a quoted response from the
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Build demo: show the whole loop.
 
@@ -329,11 +329,76 @@ Allocate about 8 minutes here. Use the existing files and a prepared response if
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
+
+# Behind the scenes: fewer moving parts.
+
+<div class="two"><section><h3>DRY</h3><p><strong>Don’t Repeat Yourself.</strong></p><p>Give each rule one authoritative home so copies do not drift.</p><p>Example: reuse one availability-validation rule wherever submissions enter.</p></section><section><h3>Convention over configuration</h3><p>Use agreed defaults for names and structure; configure exceptions.</p><p>Example: follow the framework’s folder layout so it can discover files automatically.</p></section></div><div class="takeaway">Ask the builder: “What can we reuse? Which defaults already fit?”</div>
+
+<div class="source"><a href="https://pragprog.com/tips/">The Pragmatic Programmer: DRY</a> · <a href="https://guides.rubyonrails.org/getting_started.html">Rails: conventions</a> · Authored project examples</div>
+
+<!--
+Budget about one minute per engineering slide. These are design lenses for the team’s eventual software, not claims that the prompt-only coach implements a database or object model. DRY concerns duplicated knowledge: similar-looking code need not represent the same rule. Avoid inventing an abstraction before the shared responsibility is clear. Convention over configuration means tools understand defaults; merely agreeing on names is not automatic discovery.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# SOLID: make change manageable.
+
+<div class="artifact"><p><strong>S — Single Responsibility:</strong> one reason to change per module.</p><p><strong>O — Open/Closed:</strong> support extensions without changing stable code.</p><p><strong>L — Liskov Substitution:</strong> replacements honor the original contract.</p><p><strong>I — Interface Segregation:</strong> expose only what each client needs.</p><p><strong>D — Dependency Inversion:</strong> depend on abstractions, not concrete details.</p></div><div class="takeaway">Example: separate availability rules from storage and notifications.</div>
+
+<div class="source"><a href="https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html">Robert C. Martin: SOLID relevance</a> · Authored project example</div>
+
+<!--
+SOLID groups five design principles. Single responsibility groups things that change for the same reason. For the scheduling example, changing how messages are sent should not change availability rules. A replacement storage adapter must preserve the caller’s expectations, including failures. A reader should not need a write interface. Keep abstractions proportionate to the project; five principles do not require five classes or a large architecture.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# ACID: protect a database transaction.
+
+<div class="four"><section><h3>A — Atomicity</h3><p>All changes in the transaction succeed together, or none take effect.</p></section><section><h3>C — Consistency</h3><p>A successful transaction preserves defined data rules and constraints.</p></section><section><h3>I — Isolation</h3><p>Concurrent transactions interact according to the isolation level.</p></section><section><h3>D — Durability</h3><p>Committed changes survive failures under the database’s guarantees.</p></section></div><div class="takeaway">Example: reserve a seat and update capacity in one transaction.</div>
+
+<div class="source"><a href="https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties">IBM: transaction properties</a> · Authored project example</div>
+
+<!--
+The booking example extends beyond the manual MVP. If the second database write fails, atomicity prevents a partial booking. Define capacity constraints and choose concurrency control appropriate to the reservation rule; a transaction alone does not prevent every race. Serializable isolation aims for results equivalent to a serial order; weaker levels permit some anomalies. Consistency means preserving defined invariants, not proving user-entered facts true. An external email is not automatically part of a database transaction. ACID describes database behavior, not a guarantee made by a prompt.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Big O: what happens as input grows?
+
+<p><strong>Big O is notation, not an acronym.</strong> It gives an asymptotic upper bound on how time or memory grows with input size <strong>n</strong>.</p>
+<div class="three"><section><h3>O(1) · constant</h3><p>Read one array item by index.</p><p>Work stays bounded as the array grows.</p></section><section><h3>O(n) · linear</h3><p>Scan every submission once.</p><p>10× the entries → about 10× the checks.</p></section><section><h3>O(n²) · quadratic</h3><p>Compare every pair of submissions.</p><p>10× the entries → about 100× the pairs.</p></section></div><div class="takeaway">Ask: “What grows with the data?” Then measure realistic inputs.</div>
+
+<div class="source"><a href="https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html">Carnegie Mellon: Big-O</a> · Authored operation-count examples</div>
+
+<!--
+Assume fixed-cost indexed reads, per-entry checks, and pair comparisons. The growth multipliers describe operation counts for these examples, not guaranteed wall-clock time. Big O ignores constant factors and lower-order terms for sufficiently large input. It is an upper bound, not automatically a tight bound or a synonym for worst case. Database indexes, network calls, and model calls require their own cost analysis. Measure before optimizing a tiny hackathon workload.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
 
 # Start using the finished coach.
 
-<div class="two"><section><h3>Claude Code · API access</h3><p>Start a separate conversation in the repository. Ask Claude to read <code>coach/PROMPT.md</code> and act as that coach.</p><p>“Do not edit files or build yet. Help me investigate my idea.”</p></section><section><h3>Claude chat · your account</h3><p>Copy the entire <a href="/coach/PROMPT.md" target="_blank">coach prompt</a> into a fresh conversation, then describe your idea.</p><p>Use whichever chat access your account provides.</p></section></div><div class="takeaway">Keep coaching and coding conversations separate.</div>
+<div class="two"><section><h3>Claude Code · API access</h3><p>Start a separate conversation in the repository. Ask Claude to read <code>coach/PROMPT.md</code> and act as that coach.</p><p>“Do not edit files or build yet. Help me investigate my idea.”</p></section><section><h3>Claude chat · your account</h3><p>Copy the entire <a href="./coach/PROMPT.md" target="_blank">coach prompt</a> into a fresh conversation, then describe your idea.</p><p>Use whichever chat access your account provides.</p></section></div><div class="takeaway">Keep coaching and coding conversations separate.</div>
 
 <div class="source"><a href="https://github.com/doctor-ew/gsu-hack-her-thon-2026/blob/handoff/coach-completion-20260909/coach/README.md#L7">coach/README.md:7</a> · walkthrough/USE-THE-COACH.md:1</div>
 
@@ -345,7 +410,7 @@ API credits fund API usage; do not promise they include a Claude chat subscripti
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Give it a real starting point.
 
@@ -366,7 +431,7 @@ Give pairs two minutes to write this before speaking to the coach. Avoid invente
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Count people you can actually reach.
 
@@ -382,7 +447,7 @@ Ask whether the two committed people must be among the three problem reporters. 
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Find alternatives. Bring sources.
 
@@ -398,7 +463,7 @@ If source browsing is unavailable, students paste excerpts. A competitor feature
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Turn an idea into an experiment.
 
@@ -414,7 +479,7 @@ This is a proposed test; result remains Not run. Ask which observation exercises
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # You choose the next move.
 
@@ -430,7 +495,7 @@ No automated approval. Proceed does not mean proven product-market fit or permis
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Save four outputs for your team.
 
@@ -447,7 +512,7 @@ Pairs save outputs into their project docs folder. Use the linked local template
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Hand the MVP to Claude Code.
 
@@ -467,7 +532,7 @@ implementation plan. Do not build until I approve.</pre></div><div class="takeaw
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Build the smallest useful slice.
 
@@ -483,7 +548,7 @@ The recorded MVP includes a manual workflow. Only turn it into software if the t
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Pitch the evidence, not the hype.
 
@@ -499,23 +564,23 @@ This is where works cited becomes useful to their pitch. Do not turn synthetic c
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
-# Tools can organize the same loop.
+# Where do BMAD and gstack fit?
 
-<div class="three"><section><h3>Claude Code</h3><p>Your coding workspace for the spec, edits, tests, and review.</p></section><section><h3>BMad / gstack</h3><p>Explore structured planning and specialist review workflows.</p></section><section><h3>Nightshift</h3><p>A workflow runner with recorded stages and gates.</p></section></div><div class="takeaway">Learn the sequence first: spec → approval → build → evidence.</div>
+<div class="three"><section><h3>BMAD</h3><p>Structured planning and delivery with product, architecture, development, and testing perspectives.</p></section><section><h3>gstack</h3><p>Specialist workflows for planning, code review, browser testing, and shipping.</p></section><section><h3>Today’s scope</h3><p>Practice the underlying decisions directly in Claude Code before adding workflow setup.</p></section></div><div class="takeaway">These tools can guide the work. Your project still needs explicit rules, design choices, and tests.</div>
 
-<div class="source"><a href="https://code.claude.com/docs/en/quickstart">Claude Code</a> · <a href="https://github.com/bmad-code-org/BMAD-METHOD">BMad</a> · <a href="https://github.com/garrytan/gstack">gstack</a> · <a href="https://github.com/doctor-ew/nightshift-community">Nightshift</a></div>
+<div class="source"><a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD: official repository</a> · <a href="https://github.com/garrytan/gstack">gstack: official repository</a> · Workshop scope: teaching choice</div>
 
 <!--
-Short optional comparison. No installation detour. Do not claim equivalent capabilities or invoke gstack inside Nightshift.
+Neither is required for this workshop. This is a time-and-focus choice, not a verdict on quality or a claim that either lacks engineering practices. Both offer substantial planning and review support. What remains for any project is domain context: which rule is authoritative, which contract a replacement must preserve, which writes belong in a transaction, and what workload to measure. DRY, SOLID, ACID, Big O, and conventions help students assess the proposed answers. The same responsibility applies when using Nightshift or a plain coding session. Adopt a workflow when its structure helps the team; installation itself is not evidence of correctness.
 -->
 
 ---
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Your team’s practice loop.
 
@@ -531,7 +596,7 @@ Let teams work for 8–10 minutes. They can start with the source-packet exercis
 class: closing
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Leave with a next step you can defend.
 
@@ -547,11 +612,11 @@ class: closing
 class: content
 ---
 
-<div class="slide-number">HACK-HER-THON</div>
+<div class="slide-number">Hackhers</div>
 
 # Your hackathon kit.
 
-<div class="two"><section><h3>Use the coach</h3><p><a href="/coach/PROMPT.md" target="_blank">Open the full coaching prompt ↗</a></p><p><a href="/coach/templates/idea-brief.md" target="_blank">Idea brief</a> · <a href="/coach/templates/count-ledger.md" target="_blank">Count ledger</a></p><p><a href="/coach/templates/experiment-card.md" target="_blank">Experiment card</a> · <a href="/coach/templates/mvp-brief.md" target="_blank">MVP brief</a></p></section><section><h3>Build with the workflow</h3><p><a href="/walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Claude Code build steps ↗</a></p><p><a href="/walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Team playbook ↗</a></p><p><a href="https://github.com/doctor-ew/gsu-hack-her-thon-2026" target="_blank">Workshop repository ↗</a></p></section></div>
+<div class="two"><section><h3>Use the coach</h3><p><a href="./coach/PROMPT.md" target="_blank">Open the full coaching prompt ↗</a></p><p><a href="./coach/templates/idea-brief.md" target="_blank">Idea brief</a> · <a href="./coach/templates/count-ledger.md" target="_blank">Count ledger</a></p><p><a href="./coach/templates/experiment-card.md" target="_blank">Experiment card</a> · <a href="./coach/templates/mvp-brief.md" target="_blank">MVP brief</a></p></section><section><h3>Build with the workflow</h3><p><a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Claude Code build steps ↗</a></p><p><a href="./walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Team playbook ↗</a></p><p><a href="https://github.com/doctor-ew/gsu-hack-her-thon-2026" target="_blank">Workshop repository ↗</a></p></section></div>
 
 <div class="source"><a href="https://github.com/doctor-ew/gsu-hack-her-thon-2026/blob/handoff/coach-completion-20260909/coach/README.md">coach/README.md</a></div>
 

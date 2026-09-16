@@ -1,9 +1,9 @@
 # Build with AI. Own the evidence.
 
-90-minute concepts-first workshop: Claude, Claude Code, spec-driven development,
-adversarial agents, and claim-level works cited. A short section compares gstack,
-BMad and Nightshift. Includes 30 core/reference slides plus 6 tool/setup appendices,
-speaker notes, an interactive evidence reveal, and five student handouts.
+90-minute workshop on building and using a go-to-market coach with Claude Code.
+Includes 36 slides, speaker notes, student handouts, and a four-slide engineering
+interlude covering DRY, SOLID, ACID, Big O, and convention over configuration.
+A brief comparison explains where BMAD and gstack fit in the workflow.
 
 ## Present
 
@@ -45,7 +45,21 @@ examples are labeled and sourced. Synthetic exercises do not represent real fiel
 
 ## Coach walkthrough
 
-The 32-slide deck centers the full coach, its build steps, and hackathon use.
+The 36-slide deck centers the full coach, its build steps, and hackathon use.
 The clickable side rail follows six modules. Exact teaching prompts live in
 [walkthrough/](walkthrough/); student assets are bundled under public/.
 The earlier deck is retained in archive/deck-before-coach-walkthrough.md.
+
+## Publish to GitHub Pages
+
+The workflow in [.github/workflows/deploy-slides.yml](../.github/workflows/deploy-slides.yml)
+builds and publishes slide changes pushed to main. It can also be started manually
+from GitHub Actions. Repository Pages settings must use GitHub Actions as the build source.
+
+Run `npm run build:pages` to reproduce the hosted build. It uses the repository
+base path and hash routing so shared slide links work on GitHub Pages. The default
+local build and development commands remain available. Student download links are
+relative to the presentation root.
+
+References: [Slidev hosting](https://sli.dev/guide/hosting) and
+[GitHub Pages API](https://docs.github.com/en/rest/pages/pages).

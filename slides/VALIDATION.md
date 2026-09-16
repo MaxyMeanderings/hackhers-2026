@@ -1,5 +1,28 @@
 # Coach walkthrough validation
 
+## Engineering additions — September 16, 2026
+
+- Static production build succeeded for the 36-slide deck.
+- PDF export completed successfully to workshop.pdf.
+- Chrome checked slides 19–23, 30, 33, 35, and 36: no uncaught page errors
+  or measured content overflow into the source footer.
+- SOLID, Big O, and tool-scope slides were visually inspected.
+- Clicking Use it, Your hackathon, and Take it away navigated to slides 23,
+  30, and 35 and marked the corresponding section current.
+- The existing caught FloatingVue/twoslash warning appeared during PDF export.
+- Definitions and tool descriptions have linked primary sources in SOURCES.md.
+
+## GitHub Pages preparation — September 16, 2026
+
+- Production build with the repository base path and hash routing succeeded.
+- Chrome opened slides 1, 2, 19, 33, and 36 from the subdirectory preview
+  without page errors or failed HTTP responses.
+- All seven student download links returned Markdown with HTTP 200.
+- The Build it navigation button opened slide 7 using hash routing.
+
+## Earlier 32-slide baseline
+
+
 - Slidev static build succeeded; PDF export produced 32 pages.
 - Browser visited all 32 slides with Source Code Pro loaded. No uncaught page errors
   or measured overflow of headings, paragraphs, lists, code, quotes or layout groups.

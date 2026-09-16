@@ -6,7 +6,8 @@
     "dev": "slidev",
     "build": "slidev build --base ./",
     "export": "slidev export --output workshop.pdf",
-    "preview": "vite preview --host 127.0.0.1"
+    "preview": "vite preview --host 127.0.0.1",
+    "build:pages": "slidev build --base /gsu-hack-her-thon-2026/ --router-mode hash"
   },
   "dependencies": {
     "@slidev/cli": "52.19.1",
