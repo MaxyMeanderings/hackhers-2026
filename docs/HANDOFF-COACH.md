@@ -11,7 +11,7 @@ Status: unfinished checkpoint, not a passing release. User authorized completing
 
 Both repositories use branch `handoff/coach-completion-20260909`:
 
-- Coach: https://github.com/doctor-ew/gsu-hack-her-thon-2026/tree/handoff/coach-completion-20260909
+- Coach: https://github.com/doctor-ew/hackhers-2026/tree/handoff/coach-completion-20260909
 - Runtime: https://github.com/doctor-ew/nightshift-community/tree/handoff/coach-completion-20260909
 
 Clone both branches into any user-owned workspace on the laptop. No /root directory is involved; /root/coach_proof was an internal agent identifier. Original working copies were /tmp/hack-her-thon-coach-completion-20260909 and /tmp/nightshift-coach-runtime-repair-20260909. Do not rely on those paths on the laptop.

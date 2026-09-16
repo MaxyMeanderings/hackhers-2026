@@ -2,7 +2,7 @@
 
 The verified coach source and complete evaluation evidence are committed in
 `fd79aeb475530e0e7d93a4642d1af70cf6cbf622`. The canonical publication and merge
-record is [coach PR 1](https://github.com/doctor-ew/gsu-hack-her-thon-2026/pull/1).
+record is [coach PR 1](https://github.com/doctor-ew/hackhers-2026/pull/1).
 Use that record for current merge status; the source identity is independently
 recorded in [static-source-identity-generation2.json](static-source-identity-generation2.json).
 
