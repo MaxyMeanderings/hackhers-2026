@@ -1,9 +1,10 @@
 # Build with AI. Own the evidence.
 
 90-minute workshop on building and using a go-to-market coach with Claude Code.
-Includes 37 slides, speaker notes, student handouts, and a four-slide engineering
+Includes 40 slides, speaker notes, student handouts, and a four-slide engineering
 interlude covering DRY, SOLID, ACID, Big O, and convention over configuration.
-A brief comparison explains where BMAD and gstack fit in the workflow.
+Four timed checkpoints cover working access, one coach behavior, a saved
+team handoff, and one working slice. A brief comparison explains where BMAD and gstack fit in the workflow.
 
 ## Present
 
@@ -45,7 +46,7 @@ examples are labeled and sourced. Synthetic exercises do not represent real fiel
 
 ## Coach walkthrough
 
-The 37-slide deck centers the full coach, its build steps, and hackathon use.
+The 40-slide deck centers the full coach, its build steps, and hackathon use.
 The clickable side rail follows six modules. Exact teaching prompts live in
 [walkthrough/](walkthrough/); student assets are bundled under public/.
 The earlier deck is retained in archive/deck-before-coach-walkthrough.md.

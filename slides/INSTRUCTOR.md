@@ -1,16 +1,16 @@
 # Facilitator guide — coach build and hackathon use
 
-The full repository coach is the main example. The deck has 37 slides and six
+The full repository coach is the main example. The deck has 40 slides and six
 sections. Use the prepared files alongside live Claude Code demonstrations.
 
 | Section | Slides | Suggested time | Show or do |
 |---|---|---|---|
 | Start | 1–4 | 6 minutes | Introduce facilitators and the two linked jobs |
 | Meet the coach | 5–7 | 8 minutes | Read the actual conversation excerpts; open the four outputs |
-| Build it | 8–23 | 38 minutes | Brief, spec, approval, files, challenge, repair; one live case |
-| Use it | 24–30 | 18 minutes | Teams start the coach, supply evidence, choose a test, save outputs |
-| Your hackathon | 31–35 | 15 minutes | Turn the MVP into a project spec and run pair practice |
-| Take it away | 36–37 | 5 minutes | Explain a decision and distribute the kit |
+| Build it | 8–25 | 38 minutes | Brief, spec, approval, files, challenge, repair; one live case |
+| Use it | 26–33 | 18 minutes | Teams start the coach, supply evidence, choose a test, save outputs |
+| Your hackathon | 34–38 | 15 minutes | Turn the MVP into a project spec and run pair practice |
+| Take it away | 39–40 | 5 minutes | Explain a decision and distribute the kit |
 
 These timings are facilitation guidance, not displayed on the slides. The side
 rail links to section starts and distinguishes past/current/future sections.
@@ -40,11 +40,27 @@ The supplied club story and all of its counts are synthetic; no experiment was r
 
 ## Engineering interlude
 
-Slides 20–23 introduce DRY and convention over configuration, SOLID, ACID,
+Slides 22–25 introduce DRY and convention over configuration, SOLID, ACID,
 and Big O. Allow four minutes within Build it. The examples describe potential
 student software; they do not claim the coach uses a database or class hierarchy.
-Slide 34 explains the decision to teach the practices before adding BMAD or gstack
+Slide 37 explains the decision to teach the practices before adding BMAD or gstack
 setup. Present both as useful workflow options, without implying missing features.
+
+## Checkpoint activities
+
+The 90-minute schedule includes four pauses. Keep the build demonstration to
+four minutes and the final pair practice to six minutes to make room for them.
+
+| Checkpoint | Slide | Time | Completion evidence | Fallback |
+|---|---|---|---|---|
+| Claude is ready | 11 | 3 minutes | Version, successful response, rule matched to the actual file | Facilitator setup help; pair on a working laptop |
+| Prove one behavior | 21 | 4 minutes | Exact input, full answer, and reasoned pass/fail/unresolved decision | Inspect the linked recorded example and label it recorded |
+| Handoff is ready | 33 | 4 minutes | Partner opens four saved outputs and explains the next experiment | Fill templates manually; retain Unknowns |
+| Show one working slice | 38 | 6 minutes | Workflow, expected/actual result, and next decision | Manual experiment or acceptance case labeled Not run |
+
+Ask pairs to signal ready or needs help at each stop. A version number alone does
+not confirm working model access. The behavior checkpoint tests one rule, and the
+handoff checkpoint does not establish demand or require a Proceed decision.
 
 ## Student activity
 

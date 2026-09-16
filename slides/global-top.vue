@@ -4,8 +4,8 @@ import { useNav } from '@slidev/client'
 const nav = useNav()
 const sections = [
   {label:'Start', start:1}, {label:'Meet the coach', start:5},
-  {label:'Build it', start:8}, {label:'Use it', start:24},
-  {label:'Your hackathon', start:31}, {label:'Take it away', start:36},
+  {label:'Build it', start:8}, {label:'Use it', start:26},
+  {label:'Your hackathon', start:34}, {label:'Take it away', start:39},
 ]
 const active = computed(() => sections.reduce((found,s,i) => nav.currentPage.value >= s.start ? i : found, 0))
 </script>

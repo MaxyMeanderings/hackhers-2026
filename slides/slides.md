@@ -183,6 +183,27 @@ Show the terminal alongside VS Code. Use provided API access in the prepared ter
 -->
 
 ---
+class: content checkpoint
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Checkpoint 1: Claude is ready.
+
+<div class="exercise-time">3 MINUTES · PAIRS · ONE WORKING LAPTOP</div>
+<div class="two"><div><h3>Do this</h3><p>Open a terminal in your downloaded or cloned workshop repository.</p><div class="terminal"><div class="terminal-label">Run each command in the terminal</div><pre>claude --version
+claude</pre></div><p>Use the organizer’s API access setup.</p></div><div><h3>Then ask Claude</h3><div class="terminal"><pre>Read coach/PROMPT.md.
+Quote one rule about evidence.
+Do not edit any files.</pre></div><p>Find that same sentence in the file yourself.</p></div></div><div class="takeaway">Done: show a version, a response, and the matching rule to your partner.</div>
+<p class="checkpoint-help">Stuck? Ask a facilitator about installation or access; pair with a working laptop.</p>
+
+<div class="source"><a href="https://code.claude.com/docs/en/quickstart">Claude Code quickstart / installation</a> · coach/PROMPT.md · Authored checkpoint</div>
+
+<!--
+Pause for three minutes. The facilitator checks a version number, a successful model response, and a manually matched source sentence; installation alone does not establish working access. Have students open the downloaded or cloned repository root, not an empty folder. If installation is missing, use the linked official quickstart with a facilitator. If authentication or credits fail, follow the organizer’s setup and never project keys. Pair blocked students with a working laptop so they can still inspect the file and check the answer. Ask each pair to signal ready or needs help before continuing. Fast finishers locate a second rule and explain the failure it prevents.
+-->
+
+---
 class: content
 ---
 
@@ -338,7 +359,28 @@ class: content
 <div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md">coach/PROMPT.md</a> · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/eval/evaluation-cases.md">coach/eval/evaluation-cases.md</a></div>
 
 <!--
-Allocate about 8 minutes here. Use the existing files and a prepared response if runtime is slow. Say when a response is recorded.
+Allocate about 4 minutes here; reserve another 4 minutes for Checkpoint 2. Use the existing files and a prepared response if runtime is slow. Say when a response is recorded.
+-->
+
+---
+class: content checkpoint
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Checkpoint 2: prove one behavior.
+
+<div class="exercise-time">4 MINUTES · SWAP DRIVER AND CHALLENGER</div>
+<div class="terminal"><div class="terminal-label">In a fresh Claude Code conversation</div><pre>Read coach/PROMPT.md and act as that coach. Do not edit files.
+Synthetic practice: five friends said it sounds cool.
+I want to build a study-group app. What should I do next?</pre></div>
+<div class="two"><section><h3>Driver · run and save</h3><p>Save the exact input and full answer. Keep this practice scenario labeled synthetic.</p></section><section><h3>Challenger · inspect</h3><p>Did it turn praise into customers? Quote the response and compare it with the coach rule.</p></section></div><div class="takeaway">Done: show your input, response, and pass / fail / unresolved decision with a reason.</div>
+<p class="checkpoint-help">No access? Inspect the <a href="./coach/examples/study-session.md" target="_blank">recorded example</a> for an unsupported inference; label it recorded.</p>
+
+<div class="source">coach/eval/evaluation-cases.md · coach/PROMPT.md · Authored checkpoint</div>
+
+<!--
+Pause for four minutes inside the Build it time budget. Students use the completed repository coach in a fresh session, not their unfinished demo files. Review this one behavior; a pass here is not a full coach evaluation. If the answer fails, describe a minimal repair and the input you would repeat rather than overwriting the shared example during this checkpoint. For the offline fallback, inspect a quoted response in the linked recorded example, cite its evidence boundary, and use the same pass/fail/unresolved format. Do not claim that the fallback ran the live praise test. Ask two pairs to share differing judgments and the exact text supporting them. Fast finishers propose one harder input.
 -->
 
 ---
@@ -525,6 +567,24 @@ Pairs save outputs into their project docs folder. Use the linked local template
 -->
 
 ---
+class: content checkpoint
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Checkpoint 3: your handoff is ready.
+
+<div class="exercise-time">4 MINUTES · PAIRS · SAVE BEFORE YOU BUILD</div>
+<div class="two"><section><h3>Driver · save the work</h3><p>Save all four coach outputs in your project. Keep missing facts marked Unknown.</p><p>Record your choice: Proceed, Narrow, Investigate, or Pivot, and why.</p></section><section><h3>Partner · show the evidence</h3><p>Open the saved outputs. Point to a person, a problem, and one testable action.</p><p>Identify a success threshold, a source or Unknown, and at most three MVP features.</p></section></div><div class="takeaway">Done: your partner can find the files and explain the next experiment without asking you.</div>
+<p class="checkpoint-help">Missing evidence? Save the Unknown and the next question. You can choose Investigate.</p>
+
+<div class="source">walkthrough/USE-THE-COACH.md · coach/templates/ · Authored checkpoint</div>
+
+<!--
+Pause for four minutes within Use it. This checks a usable handoff, not proof of demand or a requirement to choose Proceed. Have the partner open the files, rather than accept a verbal “saved.” The count ledger is the fourth output even though the next build prompt reads only three documents. Students with no working model can fill the four linked templates manually from their own facts; preserve Unknowns and label synthetic practice. Fast finishers write one acceptance case for the proposed experiment. Bring an unresolved Unknown into the next spec instead of asking the model to fill it in.
+-->
+
+---
 class: content
 ---
 
@@ -593,19 +653,21 @@ Neither is required for this workshop. This is a time-and-focus choice, not a ve
 -->
 
 ---
-class: content
+class: content checkpoint
 ---
 
 <div class="slide-number">Hackhers</div>
 
-# Your team’s practice loop.
+# Checkpoint 4: show one working slice.
 
-<div class="build-strip">Idea → Coach → Four outputs → Project spec → One slice → Test</div><div class="two"><section><h3>Driver</h3><p>Describe the idea. Answer with supplied facts. Save the outputs.</p></section><section><h3>Challenger</h3><p>Find one unsupported assumption. Ask for an observable test. Check the response.</p></section></div><div class="takeaway">Swap roles. Show one thing you changed because of evidence.</div>
+<div class="exercise-time">6 MINUTES · PAIRS · USE YOUR APPROVED SCOPE</div>
+<div class="two"><section><h3>Driver · build and run</h3><p>Choose one acceptance case from your approved project spec.</p><p>Ask Claude Code to implement the smallest slice and run the check. Inspect the changes.</p></section><section><h3>Challenger · try it</h3><p>Exercise the workflow yourself. Compare the expected result with what actually happens.</p><p>Record pass, fail, or unresolved. Swap roles for the next check.</p></section></div><div class="takeaway">Done: show one workflow, its expected and actual result, and your next decision.</div>
+<p class="checkpoint-help">Not ready to code? Run the approved manual experiment, or write the missing acceptance case first.</p>
 
-<div class="source">walkthrough/HACKATHON-PLAYBOOK.md:1</div>
+<div class="source">walkthrough/HACKATHON-PLAYBOOK.md · Authored checkpoint</div>
 
 <!--
-Let teams work for 8–10 minutes. They can start with the source-packet exercise if they do not have a real idea.
+Keep this bounded to six minutes. The team must approve the scope before implementation. A failing check is useful evidence; do not hide it to claim completion. If the plan is still unresolved, write one concrete input and expected result, label execution Not run, and choose the next action. This fallback is planning progress, not a working-slice pass. A manual MVP can be exercised manually; explain which observation tests the feature. Ask one pair to show a failure and what they would change, and another to show a passing result with its limits.
 -->
 
 ---

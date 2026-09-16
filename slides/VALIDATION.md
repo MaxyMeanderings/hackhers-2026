@@ -1,5 +1,16 @@
 # Coach walkthrough validation
 
+## Checkpoints and source image — September 16, 2026
+
+- The 40-slide Pages build passed.
+- Chrome checked checkpoints 11, 21, 33, and 38 for footer overlap. An initial
+  overlap on slide 21 was corrected; all four passed the repeated layout check.
+- Section navigation reached slides 26, 34, and 39 with no page errors.
+- The original post thumbnail was visually inspected and opened a new tab
+  containing the unmodified 1293 × 2198 image.
+- Setup and behavior checkpoint screenshots were visually inspected.
+
+
 ## Copilot introduction and PR publishing — September 16, 2026
 
 - The 37-slide GitHub Pages build passed.

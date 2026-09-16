@@ -104,3 +104,10 @@
 .slidev-layout .post-thumbnail img{display:block;width:100%;height:auto;}
 .slidev-layout .post-thumbnail span{display:block;font-size:12px;line-height:1.5;color:#e7a58d;margin-top:9px;text-align:center;}
 .slidev-layout .post-thumbnail:hover,.slidev-layout .post-thumbnail:focus-visible{outline:2px solid #e7a58d;outline-offset:4px;}
+
+.slidev-layout .checkpoint-help{font-size:16px;line-height:1.4;color:#c8b8ab;margin-top:16px;}
+
+.slidev-layout.checkpoint .terminal pre{font-size:19px!important;line-height:1.45!important;}
+.slidev-layout.checkpoint .terminal{padding:18px 22px;margin-top:12px;margin-bottom:16px;}
+.slidev-layout.checkpoint section{padding-top:8px;}
+.slidev-layout.checkpoint .takeaway{margin-top:18px;font-size:23px;}
