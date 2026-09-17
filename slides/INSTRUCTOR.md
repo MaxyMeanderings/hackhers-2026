@@ -63,10 +63,12 @@ not a research finding or a claim that autonomous execution is inherently wrong.
 
 Slides 4–7 walk students through claiming the sponsored API credits and choosing
 the Anthropic Console login inside Claude Code. Have every pair scan the offer on
-slide 4 right after the workshop links on slide 3. Confirm the QR code and offer
-screenshot are the ones issued for this event before presenting. The offer page
-states credits arrive within one to two business days of applying; confirm the
-arrangement for this event before promising same-day access.
+slide 4 right after the workshop links on slide 3. The QR code is this event’s
+offer; the form screenshot on slide 5 is from an earlier offer until replaced.
+Credits are issued within a couple of minutes of a valid claim. Students must
+submit the Organization ID from the Claude Console, not a Claude.ai user ID,
+which the system rejects. Each person can claim once, and the link’s expiration
+date is shown on the offer page.
 
 Use the organizer’s API access setup. Never project keys. If a pair is blocked,
 pair them on a working laptop. They may draft the spec manually while resolving

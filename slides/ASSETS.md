@@ -18,14 +18,15 @@ Presenter bios are concise paraphrases of public professional sources, pending a
   attributed to Chorouk Malmoum. Slide 8 displays a thumbnail linked to the
   full-size image in a new tab. No post permalink was supplied.
 
-- `public/assets/api-credits-qr.png`, `public/assets/api-credits-form.png`,
-  `public/assets/claude-console-dashboard.png`, `public/assets/claude-code-login.png`:
-  unmodified images extracted from the organizer’s API Credits.pptx on
-  September 17, 2026, for slides 4–7. The QR code encodes the organizer’s
-  Anthropic API credits offer URL (see SOURCES.md). The screenshots show the
-  organizer’s own Anthropic credits application page, Claude Console dashboard,
-  and Claude Code login prompt. Replace the QR code and application screenshot
-  when a new offer is issued for this event.
+- `public/assets/api-credits-qr.png`: the event offer QR code supplied by the
+  organizer on September 17, 2026, unmodified; it encodes the offer URL recorded
+  in SOURCES.md. Used on slide 4.
+- `public/assets/api-credits-form.png`, `public/assets/claude-console-dashboard.png`,
+  `public/assets/claude-code-login.png`: unmodified images extracted from the
+  organizer’s API Credits.pptx on September 17, 2026, for slides 5–7. They show
+  the organizer’s own earlier Anthropic credits application page, Claude Console
+  dashboard, and Claude Code login prompt. Replace the application screenshot
+  with this event’s offer page when available.
 
 - `public/assets/claude-terminal.png` and `public/assets/claude-desktop.png`:
   organizer-supplied screenshots, September 17, 2026, used unmodified on slides

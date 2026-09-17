@@ -74,12 +74,12 @@ class: content
 
 # Claim your $50 in API credits.
 
-<div class="credits"><div><p class="amount">$50</p><p>Anthropic is covering the API usage behind every Claude Code call you make today.</p><ol><li>Scan the code. Sign in to the Claude Console, or create an account.</li><li>Submit the short credit application.</li><li>Sign in to Claude Code with that same account. Next three slides.</li></ol></div><a class="qr" href="https://platform.claude.com/offers/b5a8e762-e0a0-46fe-a80b-3f6e66f563dc" target="_blank" rel="noopener noreferrer" aria-label="Open the Anthropic API credits offer in a new tab"><img src="/assets/api-credits-qr.png" alt="QR code linking to the Anthropic API credits offer" /><span>Scan, or click to open ↗</span></a></div><div class="takeaway">Do this first. Everything from checkpoint 1 onward needs a working sign-in.</div>
+<div class="credits"><div><p class="amount">$50</p><p>Anthropic is covering your Claude Code API usage today.</p><ol><li>Scan the code. Sign in to the Claude Console (console.anthropic.com) or create an account.</li><li>Submit your Console <b>Organization ID</b>, not a Claude.ai user ID. A user ID is rejected.</li><li>Wait a couple of minutes, then sign in to Claude Code with that account.</li></ol></div><a class="qr" href="https://platform.claude.com/offers/2239eaf0-dbc5-49ed-b6b7-1f1fe14ea78e" target="_blank" rel="noopener noreferrer" aria-label="Open the Anthropic API credits offer in a new tab"><img src="/assets/api-credits-qr.png" alt="QR code linking to the Anthropic API credits offer" /><span>Scan, or click to open ↗</span></a></div><div class="takeaway">Do this first. One claim each. API only: Claude Code, not the Claude.ai app. The link expires; the date is on the page.</div>
 
 <div class="source">Anthropic API credits offer · organizer’s QR code · sponsorship wording per the organizer</div>
 
 <!--
-Have every pair scan now, before the copilot slide, so applications are in before hands-on work begins. The offer page states that credits arrive within one to two business days; confirm the arrangement for this event before promising same-day access. Credits cover Claude API usage only, not claude.ai subscriptions. Never project an API key.
+Have every pair scan now, before the copilot slide. Credits are issued within a couple of minutes of a valid claim; there is no overnight wait. The common failure is pasting a Claude.ai user ID instead of the Console Organization ID, which the system rejects; they can resubmit with the right ID. Each person can claim once, so they should be signed in to the Console account they will use in Claude Code. Credits cover API usage only, not claude.ai subscriptions. Never project an API key.
 -->
 
 ---
@@ -90,12 +90,12 @@ class: content
 
 # Apply for credits. Two minutes.
 
-<img class="shot" src="/assets/api-credits-form.png" alt="Anthropic API credits application page with the apply-for-credits form" /><p class="shot-caption">Sign in, confirm your name and organization, submit. Credits cover the Claude API only, not claude.ai subscriptions, and expire six months after they are granted.</p>
+<img class="shot" src="/assets/api-credits-form.png" alt="Anthropic API credits application page with the apply-for-credits form" /><p class="shot-caption">Sign in, paste your Console <b>Organization ID</b>, submit. Find it in the Console under Settings → Organization. Credits cover the Claude API only, not Claude.ai, and each person can claim once.</p>
 
 <div class="source">Screenshot: Anthropic API credits application page, organizer’s account · fields shown are the organizer’s, not a template</div>
 
 <!--
-Walk through the form once on the projector, or use this screenshot. Students use their own email. Replace this screenshot with the current offer page before presenting; the event name and deadline shown are from an earlier offer.
+Walk through the form once on the projector. This screenshot is from an earlier offer page; replace it with this event’s page before presenting. Show where the Organization ID lives in the Console so nobody pastes a Claude.ai user ID, and point out the link expiration date on the page.
 -->
 
 ---
@@ -106,12 +106,12 @@ class: content
 
 # Your credits live in the Claude Console.
 
-<img class="shot" src="/assets/claude-console-dashboard.png" alt="Claude Console dashboard showing organization credits, monthly spend, and available models" /><p class="shot-caption">platform.claude.com · <b>Organization credits</b> is the balance Claude Code draws from. You do not need to create an API key today.</p>
+<img class="shot" src="/assets/claude-console-dashboard.png" alt="Claude Console dashboard showing organization credits, monthly spend, and available models" /><p class="shot-caption">Claude Console dashboard · <b>Organization credits</b> is the balance Claude Code draws from. It updates a couple of minutes after a valid claim. You do not need to create an API key today.</p>
 
 <div class="source">Screenshot: Claude Console dashboard, organizer’s account, July 2026 · balances shown are the organizer’s</div>
 
 <!--
-Point at Organization credits and Spend this month. Everything else on this page is optional for the workshop. A student who sees a zero balance has not been granted credits yet; pair them with a working laptop and keep going.
+Point at Organization credits and Spend this month. Everything else on this page is optional for the workshop. A student who still sees a zero balance after a few minutes most likely submitted a Claude.ai user ID; have them resubmit with the Console Organization ID. Meanwhile pair them with a working laptop and keep going.
 -->
 
 ---
