@@ -58,8 +58,7 @@ The earlier deck and completed coach are preserved on the reference/completed-co
 ## Publish to GitHub Pages
 
 The workflow in [.github/workflows/deploy-slides.yml](../.github/workflows/deploy-slides.yml)
-builds every pull
-request targeting main is opened or updated.
+builds every pull request targeting main when it is opened or updated.
 After the pull request is merged, the push to main automatically rebuilds and
 publishes the deck at https://doctor-ew.github.io/hackhers-2026/.
 Pull request builds validate the changes; the public deck updates after merge.
