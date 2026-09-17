@@ -38,8 +38,9 @@ Confirm the actual prompt path loaded for the final checkpoint.
 
 ## Preparation and facilitation
 
-Students start in a fresh folder with walkthrough/BUILD-BRIEF.md saved as
-BUILD-BRIEF.md. Use walkthrough/CLAUDE-CODE-STEPS.md for the build prompts.
+Students download and extract the student starter ZIP into their own workspace.
+Its contents come from ../starter/. Use ../starter/BUILD-STEPS.md for the build
+prompts and ../starter/BUILD-BRIEF.md for the requirements.
 Each pair reviews and approves its own SPEC.md before implementation. Let Claude
 propose file paths; students should inspect the files actually created.
 
@@ -75,3 +76,15 @@ At slide 29, each pair demonstrates its own coach and explains a requirement,
 where it is implemented, the observed test result, and remaining limitations.
 At slide 30, share the build kit and published presentation URL. Optional slides
 31–40 show how the finished coach could later inform a separate project.
+
+## Completed backup
+
+The [reference/completed-coach branch](https://github.com/doctor-ew/hackhers-2026/tree/reference/completed-coach)
+is the already-baked backup. Download it before the event into a separate folder
+for offline demos and recovery. Read its coach/README.md and coach/eval/RESULTS.md
+for setup and tested limits. Do not merge the backup into main or copy it into a
+student workspace. The reference branch does not publish the live slides.
+
+Use the starter ZIP for students rather than the full repository archive. Main
+contains brief teaching excerpts in the slides but no completed coach. The ZIP
+contains only four starter files and no Git history or reference implementation.

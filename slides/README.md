@@ -11,7 +11,8 @@ mindset support those activities.
 
 ## Present
 
-Tested authoring runtime: Node 24.13.1. Install dependencies, then start Slidev:
+Tested authoring runtime: Node 24.13.1. Python 3 is also required to package the
+student starter. Install dependencies, then start Slidev:
 
 ```bash
 npm ci
@@ -52,12 +53,13 @@ examples are labeled and sourced. Synthetic exercises do not represent real fiel
 The 40-slide deck centers students building and testing their own coach.
 The clickable side rail marks the build workflow and optional follow-on material. Exact teaching prompts live in
 [walkthrough/](walkthrough/); student assets are bundled under public/.
-The earlier deck is retained in archive/deck-before-coach-walkthrough.md.
+The earlier deck and completed coach are preserved on the reference/completed-coach branch.
 
 ## Publish to GitHub Pages
 
 The workflow in [.github/workflows/deploy-slides.yml](../.github/workflows/deploy-slides.yml)
-builds slide changes when a pull request targeting main is opened or updated.
+builds changes to slides, starter files, or their packaging script when a pull
+request targeting main is opened or updated.
 After the pull request is merged, the push to main automatically rebuilds and
 publishes the deck at https://doctor-ew.github.io/hackhers-2026/.
 Pull request builds validate the changes; the public deck updates after merge.
@@ -71,3 +73,15 @@ relative to the presentation root.
 
 References: [Slidev hosting](https://sli.dev/guide/hosting) and
 [GitHub Pages API](https://docs.github.com/en/rest/pages/pages).
+
+## Student starter packaging
+
+The canonical student files live in ../starter/. Before development, builds, and
+PDF export, npm runs ../scripts/prepare-starter.py to generate the four-file
+public/hackhers-starter.zip and the two public build handouts. The script checks
+an explicit file list and rejects a bundled public/coach directory. It never
+packages the repository root or completed reference branch.
+
+Edit the canonical starter files, not generated copies. The existing handout URLs
+remain available. Full reference prompts and examples link to the completed
+branch on GitHub instead of being bundled with the student site.

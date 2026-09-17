@@ -78,7 +78,7 @@ class: content
 
 <div class="three"><section><h3>Specify your coach</h3><p>Turn the supplied build brief into observable requirements and acceptance cases.</p></section><section><h3>Implement your coach</h3><p>Use Claude Code to create the prompt, four output templates, and tests in your own folder.</p></section><section><h3>Demonstrate your coach</h3><p>Run your implementation, inspect its answers, repair failures, and explain the evidence.</p></section></div><div class="takeaway">Leave with a coach you built and a behavior you can defend.</div>
 
-<div class="source">walkthrough/BUILD-BRIEF.md · Workshop learning objectives</div>
+<div class="source">starter/BUILD-BRIEF.md · Workshop learning objectives</div>
 
 <!--
 Show the completed coach only to establish what students are building. Filled-in business discovery outputs are examples of the coach’s eventual use, not the primary student deliverable today.
@@ -94,7 +94,7 @@ class: content
 
 <div class="two"><div><p>This completed example shows what your team will build.</p><p>The coach asks focused questions, separates facts from guesses, and helps you choose a small test.</p></div><div class="artifact"><label>WHAT YOU GET</label><p>Idea brief<br>Count ledger<br>Experiment card<br>MVP brief</p></div></div><div class="takeaway">Your task: reproduce these behaviors from the brief and your approved spec.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md#L3">coach/README.md:3</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md#L3">coach/README.md:3</a></div>
 
 <!--
 
@@ -110,7 +110,7 @@ class: content
 
 <div class="conversation"><div class="student"><label>STUDENT · SYNTHETIC EXAMPLE</label><p>“I want to investigate study-session scheduling for my campus club.”</p></div><div class="coach"><label>COACH · RECORDED RESPONSE EXCERPTS</label><p>“Whether the chasing and the missed sessions are connected is Unknown — you observed both, not a link between them.”</p><p>“After the organizer chased answers in the chat yesterday, what happened next?”</p></div></div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json">docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json">docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json</a></div>
 
 <!--
 Read the coach aloud. Ask: what did it refuse to assume? These are exact excerpts, with intervening response text omitted. Not a fabricated live transcript.
@@ -126,7 +126,7 @@ class: content
 
 <div class="four"><section><h3>Idea brief</h3><p>Club organizer; scheduling friction; current group-chat workflow.</p></section><section><h3>Count ledger</h3><p>24 roster / 8 reachable / 6 contacted / 3 problems / 6 workarounds / 2 commitments.</p></section><section><h3>Experiment card</h3><p>Two members submit availability; organizer posts a time.</p></section><section><h3>MVP brief</h3><p>Submission link + manual compile step. Team chooses Proceed.</p></section></div><div class="takeaway">Synthetic worked example. The proposed experiment has not run.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/examples/study-session.md">coach/examples/study-session.md</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/examples/study-session.md">coach/examples/study-session.md</a></div>
 
 <!--
 Open the locally bundled worked example if the audience wants detail. The MVP here may be a manual service; do not imply that an app is required.
@@ -158,7 +158,7 @@ class: content
 
 <div class="two"><section><h3>Building session</h3><p>Reads project files, proposes changes, edits the implementation, and runs checks.</p><p>You review scope and the diff.</p></section><section><h3>Coaching session</h3><p>Uses the finished prompt to ask about your market and experiment.</p><p>You supply evidence and choose the next step.</p></section></div>
 
-<div class="source"><a href="https://code.claude.com/docs/en/how-claude-code-works">Claude Code: how it works</a> · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md">coach/README.md</a></div>
+<div class="source"><a href="https://code.claude.com/docs/en/how-claude-code-works">Claude Code: how it works</a> · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md">coach/README.md</a></div>
 
 <!--
 Keep these in separate conversations so implementation context does not become a student answer.
@@ -176,7 +176,7 @@ class: content
 Identify the deliverables and questions to resolve.
 Do not implement yet.</pre></div><div class="takeaway">Check that Claude is looking at the right folder.</div>
 
-<div class="source"><a href="https://code.claude.com/docs/en/quickstart">Claude Code quickstart</a> · walkthrough/CLAUDE-CODE-STEPS.md:5</div>
+<div class="source"><a href="https://code.claude.com/docs/en/quickstart">Claude Code quickstart</a> · starter/BUILD-STEPS.md</div>
 
 <!--
 Show the terminal alongside VS Code in a fresh build folder containing BUILD-BRIEF.md. The next checkpoint has students prepare their own folder. Use the organizer’s API access; never display the key.
@@ -191,17 +191,17 @@ class: content checkpoint
 # Checkpoint 1: your build folder is ready.
 
 <div class="exercise-time">5 MINUTES · PAIRS · START YOUR OWN COACH</div>
-<div class="two"><div><h3>Prepare your workspace</h3><p>Create an empty folder. Save the <a href="./walkthrough/BUILD-BRIEF.md" target="_blank">build brief</a> there as <code>BUILD-BRIEF.md</code>.</p><div class="terminal"><div class="terminal-label">Terminal · in that folder</div><pre>claude --version
+<div class="two"><div><h3>Prepare your workspace</h3><p>Download and extract the <a href="./hackhers-starter.zip">student starter ZIP</a>. Open its folder in your editor and terminal.</p><div class="terminal"><div class="terminal-label">Terminal · in that folder</div><pre>claude --version
 claude</pre></div></div><div><h3>Ask your builder</h3><div class="terminal"><pre>Read BUILD-BRIEF.md.
 Summarize what we must build.
 List questions before implementation.
 Do not build yet.</pre></div><p>Check the answer against the brief.</p></div></div><div class="takeaway">Done: your own folder, the brief, working Claude access, and an accurate scope summary.</div>
 <p class="checkpoint-help">Stuck on setup? Use the organizer’s access instructions or pair on a working laptop.</p>
 
-<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
+<div class="source">starter/BUILD-BRIEF.md · starter/BUILD-STEPS.md · Authored build checkpoint</div>
 
 <!--
-Students build their own conversational coach prompt and supporting files. Use a separate empty project folder containing only the supplied build brief initially. Download or save the linked Markdown under the specified filename. Do not copy the completed repository coach as the implementation. A successful response confirms model access; a version number alone does not. Keep credentials private. A blocked pair can review the brief together, but mark model access unresolved until a real response succeeds.
+Students build their own conversational coach prompt and supporting files. Extract the starter ZIP into a separate workspace. It contains only the README, build brief, build steps, and ignore rules. Keep the completed reference checkout outside this folder. Do not copy the completed repository coach as the implementation. A successful response confirms model access; a version number alone does not. Keep credentials private. A blocked pair can review the brief together, but mark model access unresolved until a real response succeeds.
 -->
 
 ---
@@ -214,7 +214,7 @@ class: content
 
 <div class="artifact"><label>BUILD-BRIEF.md · WALKTHROUGH INPUT</label><p>Help student teams turn an idea into a testable opportunity.</p><ul><li>Ask about a recent problem and people they can reach.</li><li>Separate supplied evidence, hypotheses, and Unknowns.</li><li>Require sources for alternative claims.</li><li>Produce four outputs and at most three MVP features.</li><li>Let the student choose Proceed, Narrow, Investigate, or Pivot.</li></ul></div>
 
-<div class="source">walkthrough/BUILD-BRIEF.md:1 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md#L116">coach/PROMPT.md:116</a></div>
+<div class="source">starter/BUILD-BRIEF.md:1 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md#L116">coach/PROMPT.md:116</a></div>
 
 <!--
 
@@ -232,10 +232,10 @@ class: content
 observable requirements, exclusions, and acceptance cases.
 Ask about consequential gaps. Do not implement yet.</pre></div><div class="two"><p><b>Weak:</b> “Be a helpful business coach.”</p><p><b>Testable:</b> “Never turn praise into a purchase commitment.”</p></div>
 
-<div class="source">walkthrough/CLAUDE-CODE-STEPS.md:12 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/docs/AGENT-SPEC.md#L23">docs/AGENT-SPEC.md:23</a></div>
+<div class="source">starter/BUILD-STEPS.md · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/AGENT-SPEC.md#L23">docs/AGENT-SPEC.md:23</a></div>
 
 <!--
-In a fresh demo folder, copy walkthrough/BUILD-BRIEF.md there first. Show a prepared spec if a live response is slow.
+In a fresh demo folder, copy starter/BUILD-BRIEF.md there first. Show a prepared spec if a live response is slow.
 -->
 
 ---
@@ -252,7 +252,7 @@ exclusions, and acceptance cases. Do not implement yet.</pre></div>
 <div class="two"><section><h3>Driver · inspect scope</h3><p>Check that the spec covers the brief. Identify the coach prompt, four templates, and test cases to build.</p></section><section><h3>Partner · challenge a rule</h3><p>Choose one requirement. Write an input, expected behavior, and a visible failure. Resolve consequential gaps.</p></section></div><div class="takeaway">Done: a saved spec your team can explain and explicitly approve.</div>
 <p class="checkpoint-help">Too vague? Replace “be helpful” with a behavior you can observe in a response.</p>
 
-<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
+<div class="source">starter/BUILD-BRIEF.md · starter/BUILD-STEPS.md · Authored build checkpoint</div>
 
 <!--
 Pause while every pair drafts and reviews its own SPEC.md. The partner should be able to judge an example response against the chosen acceptance case. Review the rest of the brief too; a single test does not establish complete coverage. If access is blocked, draft the same requirements manually and label that fallback. Do not approve unresolved consequential requirements just to keep pace. The next checkpoint implements the approved specification.
@@ -270,7 +270,7 @@ class: content
 First list the files you will change and the checks you will run.
 Leave unrelated files alone.</pre></div>
 
-<div class="source">walkthrough/CLAUDE-CODE-STEPS.md:17</div>
+<div class="source">starter/BUILD-STEPS.md</div>
 
 <!--
 Have a student identify one missing acceptance case before approval. A prompt approval is a workflow instruction, not an OS security boundary.
@@ -294,7 +294,7 @@ coach/
     mvp-brief.md
   eval/evaluation-cases.md</pre></div><div><h3>Inspect what changed</h3><p>The prompt defines behavior.</p><p>The templates make the outputs reusable.</p><p>The cases challenge the requirements.</p></div></div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md">coach/README.md</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md">coach/README.md</a></div>
 
 <!--
 Show the reference files briefly, then have teams implement in their own build folders. Students should inspect the actual paths their builder creates; these reference paths are not the required student file layout.
@@ -315,7 +315,7 @@ First propose file paths and checks. Stay within the spec.</pre></div>
 <div class="two"><section><h3>Driver · inspect the files</h3><p>Open the prompt, templates, and cases Claude created. Check them against your spec.</p></section><section><h3>Partner · trace a rule</h3><p>Point from one requirement to its prompt instruction and acceptance case.</p></section></div><div class="takeaway">Done: your own coach files exist, and your partner can trace a requirement through them.</div>
 <p class="checkpoint-help">Missing a rule or file? Ask for a focused repair before testing the coach.</p>
 
-<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
+<div class="source">starter/BUILD-BRIEF.md · starter/BUILD-STEPS.md · Authored build checkpoint</div>
 
 <!--
 This is the student implementation step, not a demonstration of supplied repository files. Use the actual paths proposed and created in the pair’s project; the next checkpoint must load that implementation. Coach output templates are build artifacts here, distinct from filled-in coaching outputs generated during use. File existence is only this checkpoint’s structural check, not proof of correct behavior. If a team cannot finish, identify the missing artifact and mark implementation incomplete; do not substitute the reference coach and claim it as their build.
@@ -331,7 +331,7 @@ class: content
 
 <div class="artifact"><label>coach/PROMPT.md · EXACT EXCERPT</label><blockquote>Never invent contacts, quotes, counts, research, approval, or results. Unknown is a useful value; it does not mean zero. Never strengthen the student’s account.</blockquote></div><div class="takeaway">Now design an input that tempts it to break this rule.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md#L16">coach/PROMPT.md:16</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md#L16">coach/PROMPT.md:16</a></div>
 
 <!--
 Quote typography uses a curly apostrophe for presentation; wording is otherwise the source instruction.
@@ -347,7 +347,7 @@ class: content
 
 <div class="test-grid"><section><label>INPUT</label><p>“Everyone on campus needs it.”</p><p>“Three friends said it is cool.”</p><p>“Invent competitor links for my pitch.”</p></section><section><label>WHAT YOU LOOK FOR</label><p>Names a reachable group to investigate.</p><p>Separates praise from commitment.</p><p>Refuses fabricated research.</p></section></div><div class="takeaway">Use a fresh coaching conversation for each independent case.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/eval/evaluation-cases.md">coach/eval/evaluation-cases.md</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/eval/evaluation-cases.md">coach/eval/evaluation-cases.md</a></div>
 
 <!--
 These are shortened teaching challenges, not verbatim historical test inputs. Run one live and compare the full response with all applicable rules.
@@ -366,7 +366,7 @@ For each applicable requirement, quote the exact response text.
 Mark pass, fail, or unresolved. Explain unsupported claims.
 Do not assume the builder’s summary is correct.</pre></div><div class="takeaway">Keep the reviewer in a separate session. Inspect its judgment too.</div>
 
-<div class="source">walkthrough/CLAUDE-CODE-STEPS.md:31</div>
+<div class="source">starter/BUILD-STEPS.md</div>
 
 <!--
 Explain adversarial review here, with a visible response. Separate sessions organize context; they do not guarantee independence or accuracy.
@@ -382,7 +382,7 @@ class: content
 
 <div class="two"><div class="artifact"><label>FAILURE TO CATCH · TEACHING EXAMPLE</label><p>Student: “Three people liked it.”</p><p>Coach: “You have three customers.”</p></div><div><h3>Small repair</h3><p>Preserve praise as praise. Ask what action, if any, each person committed to.</p><h3>Recheck</h3><p>Repeat that case, then check a case that previously passed.</p></div></div>
 
-<div class="source">walkthrough/CLAUDE-CODE-STEPS.md:37 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md#L14">coach/PROMPT.md:14</a></div>
+<div class="source">starter/BUILD-STEPS.md · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md#L14">coach/PROMPT.md:14</a></div>
 
 <!--
 This illustrates a failure mode; do not present it as a quoted response from the retained evaluation.
@@ -398,7 +398,7 @@ class: content
 
 <div class="four"><section><h3>Spec</h3><p>Point to one numbered requirement.</p></section><section><h3>Implementation</h3><p>Show the prompt rule that addresses it.</p></section><section><h3>Test</h3><p>Run one adversarial input; save the actual answer.</p></section><section><h3>Decision</h3><p>Compare, repair if needed, and explain the evidence.</p></section></div><div class="takeaway">Your partner must be able to follow the same trail.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md">coach/PROMPT.md</a> · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/eval/evaluation-cases.md">coach/eval/evaluation-cases.md</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md">coach/PROMPT.md</a> · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/eval/evaluation-cases.md">coach/eval/evaluation-cases.md</a></div>
 
 <!--
 Demonstrate the spec-to-test loop briefly, then let students run checkpoint 4 against the coach they built. Any facilitator reference response must be labeled recorded and is not evidence that a student implementation passed.
@@ -416,10 +416,10 @@ class: content checkpoint
 <div class="two"><section><h3>Driver · run your implementation</h3><p>Start a fresh conversation. Load the coach prompt from your build folder and ask Claude to act as that coach.</p><p>Run an acceptance case from your spec. Save the exact input and full answer.</p></section><section><h3>Partner · judge the result</h3><p>Compare the answer with the expected behavior. Quote evidence for pass, fail, or unresolved.</p><p>If it fails, repair your prompt and rerun. Also check a case that passed before.</p></section></div><div class="takeaway">Done: demonstrate your coach and show the spec → implementation → test evidence.</div>
 <p class="checkpoint-help">Not built yet? Finish checkpoint 3. Mark unexecuted cases “Not run.”</p>
 
-<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md · Authored build checkpoint</div>
+<div class="source">starter/BUILD-BRIEF.md · starter/BUILD-STEPS.md · Authored build checkpoint</div>
 
 <!--
-The test target is the team’s newly built coach, not coach/PROMPT.md from the completed reference repository. Confirm the actual loaded path with the team. For a praise-versus-commitment acceptance case, use a clearly synthetic student input and compare the generated response with the approved expectation. A passing result supports only the behaviors exercised. If the case passes immediately, run a harder case or another requirement; never manufacture a failure or repair story. For failures preserve before/after responses and explain the actual change. This checkpoint is the workshop’s principal demonstration of what students built.
+The test target is the team’s newly built coach, not the completed prompt on reference/completed-coach. Confirm the actual loaded path with the team. For a praise-versus-commitment acceptance case, use a clearly synthetic student input and compare the generated response with the approved expectation. A passing result supports only the behaviors exercised. If the case passes immediately, run a harder case or another requirement; never manufacture a failure or repair story. For failures preserve before/after responses and explain the actual change. This checkpoint is the workshop’s principal demonstration of what students built.
 -->
 
 ---
@@ -527,12 +527,12 @@ class: content
 
 # Your coach-building kit.
 
-<div class="two"><section><h3>Build your own</h3><p><a href="./walkthrough/BUILD-BRIEF.md" target="_blank">Download the build brief ↗</a></p><p><a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Follow the build steps ↗</a></p><p>Save your spec, coach prompt, four templates, test cases, and actual responses.</p></section><section><h3>Compare and continue</h3><p><a href="./coach/PROMPT.md" target="_blank">Completed reference prompt ↗</a></p><p><a href="https://github.com/doctor-ew/hackhers-2026" target="_blank">Workshop repository ↗</a></p><p><a href="./walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Optional: apply your coach to a project ↗</a></p></section></div><div class="takeaway">The core workshop ends here. The next slides are optional practice using your coach.</div>
+<div class="two"><section><h3>Build your own</h3><p><a href="./hackhers-starter.zip">Download the student starter ZIP ↗</a></p><p><a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Follow the build steps ↗</a></p><p>Save your spec, coach prompt, four templates, test cases, and actual responses.</p></section><section><h3>Compare and continue</h3><p><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md" target="_blank">Already-baked reference prompt ↗</a></p><p><a href="https://github.com/doctor-ew/hackhers-2026" target="_blank">Workshop repository ↗</a></p><p><a href="./walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Optional: apply your coach to a project ↗</a></p></section></div><div class="takeaway">The core workshop ends here. The next slides are optional practice using your coach.</div>
 
-<div class="source">walkthrough/BUILD-BRIEF.md · walkthrough/CLAUDE-CODE-STEPS.md</div>
+<div class="source">starter/BUILD-BRIEF.md · starter/BUILD-STEPS.md</div>
 
 <!--
-Students should show their own build artifacts before comparing with the supplied implementation. Optional slides explain how the coach’s outputs can inform another project after this workshop. Share the published URL for classroom access.
+Students should show their own build artifacts before comparing with the reference branch. The starter ZIP has no completed prompt or templates. Optional slides explain how the coach’s outputs can inform another project after this workshop. Share the published URL for classroom access.
 -->
 
 ---
@@ -543,9 +543,9 @@ class: content
 
 # Optional: use the coach you built.
 
-<div class="two"><section><h3>Claude Code · API access</h3><p>Start a fresh conversation in your build folder. Load your own coach prompt and ask Claude to act as that coach.</p><p>“Do not edit files or build yet. Help me investigate my idea.”</p></section><section><h3>Claude chat · your account</h3><p>Copy your complete coach prompt into a fresh chat. The <a href="./coach/PROMPT.md" target="_blank">reference prompt</a> is available for comparison.</p><p>Use whichever chat access your account provides.</p></section></div><div class="takeaway">Keep coaching and coding conversations separate.</div>
+<div class="two"><section><h3>Claude Code · API access</h3><p>Start a fresh conversation in your build folder. Load your own coach prompt and ask Claude to act as that coach.</p><p>“Do not edit files or build yet. Help me investigate my idea.”</p></section><section><h3>Claude chat · your account</h3><p>Copy your complete coach prompt into a fresh chat. The <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md" target="_blank">reference prompt</a> is available for comparison.</p><p>Use whichever chat access your account provides.</p></section></div><div class="takeaway">Keep coaching and coding conversations separate.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/README.md#L7">coach/README.md:7</a> · walkthrough/USE-THE-COACH.md:1</div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md#L7">coach/README.md:7</a> · walkthrough/USE-THE-COACH.md:1</div>
 
 <!--
 API credits fund API usage; do not promise they include a Claude chat subscription. In Claude Code, this is a coaching instruction; do not claim it mechanically disables tools.
@@ -582,7 +582,7 @@ class: content
 
 <div class="counts"><div><b>24</b><span>Roster</span></div><div><b>8</b><span>Reachable</span></div><div><b>6</b><span>Contacted</span></div><div><b>3</b><span>Problem reports</span></div><div><b>6</b><span>Workarounds</span></div><div><b>2</b><span>Commitments</span></div></div><p>These are different counts. They are not a conversion funnel.</p><div class="takeaway">Synthetic example: real fieldwork counts remain Unknown.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/examples/study-session.md#L67">coach/examples/study-session.md:67</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/examples/study-session.md#L67">coach/examples/study-session.md:67</a></div>
 
 <!--
 Ask whether the two committed people must be among the three problem reporters. Answer: overlap is Unknown. Teams keep their own denominators.
@@ -598,7 +598,7 @@ class: content
 
 <div class="two"><section><h3>Ask the coach</h3><p>“What do people do today? Which alternatives should we investigate? What would make switching worth the effort?”</p></section><section><h3>Supply evidence</h3><p>URL + relevant excerpt + access date.</p><p>Explain exactly which claim the source supports.</p></section></div><div class="takeaway">A group chat, spreadsheet, or doing nothing may be the current alternative.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md#L138">coach/PROMPT.md:138</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md#L138">coach/PROMPT.md:138</a></div>
 
 <!--
 If source browsing is unavailable, students paste excerpts. A competitor feature page does not establish demand for their idea.
@@ -614,7 +614,7 @@ class: content
 
 <div class="artifact"><label>SYNTHETIC EXPERIMENT CARD · RECORDED OUTPUT SUMMARY</label><p><b>People:</b> two members who committed to a test.</p><p><b>Action:</b> submit availability through a link; organizer posts one shared time.</p><p><b>Threshold:</b> both submit in five minutes, no reminders; shared time posted within ten minutes.</p><p><b>If it fails:</b> investigate and narrow before adding features.</p></div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/examples/study-session.md#L89">coach/examples/study-session.md:89</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/examples/study-session.md#L89">coach/examples/study-session.md:89</a></div>
 
 <!--
 This is a proposed test; result remains Not run. Ask which observation exercises each feature.
@@ -630,7 +630,7 @@ class: content
 
 <div class="three"><section><h3>Proceed</h3><p>Enough evidence for the next bounded experiment.</p></section><section><h3>Narrow / investigate</h3><p>Focus the audience or answer the most consequential unknown.</p></section><section><h3>Pivot</h3><p>Change the problem or approach when evidence warrants it.</p></section></div><div class="takeaway">Tell the coach your decision and why. Ask it to record your reasoning.</div>
 
-<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/PROMPT.md#L116">coach/PROMPT.md:116</a></div>
+<div class="source"><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md#L116">coach/PROMPT.md:116</a></div>
 
 <!--
 No automated approval. Proceed does not mean proven product-market fit or permission to build every feature.
@@ -647,7 +647,7 @@ class: content
 <div class="four"><section><h3>Idea brief</h3><p>Who, problem, alternatives, evidence.</p></section><section><h3>Count ledger</h3><p>What each number represents.</p></section><section><h3>Experiment card</h3><p>Action, threshold, result, next decision.</p></section><section><h3>MVP brief</h3><p>At most three features; what you defer.</p></section></div><div class="terminal"><div class="terminal-label">ASK THE COACH</div><pre>Draft all four outputs from what I supplied.
 Keep Unknowns and source attribution. Do not invent missing facts.</pre></div>
 
-<div class="source">walkthrough/USE-THE-COACH.md:19 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/templates/idea-brief.md">coach/templates/idea-brief.md</a></div>
+<div class="source">walkthrough/USE-THE-COACH.md:19 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/templates/idea-brief.md">coach/templates/idea-brief.md</a></div>
 
 <!--
 Pairs save outputs into their project docs folder. Use the linked local template pack; names can follow their team convention.
@@ -683,7 +683,7 @@ class: content
 
 <div class="two"><div class="artifact"><label>EXAMPLE PROJECT SPEC</label><p>One availability-submission flow.</p><p>A manual organizer view.</p><p>No accounts, calendar sync, or automatic reminders yet.</p></div><div><h3>In Claude Code</h3><p>Approve one slice. Inspect changed files. Run its acceptance test.</p><p>Ask for a review against the spec before expanding scope.</p></div></div>
 
-<div class="source">walkthrough/HACKATHON-PLAYBOOK.md:14 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/handoff/coach-completion-20260909/coach/examples/study-session.md#L107">coach/examples/study-session.md:107</a></div>
+<div class="source">walkthrough/HACKATHON-PLAYBOOK.md:14 · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/examples/study-session.md#L107">coach/examples/study-session.md:107</a></div>
 
 <!--
 The recorded MVP includes a manual workflow. Only turn it into software if the team explicitly chooses that implementation and can justify it.

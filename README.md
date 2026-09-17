@@ -1,32 +1,57 @@
 # HackHers 2026
 
-A workshop project for building a local hackathon idea coach with Drew and Tyler Sztuka.
+Build your own go-to-market coach with Claude Code, guided by Drew and Tyler Sztuka.
+Start from a behavior brief, approve a testable spec, implement your coach, and
+show evidence that its behavior meets your requirements.
 
-The coach helps students investigate a specific person's problem, count people they can actually reach, research existing alternatives, and design a small experiment before committing to an MVP.
+## Students: start here
 
-## Start the coach
+1. [Download the student starter ZIP](https://doctor-ew.github.io/hackhers-2026/hackhers-starter.zip).
+2. Extract it into your own workspace and open the extracted folder in your editor.
+3. Follow its README.md and BUILD-STEPS.md using the organizer’s Claude Code access setup.
+4. Follow along with the [live workshop slides](https://doctor-ew.github.io/hackhers-2026/).
 
-The Claude Opus terminal evaluation passed all ten original cases and a full
-coaching session. See [results and tested limits](coach/eval/RESULTS.md).
+The ZIP contains only four starter files: a README, build brief, build instructions,
+and ignore rules. You create the spec, coach prompt, four output templates, and
+tests. It contains no completed coach or recorded answers.
 
-1. Open [the coaching prompt](coach/PROMPT.md) and copy the entire document.
-2. Paste it into a fresh Claude chat, then describe your idea and what prompted it.
-3. Work through the questions. Ask for your idea brief, count ledger, experiment card, and MVP brief when ready.
+If you prefer Git, clone this repository on main and **copy [starter/](starter/)
+into a separate project folder** before starting Claude Code. The rest of main
+contains presentation and facilitator material, including short teaching excerpts.
+No slide authoring dependencies are required to build your coach.
 
-Use your own eligible account. The optional [Claude Code path](coach/CLAUDE-CODE-ADAPTER.md) uses the same prompt. No API key or new application installation is required for the chat path.
+## Checkpoints
 
-- [Student walkthrough](coach/README.md)
-- [Worked synthetic example](coach/examples/study-session.md)
-- [Blank output templates](coach/templates/)
-- [Recorded evaluation results and limitations](coach/eval/RESULTS.md)
+| Stage | Show your partner |
+|---|---|
+| Setup | Your project folder, build brief, and working Claude session |
+| Specify | Saved spec, observable acceptance cases, and your approval |
+| Implement | Your prompt, four templates, test cases, and one requirement trace |
+| Test and repair | Exact input, full answer, verdict, and any repair/retest |
 
-## Workshop planning
+## Facilitators: the already-baked backup
 
-- [Agent behavior and evaluation specification](docs/AGENT-SPEC.md)
-- [Proposed workshop agenda](workshop/WORKSHOP-DRAFT.md)
+The [reference/completed-coach branch](https://github.com/doctor-ew/hackhers-2026/tree/reference/completed-coach)
+preserves the completed implementation, templates, evaluator, recorded examples,
+and development evidence. Use it for demonstrations, recovery, or comparison
+after students make their own attempt.
 
-The workshop agenda and slide deck are separate planning work. The coach's evaluation results distinguish the tested terminal runtime from unverified Claude chat behavior; a shared prompt alone does not prove parity.
+- [Completed coach and usage guide](https://github.com/doctor-ew/hackhers-2026/tree/reference/completed-coach/coach)
+- [Recorded evaluation results and limits](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/eval/RESULTS.md)
+- [Download the completed reference](https://github.com/doctor-ew/hackhers-2026/archive/refs/heads/reference/completed-coach.zip)
 
-## Organizer references
+Keep the backup in a separate folder. Tests against it are not evidence that a
+student’s implementation passes. The preserved snapshot is commit
+`4e4e8ed2edcec7299fa403cccedeca65ba22487d`. Its recorded results retain their stated
+runtime and evaluation limits; this separation does not rerun the model evaluation.
 
-The [completion follow-up](docs/coach-completion-20260909/SPEC.md) preserves the earlier failed evaluations and records the bounded repair and delivery requirements. Student account access still needs checking before the event.
+## Presentation maintenance
+
+- [Facilitator guide](slides/INSTRUCTOR.md)
+- [Build and publishing instructions](slides/README.md)
+- [Slide sources](slides/SOURCES.md)
+
+Changes to the slides, starter, or starter packaging script are built in pull
+requests. Merging them into main automatically updates the presentation and
+starter download at the existing website. The reference branch is a preserved
+backup and does not publish over the student site.

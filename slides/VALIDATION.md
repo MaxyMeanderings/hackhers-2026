@@ -1,5 +1,20 @@
 # Coach walkthrough validation
 
+## Student starter and reference separation — September 16, 2026
+
+- The complete pre-separation snapshot was pushed to reference/completed-coach
+  at commit 4e4e8ed2edcec7299fa403cccedeca65ba22487d.
+- The student ZIP contains exactly README.md, BUILD-BRIEF.md, BUILD-STEPS.md,
+  and .gitignore under one folder. Archive contents match the canonical files.
+- Completed coach copies are absent from the public assets and built site.
+- All linked reference files exist in the preserved branch.
+- The production Pages build passed with generated starter packaging.
+- Chrome checked slides 11, 30, and 31 with no measured footer overlap.
+- The ZIP and both generated build handouts returned HTTP 200 locally.
+- Ignored local runtime state and bytecode were preserved; they are excluded
+  from Git and the student ZIP. No coach model evaluation was rerun.
+
+
 ## Student-built coach correction — September 16, 2026
 
 - The Pages build passed for 30 core slides plus 10 optional follow-on slides.

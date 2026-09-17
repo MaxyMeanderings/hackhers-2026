@@ -7,7 +7,11 @@
     "build": "slidev build --base ./",
     "export": "slidev export --output workshop.pdf",
     "preview": "vite preview --host 127.0.0.1",
-    "build:pages": "slidev build --base /hackhers-2026/ --router-mode hash"
+    "build:pages": "slidev build --base /hackhers-2026/ --router-mode hash",
+    "predev": "python3 ../scripts/prepare-starter.py",
+    "prebuild": "python3 ../scripts/prepare-starter.py",
+    "prebuild:pages": "python3 ../scripts/prepare-starter.py",
+    "preexport": "python3 ../scripts/prepare-starter.py"
   },
   "dependencies": {
     "@slidev/cli": "52.19.1",

@@ -3,16 +3,20 @@
 The build walkthrough is authored teaching material. It illustrates how to reproduce
 the workflow; it does not pretend to be a transcript of the historical build.
 
-- Slides 5–7 and optional slides 31–40: ../coach/README.md,
-  ../coach/PROMPT.md, ../coach/templates/, ../coach/examples/study-session.md,
-  walkthrough/USE-THE-COACH.md, and walkthrough/HACKATHON-PLAYBOOK.md.
-- Slide 6: exact excerpts from the input and output fields of
-  ../docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json.
+- Slides 5–7 and optional slides 31–40: the completed branch’s
+  [coach guide](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md),
+  [prompt](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md),
+  [templates](https://github.com/doctor-ew/hackhers-2026/tree/reference/completed-coach/coach/templates),
+  [worked example](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/examples/study-session.md),
+  plus walkthrough/USE-THE-COACH.md and walkthrough/HACKATHON-PLAYBOOK.md.
+- Slide 6: exact excerpts from the input and output fields of the
+  [recorded first turn](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json).
   The full response contains additional context; the slide labels the excerpts.
-- Slides 7, 33, 35, and 39: recorded synthetic example summaries from
-  ../coach/examples/study-session.md. No actual interviews or experiment results claimed.
-- Slides 8–23: walkthrough/BUILD-BRIEF.md and walkthrough/CLAUDE-CODE-STEPS.md,
-  grounded in ../docs/AGENT-SPEC.md, ../coach/PROMPT.md, and ../coach/eval/evaluation-cases.md.
+- Slides 7, 33, 35, and 39 summarize the recorded synthetic worked example above.
+  No actual interviews or experiment results are claimed.
+- Slides 8–23: ../starter/BUILD-BRIEF.md and ../starter/BUILD-STEPS.md, grounded in the
+  [original behavior spec](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/AGENT-SPEC.md)
+  and [evaluation cases](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/eval/evaluation-cases.md).
   Reference artifacts illustrate the target; checkpoints require student-built artifacts.
 - Claude Code: https://code.claude.com/docs/en/quickstart and
   https://code.claude.com/docs/en/how-claude-code-works .
@@ -60,7 +64,16 @@ research or imply that autonomous execution is inherently undesirable.
 Slides 11, 14, 17, and 23 are authored build activities: prepare a fresh project,
 approve a testable spec, implement a coach, and test that student implementation.
 Commands follow [Claude Code quickstart](https://code.claude.com/docs/en/quickstart),
-accessed September 16, 2026. Build deliverables follow walkthrough/BUILD-BRIEF.md.
-Testing and repair follow walkthrough/CLAUDE-CODE-STEPS.md. A reference response
+accessed September 16, 2026. Build deliverables follow ../starter/BUILD-BRIEF.md.
+Testing and repair follow ../starter/BUILD-STEPS.md. A reference response
 or a check against the supplied completed coach is not evidence that a student’s
 implementation works.
+
+## Starter and completed reference
+
+The completed coach and retained evidence are preserved on
+[reference/completed-coach](https://github.com/doctor-ew/hackhers-2026/tree/reference/completed-coach),
+at commit 4e4e8ed2edcec7299fa403cccedeca65ba22487d. Full implementations and historical
+runtime records are excluded from main and from the published student bundle.
+The slide excerpts remain teaching examples with explicit reference attribution.
+The starter ZIP and build handouts are generated from ../starter/.

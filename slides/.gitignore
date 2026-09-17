@@ -2,3 +2,8 @@ node_modules/
 dist/
 .slidev/
 *.pdf
+
+# Generated from starter/ by the npm lifecycle commands.
+public/hackhers-starter.zip
+public/walkthrough/BUILD-BRIEF.md
+public/walkthrough/CLAUDE-CODE-STEPS.md
