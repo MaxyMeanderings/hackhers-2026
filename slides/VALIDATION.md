@@ -15,9 +15,11 @@
   reaching the source footer. All four new images loaded at native resolution.
 - Section rail targets were checked after the shift: slides 10, 13, 29, 34,
   36, and 46 opened the expected headings and marked the matching section current.
-- The QR code encodes an earlier Anthropic offer URL and the application
-  screenshot shows an earlier event header. Both are flagged in the speaker
-  notes and ASSETS.md for replacement before the event.
+- The QR code was replaced with the event offer code supplied by the organizer
+  on September 17, 2026; it decodes to the URL recorded in SOURCES.md and the
+  slide link matches it. The application screenshot still shows an earlier
+  event header and is flagged in the speaker notes and ASSETS.md for
+  replacement before the event.
 
 ## Student starter and reference separation — September 16, 2026
 

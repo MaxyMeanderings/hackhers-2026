@@ -36,16 +36,20 @@ subscription-only shell setup is copied into the student flow.
 
 Slides 4–7 are the organizer’s sponsored-access walkthrough, adapted on
 September 17, 2026 from the organizer’s existing slides (API Credits.pptx). The
-QR code on slide 4 encodes
-https://platform.claude.com/offers/b5a8e762-e0a0-46fe-a80b-3f6e66f563dc , an
-Anthropic API credits offer page; the slide links to the same URL. Slides 5–7
-show the organizer’s own screenshots of the Anthropic credits application form,
-the Claude Console dashboard (platform.claude.com/dashboard), and the Claude Code
-`/login` prompt. Balances, names, event titles, and dates in those screenshots
-belong to the organizer’s account and earlier events; they are not claims about
-student accounts or this event’s deadline. Credit terms quoted on slide 5 (API
-only, not subscriptions, six-month expiry) are taken from the application page
-shown. Login option wording follows the Claude Code prompt in the screenshot.
+QR code on slide 4 is the event offer code supplied by the organizer on
+September 17, 2026; it decodes to
+https://platform.claude.com/offers/2239eaf0-dbc5-49ed-b6b7-1f1fe14ea78e , an
+Anthropic API credits offer page, and the slide links to the same URL. Slides 5–7
+show the organizer’s own screenshots of an earlier Anthropic credits application
+form, the Claude Console dashboard (platform.claude.com/dashboard), and the
+Claude Code `/login` prompt. Balances, names, event titles, and dates in those
+screenshots belong to the organizer’s account and earlier events; they are not
+claims about student accounts or this event’s deadline. Claim rules stated on
+slides 4–6 (API only, not Claude.ai; Console Organization ID required and a
+Claude.ai user ID rejected; one claim per person; link expiration shown on the
+offer page; credits issued within minutes) were supplied by the organizer on
+September 17, 2026. Login option wording follows the Claude Code prompt in the
+screenshot.
 
 ## Engineering principles and workflow scope
 
