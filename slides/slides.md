@@ -244,6 +244,34 @@ Keep these in separate conversations so implementation context does not become a
 -->
 
 ---
+class: content interface-slide
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Claude Code in your terminal.
+
+<div><a class="interface-image" href="./assets/claude-terminal.png" target="_blank" rel="noopener noreferrer"><img src="/assets/claude-terminal.png" alt="Claude Code running in a terminal with a custom coding buddy" /><span>Open full-size screenshot ↗</span></a></div>
+<p class="interface-caption">Work in your own starter folder. Type a request, inspect the files, and review the result. The dragon is a custom plugin; it is optional.</p>
+
+<div class="source">Organizer-supplied screenshot · interface and account shown are Drew’s</div>
+
+
+---
+class: content interface-slide
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Claude Code in the desktop app.
+
+<div><a class="interface-image" href="./assets/claude-desktop.png" target="_blank" rel="noopener noreferrer"><img src="/assets/claude-desktop.png" alt="Claude desktop app showing its Code workspace" /><span>Open full-size screenshot ↗</span></a></div>
+<p class="interface-caption">This screenshot shows the Code workspace in the desktop app. The same brief → spec → build → test workflow guides your work.</p>
+
+<div class="source">Organizer-supplied screenshot · interface and account shown are Drew’s</div>
+
+
+---
 class: content
 ---
 
@@ -305,11 +333,81 @@ class: content
 
 <div class="slide-number">Hackhers</div>
 
+# Behind the scenes: fewer moving parts.
+
+<div class="two"><section><h3>DRY</h3><p><strong>Don’t Repeat Yourself.</strong></p><p>Give each rule one authoritative home so copies do not drift.</p><p>Example: reuse one availability-validation rule wherever submissions enter.</p></section><section><h3>Convention over configuration</h3><p>Use agreed defaults for names and structure; configure exceptions.</p><p>Example: follow the framework’s folder layout so it can discover files automatically.</p></section></div><div class="takeaway">Ask the builder: “What can we reuse? Which defaults already fit?”</div>
+
+<div class="source"><a href="https://pragprog.com/tips/">The Pragmatic Programmer: DRY</a> · <a href="https://guides.rubyonrails.org/getting_started.html">Rails: conventions</a> · Authored project examples</div>
+
+<!--
+Budget about one minute per engineering slide. These are design lenses for the team’s eventual software, not claims that the prompt-only coach implements a database or object model. DRY concerns duplicated knowledge: similar-looking code need not represent the same rule. Avoid inventing an abstraction before the shared responsibility is clear. Convention over configuration means tools understand defaults; merely agreeing on names is not automatic discovery.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# SOLID: make change manageable.
+
+<div class="artifact"><p><strong>S — Single Responsibility:</strong> one reason to change per module.</p><p><strong>O — Open/Closed:</strong> support extensions without changing stable code.</p><p><strong>L — Liskov Substitution:</strong> replacements honor the original contract.</p><p><strong>I — Interface Segregation:</strong> expose only what each client needs.</p><p><strong>D — Dependency Inversion:</strong> depend on abstractions, not concrete details.</p></div><div class="takeaway">Example: separate availability rules from storage and notifications.</div>
+
+<div class="source"><a href="https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html">Robert C. Martin: SOLID relevance</a> · Authored project example</div>
+
+<!--
+SOLID groups five design principles. Single responsibility groups things that change for the same reason. For the scheduling example, changing how messages are sent should not change availability rules. A replacement storage adapter must preserve the caller’s expectations, including failures. A reader should not need a write interface. Keep abstractions proportionate to the project; five principles do not require five classes or a large architecture.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# ACID: protect a database transaction.
+
+<div class="four"><section><h3>A — Atomicity</h3><p>All changes in the transaction succeed together, or none take effect.</p></section><section><h3>C — Consistency</h3><p>A successful transaction preserves defined data rules and constraints.</p></section><section><h3>I — Isolation</h3><p>Concurrent transactions interact according to the isolation level.</p></section><section><h3>D — Durability</h3><p>Committed changes survive failures under the database’s guarantees.</p></section></div><div class="takeaway">Example: reserve a seat and update capacity in one transaction.</div>
+
+<div class="source"><a href="https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties">IBM: transaction properties</a> · Authored project example</div>
+
+<!--
+The booking example extends beyond the manual MVP. If the second database write fails, atomicity prevents a partial booking. Define capacity constraints and choose concurrency control appropriate to the reservation rule; a transaction alone does not prevent every race. Serializable isolation aims for results equivalent to a serial order; weaker levels permit some anomalies. Consistency means preserving defined invariants, not proving user-entered facts true. An external email is not automatically part of a database transaction. ACID describes database behavior, not a guarantee made by a prompt.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Big O: what happens as input grows?
+
+<p><strong>Big O is notation, not an acronym.</strong> It gives an asymptotic upper bound on how time or memory grows with input size <strong>n</strong>.</p>
+<div class="three"><section><h3>O(1) · constant</h3><p>Read one array item by index.</p><p>Work stays bounded as the array grows.</p></section><section><h3>O(n) · linear</h3><p>Scan every submission once.</p><p>10× the entries → about 10× the checks.</p></section><section><h3>O(n²) · quadratic</h3><p>Compare every pair of submissions.</p><p>10× the entries → about 100× the pairs.</p></section></div><div class="takeaway">Ask: “What grows with the data?” Then measure realistic inputs.</div>
+
+<div class="source"><a href="https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html">Carnegie Mellon: Big-O</a> · Authored operation-count examples</div>
+
+<!--
+Assume fixed-cost indexed reads, per-entry checks, and pair comparisons. The growth multipliers describe operation counts for these examples, not guaranteed wall-clock time. Big O ignores constant factors and lower-order terms for sufficiently large input. It is an upper bound, not automatically a tight bound or a synonym for worst case. Database indexes, network calls, and model calls require their own cost analysis. Measure before optimizing a tiny hackathon workload.
+-->
+
+---
+class: content spec-prompt
+---
+
+<div class="slide-number">Hackhers</div>
+
 # Ask for a spec before code.
 
-<div class="terminal"><div class="terminal-label">Type in Claude Code</div><pre>Read BUILD-BRIEF.md. Draft SPEC.md with numbered,
-observable requirements, exclusions, and acceptance cases.
-Ask about consequential gaps. Do not implement yet.</pre></div><div class="two"><p><b>Weak:</b> “Be a helpful business coach.”</p><p><b>Testable:</b> “Never turn praise into a purchase commitment.”</p></div>
+<div class="terminal"><div class="terminal-label">Type in Claude Code</div><pre>Read BUILD-BRIEF.md. Draft SPEC.md; do not implement yet.
+Number requirements, exclusions, and acceptance cases.
+Include DRY, SOLID, ACID, Big O, and convention over
+configuration as engineering requirements where applicable.
+For each: state applicability, a concrete rule, and a check.
+Explain any N/A; do not add a database or app to satisfy it.
+Map requirements to planned files and acceptance evidence.
+Ask about consequential gaps. Wait for our approval.</pre></div><p class="checkpoint-help">Copy the full prompt from <a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Build steps → Specify ↗</a>. Keep the coach prompt and four templates in scope.</p>
 
 <div class="source">starter/BUILD-STEPS.md · <a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/AGENT-SPEC.md#L23">docs/AGENT-SPEC.md:23</a></div>
 
@@ -326,9 +424,10 @@ class: content checkpoint
 # Checkpoint 2: your spec is testable.
 
 <div class="exercise-time">8 MINUTES · DRAFT, CHALLENGE, APPROVE</div>
-<div class="terminal"><div class="terminal-label">Ask Claude Code in your build folder</div><pre>Read BUILD-BRIEF.md. Draft SPEC.md with numbered requirements,
-exclusions, and acceptance cases. Do not implement yet.</pre></div>
-<div class="two"><section><h3>Driver · inspect scope</h3><p>Check that the spec covers the brief. Identify the coach prompt, four templates, and test cases to build.</p></section><section><h3>Partner · challenge a rule</h3><p>Choose one requirement. Write an input, expected behavior, and a visible failure. Resolve consequential gaps.</p></section></div><div class="takeaway">Done: a saved spec your team can explain and explicitly approve.</div>
+<div class="terminal"><div class="terminal-label">Ask Claude Code in your build folder</div><pre>Use the full Specify prompt in BUILD-STEPS.md.
+Draft SPEC.md with behavior and engineering requirements.
+Include applicability and checks. Do not implement yet.</pre></div>
+<div class="two"><section><h3>Driver · inspect scope</h3><p>Check that the spec covers the brief. Identify the coach prompt, four templates, and test cases to build.</p></section><section><h3>Partner · challenge a rule</h3><p>Choose one requirement. Write an input, expected behavior, and a visible failure. Check one engineering rule or justified N/A. Resolve gaps.</p></section></div><div class="takeaway">Done: a saved spec your team can explain and explicitly approve.</div>
 <p class="checkpoint-help">Too vague? Replace “be helpful” with a behavior you can observe in a response.</p>
 
 <div class="source">starter/BUILD-BRIEF.md · starter/BUILD-STEPS.md · Authored build checkpoint</div>
@@ -347,6 +446,7 @@ class: content
 
 <div class="artifact"><label>REVIEW THE SPEC</label><p>Who is the student helping?<br>What must the coach ask and produce?<br>What must it never invent?<br>Which input would expose a failure?</p></div><div class="terminal"><div class="terminal-label">Type in Claude Code</div><pre>Approved: implement only the requirements in SPEC.md.
 First list the files you will change and the checks you will run.
+Apply the approved engineering requirements; explain each N/A.
 Leave unrelated files alone.</pre></div>
 
 <div class="source">starter/BUILD-STEPS.md</div>
@@ -499,71 +599,6 @@ class: content checkpoint
 
 <!--
 The test target is the team’s newly built coach, not the completed prompt on reference/completed-coach. Confirm the actual loaded path with the team. For a praise-versus-commitment acceptance case, use a clearly synthetic student input and compare the generated response with the approved expectation. A passing result supports only the behaviors exercised. If the case passes immediately, run a harder case or another requirement; never manufacture a failure or repair story. For failures preserve before/after responses and explain the actual change. This checkpoint is the workshop’s principal demonstration of what students built.
--->
-
----
-class: content
----
-
-<div class="slide-number">Hackhers</div>
-
-# Behind the scenes: fewer moving parts.
-
-<div class="two"><section><h3>DRY</h3><p><strong>Don’t Repeat Yourself.</strong></p><p>Give each rule one authoritative home so copies do not drift.</p><p>Example: reuse one availability-validation rule wherever submissions enter.</p></section><section><h3>Convention over configuration</h3><p>Use agreed defaults for names and structure; configure exceptions.</p><p>Example: follow the framework’s folder layout so it can discover files automatically.</p></section></div><div class="takeaway">Ask the builder: “What can we reuse? Which defaults already fit?”</div>
-
-<div class="source"><a href="https://pragprog.com/tips/">The Pragmatic Programmer: DRY</a> · <a href="https://guides.rubyonrails.org/getting_started.html">Rails: conventions</a> · Authored project examples</div>
-
-<!--
-Budget about one minute per engineering slide. These are design lenses for the team’s eventual software, not claims that the prompt-only coach implements a database or object model. DRY concerns duplicated knowledge: similar-looking code need not represent the same rule. Avoid inventing an abstraction before the shared responsibility is clear. Convention over configuration means tools understand defaults; merely agreeing on names is not automatic discovery.
--->
-
----
-class: content
----
-
-<div class="slide-number">Hackhers</div>
-
-# SOLID: make change manageable.
-
-<div class="artifact"><p><strong>S — Single Responsibility:</strong> one reason to change per module.</p><p><strong>O — Open/Closed:</strong> support extensions without changing stable code.</p><p><strong>L — Liskov Substitution:</strong> replacements honor the original contract.</p><p><strong>I — Interface Segregation:</strong> expose only what each client needs.</p><p><strong>D — Dependency Inversion:</strong> depend on abstractions, not concrete details.</p></div><div class="takeaway">Example: separate availability rules from storage and notifications.</div>
-
-<div class="source"><a href="https://blog.cleancoder.com/uncle-bob/2020/10/18/Solid-Relevance.html">Robert C. Martin: SOLID relevance</a> · Authored project example</div>
-
-<!--
-SOLID groups five design principles. Single responsibility groups things that change for the same reason. For the scheduling example, changing how messages are sent should not change availability rules. A replacement storage adapter must preserve the caller’s expectations, including failures. A reader should not need a write interface. Keep abstractions proportionate to the project; five principles do not require five classes or a large architecture.
--->
-
----
-class: content
----
-
-<div class="slide-number">Hackhers</div>
-
-# ACID: protect a database transaction.
-
-<div class="four"><section><h3>A — Atomicity</h3><p>All changes in the transaction succeed together, or none take effect.</p></section><section><h3>C — Consistency</h3><p>A successful transaction preserves defined data rules and constraints.</p></section><section><h3>I — Isolation</h3><p>Concurrent transactions interact according to the isolation level.</p></section><section><h3>D — Durability</h3><p>Committed changes survive failures under the database’s guarantees.</p></section></div><div class="takeaway">Example: reserve a seat and update capacity in one transaction.</div>
-
-<div class="source"><a href="https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties">IBM: transaction properties</a> · Authored project example</div>
-
-<!--
-The booking example extends beyond the manual MVP. If the second database write fails, atomicity prevents a partial booking. Define capacity constraints and choose concurrency control appropriate to the reservation rule; a transaction alone does not prevent every race. Serializable isolation aims for results equivalent to a serial order; weaker levels permit some anomalies. Consistency means preserving defined invariants, not proving user-entered facts true. An external email is not automatically part of a database transaction. ACID describes database behavior, not a guarantee made by a prompt.
--->
-
----
-class: content
----
-
-<div class="slide-number">Hackhers</div>
-
-# Big O: what happens as input grows?
-
-<p><strong>Big O is notation, not an acronym.</strong> It gives an asymptotic upper bound on how time or memory grows with input size <strong>n</strong>.</p>
-<div class="three"><section><h3>O(1) · constant</h3><p>Read one array item by index.</p><p>Work stays bounded as the array grows.</p></section><section><h3>O(n) · linear</h3><p>Scan every submission once.</p><p>10× the entries → about 10× the checks.</p></section><section><h3>O(n²) · quadratic</h3><p>Compare every pair of submissions.</p><p>10× the entries → about 100× the pairs.</p></section></div><div class="takeaway">Ask: “What grows with the data?” Then measure realistic inputs.</div>
-
-<div class="source"><a href="https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html">Carnegie Mellon: Big-O</a> · Authored operation-count examples</div>
-
-<!--
-Assume fixed-cost indexed reads, per-entry checks, and pair comparisons. The growth multipliers describe operation counts for these examples, not guaranteed wall-clock time. Big O ignores constant factors and lower-order terms for sufficiently large input. It is an upper bound, not automatically a tight bound or a synonym for worst case. Database indexes, network calls, and model calls require their own cost analysis. Measure before optimizing a tiny hackathon workload.
 -->
 
 ---

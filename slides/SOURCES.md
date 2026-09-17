@@ -3,7 +3,7 @@
 The build walkthrough is authored teaching material. It illustrates how to reproduce
 the workflow; it does not pretend to be a transcript of the historical build.
 
-- Slides 10–12 and optional slides 36–45: the completed branch’s
+- Slides 10–12 and optional slides 38–47: the completed branch’s
   [coach guide](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md),
   [prompt](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md),
   [templates](https://github.com/doctor-ew/hackhers-2026/tree/reference/completed-coach/coach/templates),
@@ -12,9 +12,9 @@ the workflow; it does not pretend to be a transcript of the historical build.
 - Slide 11: exact excerpts from the input and output fields of the
   [recorded first turn](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/coach-completion-20260909/live/laptop-20260909/conversation-opus-complete-experiment/turn-01.json).
   The full response contains additional context; the slide labels the excerpts.
-- Slides 12, 38, 40, and 44 summarize the recorded synthetic worked example above.
+- Slides 12, 40, 42, and 46 summarize the recorded synthetic worked example above.
   No actual interviews or experiment results are claimed.
-- Slides 13–28: ../starter/BUILD-BRIEF.md and ../starter/BUILD-STEPS.md, grounded in the
+- Slides 13–34: ../starter/BUILD-BRIEF.md and ../starter/BUILD-STEPS.md, grounded in the
   [original behavior spec](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/docs/AGENT-SPEC.md)
   and [evaluation cases](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/eval/evaluation-cases.md).
   Reference artifacts illustrate the target; checkpoints require student-built artifacts.
@@ -49,7 +49,7 @@ shown. Login option wording follows the Claude Code prompt in the screenshot.
 
 ## Engineering principles and workflow scope
 
-Slides 29–32 use the following primary sources. Scheduling, validation, booking,
+Slides 20–23 use the following primary sources. Scheduling, validation, booking,
 and operation-count examples are authored teaching illustrations, not claims
 about implemented coach behavior.
 
@@ -59,7 +59,7 @@ about implemented coach behavior.
 - ACID: [IBM transaction properties](https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties).
 - Big O: [Carnegie Mellon machine learning primer](https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html).
 
-Slide 33 summarizes the official BMAD and gstack repositories linked above.
+Slide 35 summarizes the official BMAD and gstack repositories linked above.
 Omitting their setup is a workshop scope decision. The slide does not assert that
 either tool lacks engineering principles, review, testing, or evidence features.
 Sources accessed September 16, 2026.
@@ -76,7 +76,7 @@ research or imply that autonomous execution is inherently undesirable.
 
 ## Checkpoints
 
-Slides 16, 19, 22, and 28 are authored build activities: prepare a fresh project,
+Slides 18, 25, 28, and 34 are authored build activities: prepare a fresh project,
 approve a testable spec, implement a coach, and test that student implementation.
 Commands follow [Claude Code quickstart](https://code.claude.com/docs/en/quickstart),
 accessed September 16, 2026. Build deliverables follow ../starter/BUILD-BRIEF.md.

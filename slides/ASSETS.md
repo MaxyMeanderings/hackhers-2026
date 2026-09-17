@@ -26,3 +26,8 @@ Presenter bios are concise paraphrases of public professional sources, pending a
   organizer’s own Anthropic credits application page, Claude Console dashboard,
   and Claude Code login prompt. Replace the QR code and application screenshot
   when a new offer is issued for this event.
+
+- `public/assets/claude-terminal.png` and `public/assets/claude-desktop.png`:
+  organizer-supplied screenshots, September 17, 2026, used unmodified on slides
+  15–16. Each opens full size. The terminal shows an optional custom coding buddy;
+  the desktop shows the organizer’s Code workspace and account activity.
