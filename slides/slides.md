@@ -752,4 +752,3 @@ class: content access-slide
 <WorkshopLinks />
 
 <div class="source">Slides, starter, and source. Scan or click to return anytime.</div>
-
