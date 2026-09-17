@@ -63,9 +63,9 @@ about implemented coach behavior.
 - ACID: [IBM transaction properties](https://www.ibm.com/docs/en/iis/11.7.0?topic=transactions-transaction-properties).
 - Big O: [Carnegie Mellon machine learning primer](https://www.cs.cmu.edu/~mgormley/courses/ml-primer/bigO.html).
 
-Slide 35 summarizes the official BMAD and gstack repositories linked above.
+Slide 35 summarizes the official BMAD, gstack, and Nightshift repositories linked above.
 Omitting their setup is a workshop scope decision. The slide does not assert that
-either tool lacks engineering principles, review, testing, or evidence features.
+any of these tools lacks engineering principles, review, testing, or evidence features.
 Sources accessed September 16, 2026.
 
 ## Copilot and autopilot
@@ -106,3 +106,6 @@ The starter ZIP and build handouts are generated from ../starter/.
 - Resource codes use the published deck and repository URLs shown on the slides.
 - QR images are local PNG assets with black modules, white backgrounds, and
   four-module quiet zones; no third-party QR service is called at presentation time.
+
+Nightshift’s staged workflow and evidence description was checked against its
+[public README](https://github.com/doctor-ew/nightshift-community) on September 17, 2026.

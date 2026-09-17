@@ -150,3 +150,5 @@
 .slidev-layout .interface-caption{font-size:18px;line-height:1.4;margin-top:14px;}
 .slidev-layout.spec-prompt .terminal pre{font-size:20px!important;line-height:1.5!important;}
 .module-nav button{padding-top:10px;padding-bottom:10px;}
+
+.slidev-layout .workflow-screenshots{font-size:14px;line-height:1.65;margin:12px 0 0;}

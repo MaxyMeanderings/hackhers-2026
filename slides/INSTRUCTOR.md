@@ -53,7 +53,7 @@ they are examples, not passing evidence for student builds.
 The implementation is a conversational coach prompt and supporting files. An app,
 a database, and a separate hackathon product are not required workshop deliverables.
 Explain the engineering slides as design lenses whose applicability depends on
-what is being built. On slide 35, present BMAD and gstack as workflow options.
+what is being built. On slide 35, present BMAD, gstack, and Nightshift as workflow options.
 
 Slide 8 adapts Chorouk Malmoum’s post from the supplied screenshot. The thumbnail
 opens the original image. Present its comparison as a practice students can learn,
