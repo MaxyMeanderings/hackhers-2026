@@ -51,7 +51,7 @@ Sources accessed September 16, 2026.
 
 ## Copilot and autopilot
 
-Slide 3 adapts the copilot/autopilot comparison in a LinkedIn post attributed to
+Slide 4 adapts the copilot/autopilot comparison in a LinkedIn post attributed to
 Chorouk Malmoum in the screenshot supplied by the workshop organizer on
 September 16, 2026. The screenshot is the source available for this attribution;
 a permalink and publication date were not supplied. The original screenshot is
@@ -77,3 +77,13 @@ at commit 4e4e8ed2edcec7299fa403cccedeca65ba22487d. Full implementations and his
 runtime records are excluded from main and from the published student bundle.
 The slide excerpts remain teaching examples with explicit reference attribution.
 The starter ZIP and build handouts are generated from ../starter/.
+
+## Speaker connections and QR destinations
+
+- Tyler’s LinkedIn destination is linked from [SZD Labs](https://szdlabs.io/):
+  https://www.linkedin.com/in/tyler-sztuka-283937123/ .
+- Drew’s LinkedIn destination is linked from [his speaker profile](https://sessionize.com/drew-schillinger/):
+  https://www.linkedin.com/in/andrew-schillinger/ .
+- Resource codes use the published deck and repository URLs shown on the slides.
+- QR images are local PNG assets with black modules, white backgrounds, and
+  four-module quiet zones; no third-party QR service is called at presentation time.

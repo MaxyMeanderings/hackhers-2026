@@ -46,11 +46,23 @@ class: presenters-slide
 <div class="takeaway">Bring an idea. Leave with evidence you can explain.</div>
 
 
-<div class="source"><a href="https://szdlabs.io/">Tyler: SZD Labs</a> · <a href="https://sessionize.com/drew-schillinger/">Drew: speaker profile</a></div>
+<div class="source"><a href="https://szdlabs.io/">Tyler: SZD Labs</a> · <a href="https://www.linkedin.com/in/tyler-sztuka-283937123/" target="_blank" rel="noopener noreferrer">Tyler: LinkedIn</a> · <a href="https://sessionize.com/drew-schillinger/">Drew: speaker profile</a> · <a href="https://www.linkedin.com/in/andrew-schillinger/" target="_blank" rel="noopener noreferrer">Drew: LinkedIn</a></div>
 
 <!--
 
 -->
+
+---
+class: content access-slide
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Open the workshop.
+
+<WorkshopLinks />
+
+<div class="source">Scan a QR code or click its link. Keep the slides and repository handy.</div>
 
 ---
 class: content
@@ -527,13 +539,37 @@ class: content
 
 # Your coach-building kit.
 
-<div class="two"><section><h3>Build your own</h3><p><a href="./hackhers-starter.zip">Download the student starter ZIP ↗</a></p><p><a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Follow the build steps ↗</a></p><p>Save your spec, coach prompt, four templates, test cases, and actual responses.</p></section><section><h3>Compare and continue</h3><p><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md" target="_blank">Already-baked reference prompt ↗</a></p><p><a href="https://github.com/doctor-ew/hackhers-2026" target="_blank">Workshop repository ↗</a></p><p><a href="./walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Optional: apply your coach to a project ↗</a></p></section></div><div class="takeaway">The core workshop ends here. The next slides are optional practice using your coach.</div>
+<div class="two"><section><h3>Build your own</h3><p><a href="./hackhers-starter.zip">Download the student starter ZIP ↗</a></p><p><a href="./walkthrough/CLAUDE-CODE-STEPS.md" target="_blank">Follow the build steps ↗</a></p><p>Save your spec, coach prompt, four templates, test cases, and actual responses.</p></section><section><h3>Compare and continue</h3><p><a href="https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md" target="_blank">Already-baked reference prompt ↗</a></p><p><a href="https://github.com/doctor-ew/hackhers-2026" target="_blank">Workshop repository ↗</a></p><p><a href="./walkthrough/HACKATHON-PLAYBOOK.md" target="_blank">Optional: apply your coach to a project ↗</a></p></section></div><div class="takeaway">Save your work, stay connected, and keep building.</div>
 
 <div class="source">starter/BUILD-BRIEF.md · starter/BUILD-STEPS.md</div>
 
 <!--
 Students should show their own build artifacts before comparing with the reference branch. The starter ZIP has no completed prompt or templates. Optional slides explain how the coach’s outputs can inform another project after this workshop. Share the published URL for classroom access.
 -->
+
+---
+class: content access-slide
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Stay connected.
+
+<SpeakerLinks />
+
+<div class="source">Thanks for building with us. Share what you tried, learned, and changed.</div>
+
+---
+class: content access-slide
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Keep building. Take the links.
+
+<WorkshopLinks />
+
+<div class="source">The core workshop ends here. Continue for optional practice using your coach.</div>
 
 ---
 class: content
@@ -704,3 +740,15 @@ class: content
 <!--
 This is where works cited becomes useful to their pitch. Do not turn synthetic counts into customer claims.
 -->
+
+---
+class: content access-slide
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Keep building. Take the links.
+
+<WorkshopLinks />
+
+<div class="source">Slides, starter, and source. Scan or click to return anytime.</div>

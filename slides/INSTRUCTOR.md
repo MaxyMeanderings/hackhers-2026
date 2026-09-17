@@ -7,16 +7,16 @@ prompt, four output templates, test cases, and actual test evidence.
 
 ## Schedule
 
-The 90-minute workshop uses slides 1–30. Slides 31–40 are optional follow-on
+The 90-minute workshop uses slides 1–33. Slides 34–43 are optional follow-on
 material about using a finished coach to investigate a hackathon idea.
 
 | Section | Slides | Time | Activity |
 |---|---|---|---|
-| Start | 1–4 | 6 minutes | Copilot mindset and student build deliverables |
-| Reference coach | 5–7 | 6 minutes | Show the target behavior and outputs |
-| Build your coach | 8–23 | 60 minutes | Brief, spec, approval, implementation, testing, and repair |
-| Engineering | 24–28 | 10 minutes | Principles and workflow options |
-| Show your work | 29–30 | 8 minutes | Demonstrate the student-built coach and share artifacts |
+| Start | 1–5 | 6 minutes | Copilot mindset and student build deliverables |
+| Reference coach | 6–8 | 6 minutes | Show the target behavior and outputs |
+| Build your coach | 9–24 | 60 minutes | Brief, spec, approval, implementation, testing, and repair |
+| Engineering | 25–29 | 10 minutes | Principles and workflow options |
+| Show your work | 30–33 | 8 minutes | Demonstrate the student-built coach and share artifacts |
 
 Checkpoint time is included in Build your coach. Reserve its remaining 23 minutes
 for short explanations and demonstrations. Move optional material into a later
@@ -26,10 +26,10 @@ session instead of reducing student implementation time.
 
 | Checkpoint | Slide | Time | Completion evidence |
 |---|---|---|---|
-| Prepare your build folder | 11 | 5 minutes | Own folder, BUILD-BRIEF.md, working access, scope summary |
-| Review your spec | 14 | 8 minutes | Saved SPEC.md, observable acceptance cases, explicit team approval |
-| Implement your coach | 17 | 12 minutes | Own prompt, four templates, test cases, requirement trace |
-| Test your coach | 23 | 12 minutes | Actual input and response, reasoned verdict, repair/retest where needed |
+| Prepare your build folder | 12 | 5 minutes | Own folder, BUILD-BRIEF.md, working access, scope summary |
+| Review your spec | 15 | 8 minutes | Saved SPEC.md, observable acceptance cases, explicit team approval |
+| Implement your coach | 18 | 12 minutes | Own prompt, four templates, test cases, requirement trace |
+| Test your coach | 24 | 12 minutes | Actual input and response, reasoned verdict, repair/retest where needed |
 
 Ask pairs to signal ready or needs help at each stop. Installation alone is not
 working model access. Files on disk are not proof of correct behavior. A test of
@@ -45,16 +45,16 @@ Each pair reviews and approves its own SPEC.md before implementation. Let Claude
 propose file paths; students should inspect the files actually created.
 
 Show one reference requirement, its prompt instruction, and a test briefly, then
-return to the student projects. Slide 6 contains recorded synthetic excerpts from
+return to the student projects. Slide 7 contains recorded synthetic excerpts from
 the retained conversation. Label reference demonstrations and recorded responses;
 they are examples, not passing evidence for student builds.
 
 The implementation is a conversational coach prompt and supporting files. An app,
 a database, and a separate hackathon product are not required workshop deliverables.
 Explain the engineering slides as design lenses whose applicability depends on
-what is being built. On slide 28, present BMAD and gstack as workflow options.
+what is being built. On slide 29, present BMAD and gstack as workflow options.
 
-Slide 3 adapts Chorouk Malmoum’s post from the supplied screenshot. The thumbnail
+Slide 4 adapts Chorouk Malmoum’s post from the supplied screenshot. The thumbnail
 opens the original image. Present its comparison as a practice students can learn,
 not a research finding or a claim that autonomous execution is inherently wrong.
 
@@ -72,10 +72,10 @@ Do not invent a failure, repair, or successful evaluation.
 
 ## Completion
 
-At slide 29, each pair demonstrates its own coach and explains a requirement,
+At slide 30, each pair demonstrates its own coach and explains a requirement,
 where it is implemented, the observed test result, and remaining limitations.
-At slide 30, share the build kit and published presentation URL. Optional slides
-31–40 show how the finished coach could later inform a separate project.
+At slides 31–33, share the build kit and published presentation URL. Optional slides
+34–43 show how the finished coach could later inform a separate project.
 
 ## Completed backup
 
@@ -88,3 +88,10 @@ student workspace. The reference branch does not publish the live slides.
 Use the starter ZIP for students rather than the full repository archive. Main
 contains brief teaching excerpts in the slides but no completed coach. The ZIP
 contains only four starter files and no Git history or reference implementation.
+
+## Connection and access slides
+
+Slide 3 provides QR codes and clickable links to the live deck and repository.
+Slide 32 provides both speakers’ photos and LinkedIn QR codes and links.
+Slide 33 repeats resource access at the core workshop close; slide 44 repeats it
+after optional practice. Allow scanning time within the opening and closing sections.
