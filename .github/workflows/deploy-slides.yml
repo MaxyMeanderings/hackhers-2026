@@ -10,11 +10,6 @@ on:
       - '.github/workflows/deploy-slides.yml'
   pull_request:
     branches: [main]
-    paths:
-      - 'slides/**'
-      - 'starter/**'
-      - 'scripts/prepare-starter.py'
-      - '.github/workflows/deploy-slides.yml'
   workflow_dispatch:
 
 permissions:

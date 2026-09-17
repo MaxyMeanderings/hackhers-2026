@@ -45,6 +45,8 @@ class: presenters-slide
 
 <div class="takeaway">Bring an idea. Leave with evidence you can explain.</div>
 
+<div class="intro-linkedin"><a href="https://www.linkedin.com/in/tyler-sztuka-283937123/" target="_blank" rel="noopener noreferrer"><img src="/assets/qr-tyler.png" alt="QR code: Tyler on LinkedIn" /><span>Connect with Tyler<br />on LinkedIn ↗</span></a><a href="https://www.linkedin.com/in/andrew-schillinger/" target="_blank" rel="noopener noreferrer"><img src="/assets/qr-drew.png" alt="QR code: Drew on LinkedIn" /><span>Connect with Drew<br />on LinkedIn ↗</span></a></div>
+
 
 <div class="source"><a href="https://szdlabs.io/">Tyler: SZD Labs</a> · <a href="https://www.linkedin.com/in/tyler-sztuka-283937123/" target="_blank" rel="noopener noreferrer">Tyler: LinkedIn</a> · <a href="https://sessionize.com/drew-schillinger/">Drew: speaker profile</a> · <a href="https://www.linkedin.com/in/andrew-schillinger/" target="_blank" rel="noopener noreferrer">Drew: LinkedIn</a></div>
 
@@ -548,30 +550,6 @@ Students should show their own build artifacts before comparing with the referen
 -->
 
 ---
-class: content access-slide
----
-
-<div class="slide-number">Hackhers</div>
-
-# Stay connected.
-
-<SpeakerLinks />
-
-<div class="source">Thanks for building with us. Share what you tried, learned, and changed.</div>
-
----
-class: content access-slide
----
-
-<div class="slide-number">Hackhers</div>
-
-# Keep building. Take the links.
-
-<WorkshopLinks />
-
-<div class="source">The core workshop ends here. Continue for optional practice using your coach.</div>
-
----
 class: content
 ---
 
@@ -740,6 +718,18 @@ class: content
 <!--
 This is where works cited becomes useful to their pitch. Do not turn synthetic counts into customer claims.
 -->
+
+---
+class: content access-slide
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Stay connected.
+
+<SpeakerLinks />
+
+<div class="source">Thanks for building with us. Share what you tried, learned, and changed.</div>
 
 ---
 class: content access-slide

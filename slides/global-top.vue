@@ -5,7 +5,8 @@ const nav = useNav()
 const sections = [
   {label:'Start', start:1}, {label:'Reference coach', start:6},
   {label:'Build your coach', start:9}, {label:'Engineering', start:25},
-  {label:'Show your work', start:30}, {label:'Optional: use it', start:34},
+  {label:'Show your work', start:30}, {label:'Optional: use it', start:32},
+  {label:'Stay connected', start:42},
 ]
 const active = computed(() => sections.reduce((found,s,i) => nav.currentPage.value >= s.start ? i : found, 0))
 </script>

@@ -4,7 +4,7 @@
 build brief and an approved specification using Claude Code. Deliverables are a
 spec, coach prompt, four output templates, test cases, and saved test evidence.
 
-The deck has 33 core slides plus 10 optional follow-on slides and a final resource slide about using the
+The deck has 31 core slides, 10 optional follow-on slides, and two closing slides about using the
 finished coach. Four checkpoints cover setup, spec approval, implementation,
 and testing the student-built coach. Engineering principles and the copilot
 mindset support those activities.
@@ -50,7 +50,7 @@ examples are labeled and sourced. Synthetic exercises do not represent real fiel
 
 ## Coach walkthrough
 
-The 44-slide deck centers students building and testing their own coach.
+The 43-slide deck centers students building and testing their own coach.
 The clickable side rail marks the build workflow and optional follow-on material. Exact teaching prompts live in
 [walkthrough/](walkthrough/); student assets are bundled under public/.
 The earlier deck and completed coach are preserved on the reference/completed-coach branch.
@@ -58,8 +58,7 @@ The earlier deck and completed coach are preserved on the reference/completed-co
 ## Publish to GitHub Pages
 
 The workflow in [.github/workflows/deploy-slides.yml](../.github/workflows/deploy-slides.yml)
-builds changes to slides, starter files, or their packaging script when a pull
-request targeting main is opened or updated.
+builds every pull request targeting main when it is opened or updated.
 After the pull request is merged, the push to main automatically rebuilds and
 publishes the deck at https://doctor-ew.github.io/hackhers-2026/.
 Pull request builds validate the changes; the public deck updates after merge.
