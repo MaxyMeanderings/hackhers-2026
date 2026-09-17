@@ -111,3 +111,18 @@
 .slidev-layout.checkpoint .terminal{padding:18px 22px;margin-top:12px;margin-bottom:16px;}
 .slidev-layout.checkpoint section{padding-top:8px;}
 .slidev-layout.checkpoint .takeaway{margin-top:18px;font-size:23px;}
+
+/* Shared resource and speaker cards, with full QR quiet zones. */
+.slidev-layout .access-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+.slidev-layout .access-grid section{padding:12px 18px 0;text-align:center;}
+.slidev-layout .access-grid h3{font-size:27px;margin:8px 0 16px;}
+.slidev-layout .access-grid a{display:block;border:0;text-decoration:none;}
+.slidev-layout .access-grid a:focus-visible{outline:3px solid #e7a58d;outline-offset:6px;}
+.slidev-layout .access-qr{display:block;width:232px;height:232px;margin:0 auto 16px;background:#fff;}
+.slidev-layout .access-url{display:block;font-size:18px;line-height:1.4;color:#e7a58d;overflow-wrap:anywhere;}
+.slidev-layout .access-grid p{font-size:17px;line-height:1.4;margin:14px 0;}
+.slidev-layout .speaker-heading{display:flex;align-items:center;gap:18px;text-align:left;margin-bottom:18px;min-height:112px;}
+.slidev-layout .speaker-photo{width:100px;height:112px;object-fit:cover;border-radius:8px;}
+.slidev-layout .speaker-heading h3{font-size:23px;margin:0 0 8px;}
+.slidev-layout .speaker-heading p{font-size:13px;margin:0;}
+.slidev-layout .speaker-links .access-qr{width:208px;height:208px;}
