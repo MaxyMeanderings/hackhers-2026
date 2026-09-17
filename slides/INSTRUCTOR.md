@@ -7,7 +7,7 @@ prompt, four output templates, test cases, and actual test evidence.
 
 ## Schedule
 
-The 90-minute workshop uses slides 1–33. Slides 34–43 are optional follow-on
+The 90-minute workshop uses slides 1–31 and closing slides 42–43. Slides 32–41 are optional follow-on
 material about using a finished coach to investigate a hackathon idea.
 
 | Section | Slides | Time | Activity |
@@ -16,7 +16,7 @@ material about using a finished coach to investigate a hackathon idea.
 | Reference coach | 6–8 | 6 minutes | Show the target behavior and outputs |
 | Build your coach | 9–24 | 60 minutes | Brief, spec, approval, implementation, testing, and repair |
 | Engineering | 25–29 | 10 minutes | Principles and workflow options |
-| Show your work | 30–33 | 8 minutes | Demonstrate the student-built coach and share artifacts |
+| Show your work | 30–31, 42–43 | 8 minutes | Demonstrate the student-built coach and share artifacts |
 
 Checkpoint time is included in Build your coach. Reserve its remaining 23 minutes
 for short explanations and demonstrations. Move optional material into a later
@@ -74,8 +74,8 @@ Do not invent a failure, repair, or successful evaluation.
 
 At slide 30, each pair demonstrates its own coach and explains a requirement,
 where it is implemented, the observed test result, and remaining limitations.
-At slides 31–33, share the build kit and published presentation URL. Optional slides
-34–43 show how the finished coach could later inform a separate project.
+At slides 31 and 42–43, share the build kit and published presentation URL. Optional slides
+32–41 show how the finished coach could later inform a separate project.
 
 ## Completed backup
 
@@ -91,7 +91,9 @@ contains only four starter files and no Git history or reference implementation.
 
 ## Connection and access slides
 
+Slide 2 includes both speakers’ photos, introductions, and LinkedIn QR codes.
 Slide 3 provides QR codes and clickable links to the live deck and repository.
-Slide 32 provides both speakers’ photos and LinkedIn QR codes and links.
-Slide 33 repeats resource access at the core workshop close; slide 44 repeats it
-after optional practice. Allow scanning time within the opening and closing sections.
+The only repeats are at the end: speaker connections on slide 42 and resources
+on slide 43. Skip optional practice (slides 32–41) using the Stay connected
+navigation button when closing the core workshop. Allow scanning time within
+the opening and closing sections.

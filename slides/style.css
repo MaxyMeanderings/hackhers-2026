@@ -126,3 +126,8 @@
 .slidev-layout .speaker-heading h3{font-size:23px;margin:0 0 8px;}
 .slidev-layout .speaker-heading p{font-size:13px;margin:0;}
 .slidev-layout .speaker-links .access-qr{width:208px;height:208px;}
+
+.slidev-layout .intro-linkedin{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:18px;}
+.slidev-layout .intro-linkedin a{display:flex;align-items:center;gap:20px;border:0;font-size:17px;color:#e7a58d;}
+.slidev-layout .intro-linkedin img{width:144px;height:144px;background:white;}
+.slidev-layout.presenters-slide .takeaway{margin-top:18px;margin-bottom:0;font-size:23px;}
