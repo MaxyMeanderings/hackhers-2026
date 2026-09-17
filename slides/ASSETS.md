@@ -31,3 +31,9 @@ Presenter bios are concise paraphrases of public professional sources, pending a
   organizer-supplied screenshots, September 17, 2026, used unmodified on slides
   15–16. Each opens full size. The terminal shows an optional custom coding buddy;
   the desktop shows the organizer’s Code workspace and account activity.
+
+- `public/assets/nightshift-stages.png` and
+  `public/assets/nightshift-evidence-usage.png`: organizer-supplied Nightshift
+  screenshots, September 17, 2026. Slide 35 links to the unmodified images.
+  The run is blocked at preflight; usage is partial, and the displayed provider
+  estimate is not confirmed billed cost.
