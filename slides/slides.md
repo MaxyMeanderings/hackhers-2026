@@ -607,14 +607,14 @@ class: content
 
 <div class="slide-number">Hackhers</div>
 
-# Where do BMAD and gstack fit?
+# Where do these workflows fit?
 
-<div class="three"><section><h3>BMAD</h3><p>Structured planning and delivery with product, architecture, development, and testing perspectives.</p></section><section><h3>gstack</h3><p>Specialist workflows for planning, code review, browser testing, and shipping.</p></section><section><h3>Today’s scope</h3><p>Practice the underlying decisions directly in Claude Code before adding workflow setup.</p></section></div><div class="takeaway">These tools can guide the work. Your project still needs explicit rules, design choices, and tests.</div>
+<div class="three"><section><h3>BMAD</h3><p>Structured planning and delivery with product, architecture, development, and testing perspectives.</p></section><section><h3>gstack</h3><p>Specialist workflows for planning, code review, browser testing, and shipping.</p></section><section><h3>Nightshift</h3><p>A staged engineering workflow for specification, implementation, review, and verification, with recorded evidence.</p></section></div><div class="takeaway">Today, we practice the decisions these workflows help organize: define requirements, review changes, and test the results.</div>
 
-<div class="source"><a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD: official repository</a> · <a href="https://github.com/garrytan/gstack">gstack: official repository</a> · Workshop scope: teaching choice</div>
+<div class="source"><a href="https://github.com/bmad-code-org/BMAD-METHOD">BMAD: official repository</a> · <a href="https://github.com/garrytan/gstack">gstack: official repository</a> · <a href="https://github.com/doctor-ew/nightshift-community">Nightshift: official repository</a></div>
 
 <!--
-Neither is required for this workshop. This is a time-and-focus choice, not a verdict on quality or a claim that either lacks engineering practices. Both offer substantial planning and review support. What remains for any project is domain context: which rule is authoritative, which contract a replacement must preserve, which writes belong in a transaction, and what workload to measure. DRY, SOLID, ACID, Big O, and conventions help students assess the proposed answers. The same responsibility applies when using Nightshift or a plain coding session. Adopt a workflow when its structure helps the team; installation itself is not evidence of correctness.
+None of these workflows is required for this workshop. Present each as a way to organize engineering work, without ranking them. Nightshift is Drew’s workflow example; its stages cover specification, implementation, review, and verification with recorded evidence. Today students practice the underlying decisions directly in Claude Code. Adopt a workflow when its structure helps the team; installation itself is not evidence of correctness.
 -->
 
 ---
