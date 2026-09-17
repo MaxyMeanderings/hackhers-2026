@@ -72,6 +72,71 @@ class: content
 
 <div class="slide-number">Hackhers</div>
 
+# Claim your $50 in API credits.
+
+<div class="credits"><div><p class="amount">$50</p><p>Anthropic is covering the API usage behind every Claude Code call you make today.</p><ol><li>Scan the code. Sign in to the Claude Console, or create an account.</li><li>Submit the short credit application.</li><li>Sign in to Claude Code with that same account. Next three slides.</li></ol></div><a class="qr" href="https://platform.claude.com/offers/b5a8e762-e0a0-46fe-a80b-3f6e66f563dc" target="_blank" rel="noopener noreferrer" aria-label="Open the Anthropic API credits offer in a new tab"><img src="/assets/api-credits-qr.png" alt="QR code linking to the Anthropic API credits offer" /><span>Scan, or click to open ↗</span></a></div><div class="takeaway">Do this first. Everything from checkpoint 1 onward needs a working sign-in.</div>
+
+<div class="source">Anthropic API credits offer · organizer’s QR code · sponsorship wording per the organizer</div>
+
+<!--
+Have every pair scan now, before the copilot slide, so applications are in before hands-on work begins. The offer page states that credits arrive within one to two business days; confirm the arrangement for this event before promising same-day access. Credits cover Claude API usage only, not claude.ai subscriptions. Never project an API key.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Apply for credits. Two minutes.
+
+<img class="shot" src="/assets/api-credits-form.png" alt="Anthropic API credits application page with the apply-for-credits form" /><p class="shot-caption">Sign in, confirm your name and organization, submit. Credits cover the Claude API only, not claude.ai subscriptions, and expire six months after they are granted.</p>
+
+<div class="source">Screenshot: Anthropic API credits application page, organizer’s account · fields shown are the organizer’s, not a template</div>
+
+<!--
+Walk through the form once on the projector, or use this screenshot. Students use their own email. Replace this screenshot with the current offer page before presenting; the event name and deadline shown are from an earlier offer.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Your credits live in the Claude Console.
+
+<img class="shot" src="/assets/claude-console-dashboard.png" alt="Claude Console dashboard showing organization credits, monthly spend, and available models" /><p class="shot-caption">platform.claude.com · <b>Organization credits</b> is the balance Claude Code draws from. You do not need to create an API key today.</p>
+
+<div class="source">Screenshot: Claude Console dashboard, organizer’s account, July 2026 · balances shown are the organizer’s</div>
+
+<!--
+Point at Organization credits and Spend this month. Everything else on this page is optional for the workshop. A student who sees a zero balance has not been granted credits yet; pair them with a working laptop and keep going.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
+# Sign in to Claude Code with those credits.
+
+<div class="two"><div class="terminal"><div class="terminal-label">Terminal · then inside Claude Code</div><pre>claude
+/login</pre></div><div><p>Choose <b>2. Anthropic Console account · API usage billing</b>.</p><p>Your browser opens. Sign in with the account that holds the credits, then return to the terminal.</p></div></div><img class="shot shot-short" src="/assets/claude-code-login.png" alt="Claude Code login prompt with Anthropic Console account selected" />
+
+<div class="source">Screenshot: Claude Code /login prompt, organizer’s terminal · <a href="https://code.claude.com/docs/en/quickstart">Claude Code quickstart</a></div>
+
+<!--
+Option 1 uses a personal claude.ai subscription and will not draw on the sponsored credits. Option 2 is the one for today. A student already signed in with a subscription can run /login again to switch. This is the access check that checkpoint 1 relies on: a real response, not a version number.
+-->
+
+---
+class: content
+---
+
+<div class="slide-number">Hackhers</div>
+
 # Copilot vs autopilot: own the decision.
 
 <div class="copilot-content"><div class="two"><section><h3>Copilot · stay engaged</h3><p>Frame the problem and state your assumptions.</p><p>Ask AI for options, explanations, and challenges.</p><p>Check the evidence. Explain why you accept or change the result.</p></section><section><h3>Autopilot · the trap</h3><p>Delegate the framing before understanding the problem.</p><p>Accept a convincing answer without checking it.</p><p>Struggle to explain the choice when someone challenges it.</p></section></div><a class="post-thumbnail" href="./assets/copilot-autopilot-post.png" target="_blank" rel="noopener noreferrer" aria-label="Open Chorouk Malmoum’s original post image in a new tab"><img src="/assets/copilot-autopilot-post.png" alt="Screenshot of Chorouk Malmoum’s LinkedIn post contrasting copilot and autopilot approaches to AI." /><span>Read original post ↗<br>Opens full size in a new tab</span></a></div><div class="takeaway">Before you ship: can you explain the choice, show the evidence, and name what would change your mind?</div>

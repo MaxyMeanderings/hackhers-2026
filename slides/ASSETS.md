@@ -15,5 +15,14 @@ Presenter bios are concise paraphrases of public professional sources, pending a
 
 - `public/assets/copilot-autopilot-post.png`: original, unmodified screenshot
   supplied by the organizer on September 16, 2026. It shows a LinkedIn post
-  attributed to Chorouk Malmoum. Slide 3 displays a thumbnail linked to the
+  attributed to Chorouk Malmoum. Slide 8 displays a thumbnail linked to the
   full-size image in a new tab. No post permalink was supplied.
+
+- `public/assets/api-credits-qr.png`, `public/assets/api-credits-form.png`,
+  `public/assets/claude-console-dashboard.png`, `public/assets/claude-code-login.png`:
+  unmodified images extracted from the organizer’s API Credits.pptx on
+  September 17, 2026, for slides 4–7. The QR code encodes the organizer’s
+  Anthropic API credits offer URL (see SOURCES.md). The screenshots show the
+  organizer’s own Anthropic credits application page, Claude Console dashboard,
+  and Claude Code login prompt. Replace the QR code and application screenshot
+  when a new offer is issued for this event.

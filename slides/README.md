@@ -4,10 +4,10 @@
 build brief and an approved specification using Claude Code. Deliverables are a
 spec, coach prompt, four output templates, test cases, and saved test evidence.
 
-The deck has 31 core slides, 10 optional follow-on slides, and two closing slides about using the
+The deck has 35 core slides, 10 optional follow-on slides, and two closing slides about using the
 finished coach. Four checkpoints cover setup, spec approval, implementation,
-and testing the student-built coach. Engineering principles and the copilot
-mindset support those activities.
+and testing the student-built coach. Sponsored API credit sign-in, engineering
+principles, and the copilot mindset support those activities.
 
 ## Present
 
@@ -50,7 +50,7 @@ examples are labeled and sourced. Synthetic exercises do not represent real fiel
 
 ## Coach walkthrough
 
-The 43-slide deck centers students building and testing their own coach.
+The 47-slide deck centers students building and testing their own coach.
 The clickable side rail marks the build workflow and optional follow-on material. Exact teaching prompts live in
 [walkthrough/](walkthrough/); student assets are bundled under public/.
 The earlier deck and completed coach are preserved on the reference/completed-coach branch.

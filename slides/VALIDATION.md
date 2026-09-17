@@ -1,5 +1,24 @@
 # Coach walkthrough validation
 
+## API credits onboarding slides — September 17, 2026
+
+- Four slides inserted after the workshop-links slide (now slides 4–7): claim
+  credits, apply, Console dashboard, Claude Code /login. Every later slide
+  shifted by four; the section rail, INSTRUCTOR.md, README.md, SOURCES.md,
+  and ASSETS.md were updated to match. Slide references in SOURCES.md and
+  ASSETS.md that still used older numbering now match the deck.
+- The Pages build passed for 35 core slides, 10 optional follow-on slides,
+  and two closing slides (47 total, 94 slide separators), with the starter
+  packaging script run beforehand.
+- The Slidev dev server rendered slides 3–7 at 1280 × 720 in the in-app
+  browser; the four new slides were visually inspected with no content
+  reaching the source footer. All four new images loaded at native resolution.
+- Section rail targets were checked after the shift: slides 10, 13, 29, 34,
+  36, and 46 opened the expected headings and marked the matching section current.
+- The QR code encodes an earlier Anthropic offer URL and the application
+  screenshot shows an earlier event header. Both are flagged in the speaker
+  notes and ASSETS.md for replacement before the event.
+
 ## Student starter and reference separation — September 16, 2026
 
 - The complete pre-separation snapshot was pushed to reference/completed-coach
