@@ -1,8 +1,9 @@
 # Use the coach during the hackathon
 
 Claude Code with provided API access: start a separate conversation in the repository,
-ask it to read coach/PROMPT.md and act as the coach. Ask it not to edit or build yet.
-Claude chat: paste the full coach/PROMPT.md into a fresh chat on your eligible account.
+load the coach prompt you created in your own build folder and ask it to act as
+that coach. Ask it not to edit or build yet.
+Claude chat: paste your complete coach prompt into a fresh chat on your eligible account.
 API credits do not promise a Claude chat subscription. Follow the organizer's access setup.
 
 ## First message
@@ -24,5 +25,7 @@ Save the Idea Brief, Count Ledger, Experiment Card and MVP Brief in your project
 Choose Proceed, Narrow, Investigate or Pivot yourself and explain why.
 Return after your test with actual results; ask what they establish and what remains unknown.
 
-Behavior source: ../../coach/README.md:7 and ../../coach/PROMPT.md:116.
+Behavior reference: [completed coach](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/README.md) and
+[reference prompt](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md).
+These are available for comparison after your own build.
 The coaching instruction in a coding session does not mechanically disable its tools.

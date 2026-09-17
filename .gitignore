@@ -9,3 +9,6 @@ __pycache__/
 # Keep student interview material and local runs out of the public repository.
 private/
 local-runs/
+
+# Local workshop authoring state is preserved outside the student materials.
+.nightshift/

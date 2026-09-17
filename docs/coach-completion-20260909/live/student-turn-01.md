@@ -1,1 +1,0 @@
-This is a synthetic workshop roleplay, not real field evidence. I want to investigate study-session scheduling for my campus club. Yesterday I personally observed our organizer chasing availability answers in the group chat; two planned study sessions were missed. I want to work through discovery before deciding what, if anything, to build.

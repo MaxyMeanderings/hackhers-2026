@@ -28,4 +28,5 @@ Driver supplies the idea and saves outputs. Challenger checks assumptions, asks 
 observable test, and inspects the evidence. Swap roles after one iteration.
 
 This is a teaching workflow derived from the coach's experiment and MVP contract:
-../../coach/PROMPT.md:116 and ../../coach/examples/study-session.md:89.
+[reference prompt](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/PROMPT.md) and
+[recorded example](https://github.com/doctor-ew/hackhers-2026/blob/reference/completed-coach/coach/examples/study-session.md).
